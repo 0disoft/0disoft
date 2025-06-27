@@ -1,4 +1,4 @@
-<div align="center">
+<div>
   
 # 👋 Hi, I'm ZeroDi
 
@@ -8,13 +8,13 @@ A passionate developer exploring modern technologies across the stack.
 
 <br>
 
-<h2 align="center">🛠️ Tech Stack 🛠️</h2>
+<h2>🛠️ Tech Stack 🛠️</h2>
 
 <br>
 
 <details>
   <summary><strong>🌐 Frontend</strong></summary>
-  <div align="center">
+  <div>
     <br>
     <a href="https://svelte.dev" target="_blank"><img src="https://img.shields.io/badge/SvelteKit-FF3E00?style=for-the-badge&logo=svelte&logoColor=white" /></a>
     <a href="https://tailwindcss.com" target="_blank"><img src="https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white" /></a>
@@ -27,7 +27,7 @@ A passionate developer exploring modern technologies across the stack.
 
 <details>
   <summary><strong>⚙️ Backend</strong></summary>
-  <div align="center">
+  <div>
     <br>
     <a href="https://hono.dev" target="_blank"><img src="https://img.shields.io/badge/Hono-E36002?style=for-the-badge&logo=hono&logoColor=white" /></a>
     <a href="https://elysiajs.com" target="_blank"><img src="https://img.shields.io/badge/ElysiaJS-FFFFFF?style=for-the-badge&logo=elysia&logoColor=black" /></a>
@@ -37,7 +37,7 @@ A passionate developer exploring modern technologies across the stack.
 
 <details>
   <summary><strong>☁️ Deployment</strong></summary>
-  <div align="center">
+  <div>
     <br>
     <a href="https://vercel.com" target="_blank"><img src="https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white" /></a>
     <a href="https://www.netlify.com" target="_blank"><img src="https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white" /></a>
@@ -51,7 +51,7 @@ A passionate developer exploring modern technologies across the stack.
 
 <details>
   <summary><strong>🗃️ Database</strong></summary>
-  <div align="center">
+  <div>
     <br>
     <a href="https://supabase.com" target="_blank"><img src="https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white" /></a>
     <a href="https://www.postgresql.org" target="_blank"><img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" /></a>
@@ -66,7 +66,7 @@ A passionate developer exploring modern technologies across the stack.
 
 <details>
   <summary><strong>📱 Cross-Platform</strong></summary>
-  <div align="center">
+  <div>
     <br>
     <a href="https://flutter.dev" target="_blank"><img src="https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white" /></a>
     <a href="https://tauri.app" target="_blank"><img src="https://img.shields.io/badge/Tauri-24C8DB?style=for-the-badge&logo=tauri&logoColor=white" /></a>
@@ -75,7 +75,7 @@ A passionate developer exploring modern technologies across the stack.
 
 <details>
   <summary><strong>🎮 Game Development</strong></summary>
-  <div align="center">
+  <div>
     <br>
     <a href="https://bevy.org" target="_blank"><img src="https://img.shields.io/badge/Bevy-2d1d40?style=for-the-badge&logo=bevy&logoColor=white" /></a>
     <a href="https://phaser.io" target="_blank"><img src="https://img.shields.io/badge/Phaser-652C91?style=for-the-badge&logo=phaser&logoColor=white" /></a>
@@ -85,7 +85,7 @@ A passionate developer exploring modern technologies across the stack.
 
 <details>
   <summary><strong>📦 Runtime & Package Manager</strong></summary>
-  <div align="center">
+  <div>
     <br>
     <a href="https://nodejs.org" target="_blank"><img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" /></a>
     <a href="https://pnpm.io" target="_blank"><img src="https://img.shields.io/badge/pnpm-F69220?style=for-the-badge&logo=pnpm&logoColor=white" /></a>
@@ -95,7 +95,7 @@ A passionate developer exploring modern technologies across the stack.
 
 <details open>
   <summary><strong>❤️ Languages of Interest</strong></summary>
-  <div align="center">
+  <div>
     <br>
     <a href="https://www.typescriptlang.org" target="_blank"><img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" /></a>
     <a href="https://www.rust-lang.org" target="_blank"><img src="https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=white" /></a>
@@ -109,16 +109,10 @@ A passionate developer exploring modern technologies across the stack.
 
 <br>
 
-<h2 align="center">📊 GitHub Stats 📊</h2>
+<h2>📊 GitHub Stats 📊</h2>
 
-<br>
-
-<div align="center">
-  
-<img src="https://github-readme-stats.vercel.app/api?username=0disoft&show_icons=true&theme=dracula&hide_border=true" alt="0disoft's GitHub stats" />
-
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=0disoft&layout=compact&theme=dracula&hide_border=true" alt="0disoft's Top Languages" />
-
-</div>
-
-<br>
+<a href="https://0disoft.github.io">
+  <img src="https://github-readme-stats.vercel.app/api?username=0disoft&show_icons=true&theme=dracula&hide_border=true" alt="0disoft's GitHub stats" />
+  <br>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=0disoft&layout=compact&theme=dracula&hide_border=true" alt="0disoft's Top Languages" />
+</a>
