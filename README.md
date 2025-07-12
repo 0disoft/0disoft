@@ -1,24 +1,25 @@
-<div> 
-  <h1>👋 Hi, I'm ZeroDi</h1> 
-  <p>A passionate developer exploring modern technologies across the stack.</p>
-</div> 
+# 👋 Hi, I'm ZeroDi
 
-<br> 
+A passionate developer exploring modern technologies across the stack.
 
-<h2>🛠️ Tech Stack 🛠️</h2> 
+---
+
+## 🛠️ Tech Stack 🛠️
 
 ### 🌐 Frontend
 <div>
   <a href="https://svelte.dev" target="_blank"><img src="https://img.shields.io/badge/SvelteKit-FF3E00?style=flat-square&logo=svelte&logoColor=white" alt="SvelteKit"/></a>&nbsp;
   <a href="https://astro.build" target="_blank"><img src="https://img.shields.io/badge/Astro-FF5D01?style=flat-square&logo=astro&logoColor=white" alt="Astro"/></a>&nbsp;
-  <a href="https://qwik.dev" target="_blank"><img src="https://img.shields.io/badge/Qwik-50A9FF?style=flat-square&logo=qwik&logoColor=white" alt="Qwik"/></a>
+  <a href="https://qwik.dev" target="_blank"><img src="https://img.shields.io/badge/Qwik-50A9FF?style=flat-square&logo=qwik&logoColor=white" alt="Qwik"/></a>&nbsp;
+  <a href="https://fresh.deno.dev" target="_blank"><img src="https://img.shields.io/badge/Fresh-000000?style=flat-square&logo=deno&logoColor=white" alt="Fresh"/></a>
 </div>
 
 ### ⚙️ Backend
 <div>
   <a href="https://hono.dev" target="_blank"><img src="https://img.shields.io/badge/Hono-E36002?style=flat-square&logo=hono&logoColor=white" alt="Hono"/></a>&nbsp;
   <a href="https://elysiajs.com" target="_blank"><img src="https://img.shields.io/badge/ElysiaJS-FFFFFF?style=flat-square&logo=elysia&logoColor=black" alt="ElysiaJS"/></a>&nbsp;
-  <a href="https://actix.rs" target="_blank"><img src="https://img.shields.io/badge/Actix_Web-000000?style=flat-square&logo=actix&logoColor=white" alt="Actix Web"/></a>
+  <a href="https://actix.rs" target="_blank"><img src="https://img.shields.io/badge/Actix_Web-000000?style=flat-square&logo=actix&logoColor=white" alt="Actix Web"/></a>&nbsp;
+  <a href="https://gofiber.io" target="_blank"><img src="https://img.shields.io/badge/Fiber-00ADD8?style=flat-square&logo=go&logoColor=white" alt="Fiber"/></a>
 </div>
 
 ### 🛠️ Development Tools
@@ -69,6 +70,7 @@
   <a href="https://nodejs.org" target="_blank"><img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white" alt="Node.js"/></a>&nbsp;
   <a href="https://pnpm.io" target="_blank"><img src="https://img.shields.io/badge/pnpm-F69220?style=flat-square&logo=pnpm&logoColor=white" alt="pnpm"/></a>&nbsp;
   <a href="https://bun.sh" target="_blank"><img src="https://img.shields.io/badge/Bun-000000?style=flat-square&logo=bun&logoColor=white" alt="Bun"/></a>
+  <a href="https://deno.com" target="_blank"><img src="https://img.shields.io/badge/Deno-000000?style=flat-square&logo=deno&logoColor=white" alt="Deno"/></a>
 </div>
 
 ### ❤️ Languages of Interest
