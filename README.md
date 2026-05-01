@@ -1,5 +1,6 @@
 # 0disoft
 
-![Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=0disoft&layout=compact&hide_border=true&langs_count=6)
+![Profile Details](https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=0disoft&theme=github_dark)
 
-![Stats](https://github-readme-stats.vercel.app/api?username=0disoft&show_icons=true&hide_border=true&hide_title=true)
+![Languages by Repo](https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=0disoft&theme=github_dark)
+![Languages by Commit](https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=0disoft&theme=github_dark)
