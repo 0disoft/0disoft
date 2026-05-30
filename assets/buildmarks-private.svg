@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" class="card card-auto" role="img" width="760" height="420" viewBox="0 0 760 420" aria-labelledby="title desc">
   <title id="title">Buildmarks GitHub signal card for 0disoft</title>
-  <desc id="desc">Overall signal 51 out of 100. Maintainability 65 out of 100, Project Completeness 72 out of 100, Collaboration 7 out of 100, Shipping Evidence 65 out of 100, Consistency 45 out of 100. Public Adoption is not available for private-local cards. Owner-supplied private repository signals are included and are not independently verifiable from public GitHub; not a developer ranking.</desc>
+  <desc id="desc">16 distinct signals found across 8 summarized repositories. Overall signal 51 out of 100 is available in the report. Maintainability 65 out of 100, Project Completeness 72 out of 100, Collaboration 7 out of 100, Shipping Evidence 65 out of 100, Consistency 45 out of 100. Public Adoption is not available for private-local cards. Owner-supplied private repository signals are included and are not independently verifiable from public GitHub; not a developer ranking.</desc>
   <defs>
     <linearGradient id="panelStroke" x1="18" y1="18" x2="742" y2="402" gradientUnits="userSpaceOnUse">
       <stop offset="0%" class="stroke-start" />
@@ -81,7 +81,7 @@
     .panel { fill: var(--panel); stroke: url(#panelStroke); stroke-width: 1; }
     .top-line { stroke: url(#panelStroke); stroke-width: 2; stroke-linecap: round; opacity: 0.75; }
     .title { fill: var(--text); font: 750 24px ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
-    .subtitle, .footer, .section-label { fill: var(--muted); font: 500 13px ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    .subtitle, .footer, .section-label, .metric-note { fill: var(--muted); font: 500 13px ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
     .name { fill: var(--text); font: 750 20px ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
     .type { fill: var(--accent); font: 700 14px ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
     .overall { fill: var(--warning); font: 800 44px ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
@@ -114,9 +114,10 @@
   <text x="36" y="80" class="subtitle">Owner-supplied GitHub signals</text>
   <text x="36" y="112" class="name">0disoft</text>
   <text x="36" y="136" class="type">Public + Private Signals · Independent Builder</text>
-  <text x="604" y="72" class="subtitle">Overall Signal</text>
-  <text x="604" y="122" class="overall">51</text>
-  <text x="690" y="122" class="overall-unit">/100</text>
+  <text x="604" y="72" class="subtitle">Signals Found</text>
+  <text x="604" y="122" class="overall">16</text>
+  <text x="690" y="122" class="overall-unit">found</text>
+  <text x="604" y="142" class="metric-note">8 repos checked</text>
   <g aria-label="Dimension scores out of 100">
 
     <g role="img" aria-label="Maintainability: 65 points out of 100">
@@ -155,18 +156,18 @@
       <rect x="324" y="282" width="238" height="10" rx="5" class="track" aria-hidden="true" />
     </g>
   </g>
-  <text x="36" y="338" class="section-label">Evidence</text>
-  <g aria-label="Top owner-supplied evidence">
+  <text x="36" y="338" class="section-label">Found Signals</text>
+  <g aria-label="Top owner-supplied signals">
 
-    <g role="img" aria-label="Evidence: Test signal found">
+    <g role="img" aria-label="Signal found: Test signal found">
       <rect x="36" y="350" width="208" height="28" rx="6" class="chip-bg" />
       <text x="48" y="369" class="chip">+ Test signal found</text>
     </g>
-    <g role="img" aria-label="Evidence: CI workflow found">
+    <g role="img" aria-label="Signal found: CI workflow found">
       <rect x="260" y="350" width="208" height="28" rx="6" class="chip-bg" />
       <text x="272" y="369" class="chip">+ CI workflow found</text>
     </g>
-    <g role="img" aria-label="Evidence: Changelog or release notes …">
+    <g role="img" aria-label="Signal found: Changelog or release notes …">
       <rect x="484" y="350" width="208" height="28" rx="6" class="chip-bg" />
       <text x="496" y="369" class="chip">+ Changelog or release notes …</text>
     </g>
