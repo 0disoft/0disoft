@@ -1,0 +1,3965 @@
+{
+  "version": 1,
+  "profile": {
+    "username": "0disoft",
+    "generatedAt": "2026-05-30T03:55:38.916Z",
+    "overall": 48,
+    "signalType": "Builder",
+    "dimensions": {
+      "maintainability": 63,
+      "completeness": 84,
+      "collaboration": 25,
+      "shipping": 68,
+      "consistency": 46,
+      "externalValidation": 1
+    },
+    "topRepos": [
+      {
+        "owner": "0disoft",
+        "name": "mustflow",
+        "url": "https://github.com/0disoft/mustflow",
+        "dimensions": {
+          "completeness": {
+            "key": "completeness",
+            "label": "Project Completeness",
+            "score": 100,
+            "maxScore": 100,
+            "evidence": [
+              {
+                "level": "positive",
+                "label": "README found",
+                "source": "file",
+                "repo": "mustflow"
+              },
+              {
+                "level": "positive",
+                "label": "README includes usage guidance",
+                "source": "file",
+                "repo": "mustflow"
+              },
+              {
+                "level": "positive",
+                "label": "License file found",
+                "source": "file",
+                "repo": "mustflow"
+              },
+              {
+                "level": "positive",
+                "label": "Release or tag trace found",
+                "source": "release",
+                "repo": "mustflow"
+              },
+              {
+                "level": "positive",
+                "label": "Demo or documentation link found",
+                "source": "repository",
+                "repo": "mustflow"
+              },
+              {
+                "level": "positive",
+                "label": "Package or installable artifact found",
+                "source": "repository",
+                "repo": "mustflow"
+              }
+            ]
+          },
+          "maintainability": {
+            "key": "maintainability",
+            "label": "Maintainability",
+            "score": 100,
+            "maxScore": 100,
+            "evidence": [
+              {
+                "level": "positive",
+                "label": "Test signal found",
+                "source": "file",
+                "repo": "mustflow"
+              },
+              {
+                "level": "positive",
+                "label": "CI workflow found",
+                "source": "workflow",
+                "repo": "mustflow"
+              },
+              {
+                "level": "positive",
+                "label": "Changelog or release notes found",
+                "source": "file",
+                "repo": "mustflow"
+              },
+              {
+                "level": "positive",
+                "label": "Contribution guide found",
+                "source": "file",
+                "repo": "mustflow"
+              },
+              {
+                "level": "positive",
+                "label": "Code of conduct found",
+                "source": "file",
+                "repo": "mustflow"
+              },
+              {
+                "level": "positive",
+                "label": "Security policy found",
+                "source": "file",
+                "repo": "mustflow"
+              },
+              {
+                "level": "positive",
+                "label": "Recent maintenance trace found",
+                "source": "repository",
+                "repo": "mustflow"
+              }
+            ]
+          },
+          "collaboration": {
+            "key": "collaboration",
+            "label": "Collaboration",
+            "score": 25,
+            "maxScore": 100,
+            "evidence": [
+              {
+                "level": "positive",
+                "label": "Contribution guide supports collaboration",
+                "source": "file",
+                "repo": "mustflow"
+              },
+              {
+                "level": "positive",
+                "label": "Code of conduct supports collaboration",
+                "source": "file",
+                "repo": "mustflow"
+              }
+            ]
+          },
+          "shipping": {
+            "key": "shipping",
+            "label": "Shipping Evidence",
+            "score": 100,
+            "maxScore": 100,
+            "evidence": [
+              {
+                "level": "positive",
+                "label": "Release or tag trace found",
+                "source": "release",
+                "repo": "mustflow"
+              },
+              {
+                "level": "positive",
+                "label": "Package or installable artifact found",
+                "source": "repository",
+                "repo": "mustflow"
+              },
+              {
+                "level": "positive",
+                "label": "Demo or documentation link found",
+                "source": "repository",
+                "repo": "mustflow"
+              },
+              {
+                "level": "positive",
+                "label": "Recent shipping or maintenance trace found",
+                "source": "repository",
+                "repo": "mustflow"
+              },
+              {
+                "level": "positive",
+                "label": "Security policy found",
+                "source": "file",
+                "repo": "mustflow"
+              }
+            ]
+          },
+          "consistency": {
+            "key": "consistency",
+            "label": "Consistency",
+            "score": 60,
+            "maxScore": 100,
+            "evidence": [
+              {
+                "level": "positive",
+                "label": "Repository has recent public activity",
+                "source": "repository",
+                "repo": "mustflow"
+              },
+              {
+                "level": "positive",
+                "label": "Changelog trace found",
+                "source": "file",
+                "repo": "mustflow"
+              },
+              {
+                "level": "positive",
+                "label": "Release trace found",
+                "source": "release",
+                "repo": "mustflow"
+              }
+            ]
+          },
+          "externalValidation": {
+            "key": "externalValidation",
+            "label": "External Validation",
+            "score": 3,
+            "maxScore": 100,
+            "evidence": [
+              {
+                "level": "neutral",
+                "label": "Stars, forks, and public participation are capped weak signals",
+                "source": "repository",
+                "repo": "mustflow"
+              }
+            ]
+          }
+        },
+        "overall": 71,
+        "weight": 1.855,
+        "evidence": [
+          {
+            "level": "positive",
+            "label": "Test signal found",
+            "source": "file",
+            "repo": "mustflow"
+          },
+          {
+            "level": "positive",
+            "label": "CI workflow found",
+            "source": "workflow",
+            "repo": "mustflow"
+          },
+          {
+            "level": "positive",
+            "label": "Changelog or release notes found",
+            "source": "file",
+            "repo": "mustflow"
+          },
+          {
+            "level": "positive",
+            "label": "Contribution guide found",
+            "source": "file",
+            "repo": "mustflow"
+          },
+          {
+            "level": "positive",
+            "label": "Code of conduct found",
+            "source": "file",
+            "repo": "mustflow"
+          }
+        ]
+      },
+      {
+        "owner": "0disoft",
+        "name": "buildmarks",
+        "url": "https://github.com/0disoft/buildmarks",
+        "dimensions": {
+          "completeness": {
+            "key": "completeness",
+            "label": "Project Completeness",
+            "score": 100,
+            "maxScore": 100,
+            "evidence": [
+              {
+                "level": "positive",
+                "label": "README found",
+                "source": "file",
+                "repo": "buildmarks"
+              },
+              {
+                "level": "positive",
+                "label": "README includes usage guidance",
+                "source": "file",
+                "repo": "buildmarks"
+              },
+              {
+                "level": "positive",
+                "label": "License file found",
+                "source": "file",
+                "repo": "buildmarks"
+              },
+              {
+                "level": "positive",
+                "label": "Release or tag trace found",
+                "source": "release",
+                "repo": "buildmarks"
+              },
+              {
+                "level": "positive",
+                "label": "Demo or documentation link found",
+                "source": "repository",
+                "repo": "buildmarks"
+              },
+              {
+                "level": "positive",
+                "label": "Package or installable artifact found",
+                "source": "repository",
+                "repo": "buildmarks"
+              }
+            ]
+          },
+          "maintainability": {
+            "key": "maintainability",
+            "label": "Maintainability",
+            "score": 100,
+            "maxScore": 100,
+            "evidence": [
+              {
+                "level": "positive",
+                "label": "Test signal found",
+                "source": "file",
+                "repo": "buildmarks"
+              },
+              {
+                "level": "positive",
+                "label": "CI workflow found",
+                "source": "workflow",
+                "repo": "buildmarks"
+              },
+              {
+                "level": "positive",
+                "label": "Changelog or release notes found",
+                "source": "file",
+                "repo": "buildmarks"
+              },
+              {
+                "level": "positive",
+                "label": "Contribution guide found",
+                "source": "file",
+                "repo": "buildmarks"
+              },
+              {
+                "level": "positive",
+                "label": "Code of conduct found",
+                "source": "file",
+                "repo": "buildmarks"
+              },
+              {
+                "level": "positive",
+                "label": "Security policy found",
+                "source": "file",
+                "repo": "buildmarks"
+              },
+              {
+                "level": "positive",
+                "label": "Recent maintenance trace found",
+                "source": "repository",
+                "repo": "buildmarks"
+              }
+            ]
+          },
+          "collaboration": {
+            "key": "collaboration",
+            "label": "Collaboration",
+            "score": 25,
+            "maxScore": 100,
+            "evidence": [
+              {
+                "level": "positive",
+                "label": "Contribution guide supports collaboration",
+                "source": "file",
+                "repo": "buildmarks"
+              },
+              {
+                "level": "positive",
+                "label": "Code of conduct supports collaboration",
+                "source": "file",
+                "repo": "buildmarks"
+              }
+            ]
+          },
+          "shipping": {
+            "key": "shipping",
+            "label": "Shipping Evidence",
+            "score": 100,
+            "maxScore": 100,
+            "evidence": [
+              {
+                "level": "positive",
+                "label": "Release or tag trace found",
+                "source": "release",
+                "repo": "buildmarks"
+              },
+              {
+                "level": "positive",
+                "label": "Package or installable artifact found",
+                "source": "repository",
+                "repo": "buildmarks"
+              },
+              {
+                "level": "positive",
+                "label": "Demo or documentation link found",
+                "source": "repository",
+                "repo": "buildmarks"
+              },
+              {
+                "level": "positive",
+                "label": "Recent shipping or maintenance trace found",
+                "source": "repository",
+                "repo": "buildmarks"
+              },
+              {
+                "level": "positive",
+                "label": "Security policy found",
+                "source": "file",
+                "repo": "buildmarks"
+              }
+            ]
+          },
+          "consistency": {
+            "key": "consistency",
+            "label": "Consistency",
+            "score": 60,
+            "maxScore": 100,
+            "evidence": [
+              {
+                "level": "positive",
+                "label": "Repository has recent public activity",
+                "source": "repository",
+                "repo": "buildmarks"
+              },
+              {
+                "level": "positive",
+                "label": "Changelog trace found",
+                "source": "file",
+                "repo": "buildmarks"
+              },
+              {
+                "level": "positive",
+                "label": "Release trace found",
+                "source": "release",
+                "repo": "buildmarks"
+              }
+            ]
+          },
+          "externalValidation": {
+            "key": "externalValidation",
+            "label": "External Validation",
+            "score": 0,
+            "maxScore": 100,
+            "evidence": [
+              {
+                "level": "neutral",
+                "label": "Stars, forks, and public participation are capped weak signals",
+                "source": "repository",
+                "repo": "buildmarks"
+              }
+            ]
+          }
+        },
+        "overall": 71,
+        "weight": 1.85,
+        "evidence": [
+          {
+            "level": "positive",
+            "label": "Test signal found",
+            "source": "file",
+            "repo": "buildmarks"
+          },
+          {
+            "level": "positive",
+            "label": "CI workflow found",
+            "source": "workflow",
+            "repo": "buildmarks"
+          },
+          {
+            "level": "positive",
+            "label": "Changelog or release notes found",
+            "source": "file",
+            "repo": "buildmarks"
+          },
+          {
+            "level": "positive",
+            "label": "Contribution guide found",
+            "source": "file",
+            "repo": "buildmarks"
+          },
+          {
+            "level": "positive",
+            "label": "Code of conduct found",
+            "source": "file",
+            "repo": "buildmarks"
+          }
+        ]
+      },
+      {
+        "owner": "0disoft",
+        "name": "workduck",
+        "url": "https://github.com/0disoft/workduck",
+        "dimensions": {
+          "completeness": {
+            "key": "completeness",
+            "label": "Project Completeness",
+            "score": 83,
+            "maxScore": 100,
+            "evidence": [
+              {
+                "level": "positive",
+                "label": "README found",
+                "source": "file",
+                "repo": "workduck"
+              },
+              {
+                "level": "positive",
+                "label": "README includes usage guidance",
+                "source": "file",
+                "repo": "workduck"
+              },
+              {
+                "level": "positive",
+                "label": "License file found",
+                "source": "file",
+                "repo": "workduck"
+              },
+              {
+                "level": "positive",
+                "label": "Release or tag trace found",
+                "source": "release",
+                "repo": "workduck"
+              },
+              {
+                "level": "positive",
+                "label": "Package or installable artifact found",
+                "source": "repository",
+                "repo": "workduck"
+              }
+            ]
+          },
+          "maintainability": {
+            "key": "maintainability",
+            "label": "Maintainability",
+            "score": 55,
+            "maxScore": 100,
+            "evidence": [
+              {
+                "level": "positive",
+                "label": "CI workflow found",
+                "source": "workflow",
+                "repo": "workduck"
+              },
+              {
+                "level": "positive",
+                "label": "Contribution guide found",
+                "source": "file",
+                "repo": "workduck"
+              },
+              {
+                "level": "positive",
+                "label": "Code of conduct found",
+                "source": "file",
+                "repo": "workduck"
+              },
+              {
+                "level": "positive",
+                "label": "Recent maintenance trace found",
+                "source": "repository",
+                "repo": "workduck"
+              }
+            ]
+          },
+          "collaboration": {
+            "key": "collaboration",
+            "label": "Collaboration",
+            "score": 25,
+            "maxScore": 100,
+            "evidence": [
+              {
+                "level": "positive",
+                "label": "Contribution guide supports collaboration",
+                "source": "file",
+                "repo": "workduck"
+              },
+              {
+                "level": "positive",
+                "label": "Code of conduct supports collaboration",
+                "source": "file",
+                "repo": "workduck"
+              }
+            ]
+          },
+          "shipping": {
+            "key": "shipping",
+            "label": "Shipping Evidence",
+            "score": 69,
+            "maxScore": 100,
+            "evidence": [
+              {
+                "level": "positive",
+                "label": "Release or tag trace found",
+                "source": "release",
+                "repo": "workduck"
+              },
+              {
+                "level": "positive",
+                "label": "Package or installable artifact found",
+                "source": "repository",
+                "repo": "workduck"
+              },
+              {
+                "level": "positive",
+                "label": "Recent shipping or maintenance trace found",
+                "source": "repository",
+                "repo": "workduck"
+              }
+            ]
+          },
+          "consistency": {
+            "key": "consistency",
+            "label": "Consistency",
+            "score": 50,
+            "maxScore": 100,
+            "evidence": [
+              {
+                "level": "positive",
+                "label": "Repository has recent public activity",
+                "source": "repository",
+                "repo": "workduck"
+              },
+              {
+                "level": "positive",
+                "label": "Release trace found",
+                "source": "release",
+                "repo": "workduck"
+              }
+            ]
+          },
+          "externalValidation": {
+            "key": "externalValidation",
+            "label": "External Validation",
+            "score": 0,
+            "maxScore": 100,
+            "evidence": [
+              {
+                "level": "neutral",
+                "label": "Stars, forks, and public participation are capped weak signals",
+                "source": "repository",
+                "repo": "workduck"
+              }
+            ]
+          }
+        },
+        "overall": 51,
+        "weight": 1.587,
+        "evidence": [
+          {
+            "level": "positive",
+            "label": "CI workflow found",
+            "source": "workflow",
+            "repo": "workduck"
+          },
+          {
+            "level": "positive",
+            "label": "Contribution guide found",
+            "source": "file",
+            "repo": "workduck"
+          },
+          {
+            "level": "positive",
+            "label": "Code of conduct found",
+            "source": "file",
+            "repo": "workduck"
+          },
+          {
+            "level": "positive",
+            "label": "Recent maintenance trace found",
+            "source": "repository",
+            "repo": "workduck"
+          },
+          {
+            "level": "positive",
+            "label": "README found",
+            "source": "file",
+            "repo": "workduck"
+          }
+        ]
+      },
+      {
+        "owner": "0disoft",
+        "name": "0disoft.github.io",
+        "url": "https://github.com/0disoft/0disoft.github.io",
+        "dimensions": {
+          "completeness": {
+            "key": "completeness",
+            "label": "Project Completeness",
+            "score": 83,
+            "maxScore": 100,
+            "evidence": [
+              {
+                "level": "positive",
+                "label": "README found",
+                "source": "file",
+                "repo": "0disoft.github.io"
+              },
+              {
+                "level": "positive",
+                "label": "README includes usage guidance",
+                "source": "file",
+                "repo": "0disoft.github.io"
+              },
+              {
+                "level": "positive",
+                "label": "License file found",
+                "source": "file",
+                "repo": "0disoft.github.io"
+              },
+              {
+                "level": "positive",
+                "label": "Demo or documentation link found",
+                "source": "repository",
+                "repo": "0disoft.github.io"
+              },
+              {
+                "level": "positive",
+                "label": "Package or installable artifact found",
+                "source": "repository",
+                "repo": "0disoft.github.io"
+              }
+            ]
+          },
+          "maintainability": {
+            "key": "maintainability",
+            "label": "Maintainability",
+            "score": 55,
+            "maxScore": 100,
+            "evidence": [
+              {
+                "level": "positive",
+                "label": "CI workflow found",
+                "source": "workflow",
+                "repo": "0disoft.github.io"
+              },
+              {
+                "level": "positive",
+                "label": "Contribution guide found",
+                "source": "file",
+                "repo": "0disoft.github.io"
+              },
+              {
+                "level": "positive",
+                "label": "Code of conduct found",
+                "source": "file",
+                "repo": "0disoft.github.io"
+              },
+              {
+                "level": "positive",
+                "label": "Recent maintenance trace found",
+                "source": "repository",
+                "repo": "0disoft.github.io"
+              }
+            ]
+          },
+          "collaboration": {
+            "key": "collaboration",
+            "label": "Collaboration",
+            "score": 25,
+            "maxScore": 100,
+            "evidence": [
+              {
+                "level": "positive",
+                "label": "Contribution guide supports collaboration",
+                "source": "file",
+                "repo": "0disoft.github.io"
+              },
+              {
+                "level": "positive",
+                "label": "Code of conduct supports collaboration",
+                "source": "file",
+                "repo": "0disoft.github.io"
+              }
+            ]
+          },
+          "shipping": {
+            "key": "shipping",
+            "label": "Shipping Evidence",
+            "score": 62,
+            "maxScore": 100,
+            "evidence": [
+              {
+                "level": "positive",
+                "label": "Package or installable artifact found",
+                "source": "repository",
+                "repo": "0disoft.github.io"
+              },
+              {
+                "level": "positive",
+                "label": "Demo or documentation link found",
+                "source": "repository",
+                "repo": "0disoft.github.io"
+              },
+              {
+                "level": "positive",
+                "label": "Recent shipping or maintenance trace found",
+                "source": "repository",
+                "repo": "0disoft.github.io"
+              }
+            ]
+          },
+          "consistency": {
+            "key": "consistency",
+            "label": "Consistency",
+            "score": 30,
+            "maxScore": 100,
+            "evidence": [
+              {
+                "level": "positive",
+                "label": "Repository has recent public activity",
+                "source": "repository",
+                "repo": "0disoft.github.io"
+              }
+            ]
+          },
+          "externalValidation": {
+            "key": "externalValidation",
+            "label": "External Validation",
+            "score": 0,
+            "maxScore": 100,
+            "evidence": [
+              {
+                "level": "neutral",
+                "label": "Stars, forks, and public participation are capped weak signals",
+                "source": "repository",
+                "repo": "0disoft.github.io"
+              }
+            ]
+          }
+        },
+        "overall": 48,
+        "weight": 1.569,
+        "evidence": [
+          {
+            "level": "positive",
+            "label": "CI workflow found",
+            "source": "workflow",
+            "repo": "0disoft.github.io"
+          },
+          {
+            "level": "positive",
+            "label": "Contribution guide found",
+            "source": "file",
+            "repo": "0disoft.github.io"
+          },
+          {
+            "level": "positive",
+            "label": "Code of conduct found",
+            "source": "file",
+            "repo": "0disoft.github.io"
+          },
+          {
+            "level": "positive",
+            "label": "Recent maintenance trace found",
+            "source": "repository",
+            "repo": "0disoft.github.io"
+          },
+          {
+            "level": "positive",
+            "label": "README found",
+            "source": "file",
+            "repo": "0disoft.github.io"
+          }
+        ]
+      },
+      {
+        "owner": "0disoft",
+        "name": "oklch-shade",
+        "url": "https://github.com/0disoft/oklch-shade",
+        "dimensions": {
+          "completeness": {
+            "key": "completeness",
+            "label": "Project Completeness",
+            "score": 83,
+            "maxScore": 100,
+            "evidence": [
+              {
+                "level": "positive",
+                "label": "README found",
+                "source": "file",
+                "repo": "oklch-shade"
+              },
+              {
+                "level": "positive",
+                "label": "README includes usage guidance",
+                "source": "file",
+                "repo": "oklch-shade"
+              },
+              {
+                "level": "positive",
+                "label": "License file found",
+                "source": "file",
+                "repo": "oklch-shade"
+              },
+              {
+                "level": "positive",
+                "label": "Demo or documentation link found",
+                "source": "repository",
+                "repo": "oklch-shade"
+              },
+              {
+                "level": "positive",
+                "label": "Package or installable artifact found",
+                "source": "repository",
+                "repo": "oklch-shade"
+              }
+            ]
+          },
+          "maintainability": {
+            "key": "maintainability",
+            "label": "Maintainability",
+            "score": 45,
+            "maxScore": 100,
+            "evidence": [
+              {
+                "level": "positive",
+                "label": "Changelog or release notes found",
+                "source": "file",
+                "repo": "oklch-shade"
+              },
+              {
+                "level": "positive",
+                "label": "Contribution guide found",
+                "source": "file",
+                "repo": "oklch-shade"
+              },
+              {
+                "level": "positive",
+                "label": "Code of conduct found",
+                "source": "file",
+                "repo": "oklch-shade"
+              },
+              {
+                "level": "positive",
+                "label": "Recent maintenance trace found",
+                "source": "repository",
+                "repo": "oklch-shade"
+              }
+            ]
+          },
+          "collaboration": {
+            "key": "collaboration",
+            "label": "Collaboration",
+            "score": 25,
+            "maxScore": 100,
+            "evidence": [
+              {
+                "level": "positive",
+                "label": "Contribution guide supports collaboration",
+                "source": "file",
+                "repo": "oklch-shade"
+              },
+              {
+                "level": "positive",
+                "label": "Code of conduct supports collaboration",
+                "source": "file",
+                "repo": "oklch-shade"
+              }
+            ]
+          },
+          "shipping": {
+            "key": "shipping",
+            "label": "Shipping Evidence",
+            "score": 62,
+            "maxScore": 100,
+            "evidence": [
+              {
+                "level": "positive",
+                "label": "Package or installable artifact found",
+                "source": "repository",
+                "repo": "oklch-shade"
+              },
+              {
+                "level": "positive",
+                "label": "Demo or documentation link found",
+                "source": "repository",
+                "repo": "oklch-shade"
+              },
+              {
+                "level": "positive",
+                "label": "Recent shipping or maintenance trace found",
+                "source": "repository",
+                "repo": "oklch-shade"
+              }
+            ]
+          },
+          "consistency": {
+            "key": "consistency",
+            "label": "Consistency",
+            "score": 40,
+            "maxScore": 100,
+            "evidence": [
+              {
+                "level": "positive",
+                "label": "Repository has recent public activity",
+                "source": "repository",
+                "repo": "oklch-shade"
+              },
+              {
+                "level": "positive",
+                "label": "Changelog trace found",
+                "source": "file",
+                "repo": "oklch-shade"
+              }
+            ]
+          },
+          "externalValidation": {
+            "key": "externalValidation",
+            "label": "External Validation",
+            "score": 0,
+            "maxScore": 100,
+            "evidence": [
+              {
+                "level": "neutral",
+                "label": "Stars, forks, and public participation are capped weak signals",
+                "source": "repository",
+                "repo": "oklch-shade"
+              }
+            ]
+          }
+        },
+        "overall": 46,
+        "weight": 1.539,
+        "evidence": [
+          {
+            "level": "positive",
+            "label": "Changelog or release notes found",
+            "source": "file",
+            "repo": "oklch-shade"
+          },
+          {
+            "level": "positive",
+            "label": "Contribution guide found",
+            "source": "file",
+            "repo": "oklch-shade"
+          },
+          {
+            "level": "positive",
+            "label": "Code of conduct found",
+            "source": "file",
+            "repo": "oklch-shade"
+          },
+          {
+            "level": "positive",
+            "label": "Recent maintenance trace found",
+            "source": "repository",
+            "repo": "oklch-shade"
+          },
+          {
+            "level": "positive",
+            "label": "README found",
+            "source": "file",
+            "repo": "oklch-shade"
+          }
+        ]
+      },
+      {
+        "owner": "0disoft",
+        "name": "markdown-bold-lint",
+        "url": "https://github.com/0disoft/markdown-bold-lint",
+        "dimensions": {
+          "completeness": {
+            "key": "completeness",
+            "label": "Project Completeness",
+            "score": 83,
+            "maxScore": 100,
+            "evidence": [
+              {
+                "level": "positive",
+                "label": "README found",
+                "source": "file",
+                "repo": "markdown-bold-lint"
+              },
+              {
+                "level": "positive",
+                "label": "README includes usage guidance",
+                "source": "file",
+                "repo": "markdown-bold-lint"
+              },
+              {
+                "level": "positive",
+                "label": "License file found",
+                "source": "file",
+                "repo": "markdown-bold-lint"
+              },
+              {
+                "level": "positive",
+                "label": "Demo or documentation link found",
+                "source": "repository",
+                "repo": "markdown-bold-lint"
+              },
+              {
+                "level": "positive",
+                "label": "Package or installable artifact found",
+                "source": "repository",
+                "repo": "markdown-bold-lint"
+              }
+            ]
+          },
+          "maintainability": {
+            "key": "maintainability",
+            "label": "Maintainability",
+            "score": 45,
+            "maxScore": 100,
+            "evidence": [
+              {
+                "level": "positive",
+                "label": "Changelog or release notes found",
+                "source": "file",
+                "repo": "markdown-bold-lint"
+              },
+              {
+                "level": "positive",
+                "label": "Contribution guide found",
+                "source": "file",
+                "repo": "markdown-bold-lint"
+              },
+              {
+                "level": "positive",
+                "label": "Code of conduct found",
+                "source": "file",
+                "repo": "markdown-bold-lint"
+              },
+              {
+                "level": "positive",
+                "label": "Recent maintenance trace found",
+                "source": "repository",
+                "repo": "markdown-bold-lint"
+              }
+            ]
+          },
+          "collaboration": {
+            "key": "collaboration",
+            "label": "Collaboration",
+            "score": 25,
+            "maxScore": 100,
+            "evidence": [
+              {
+                "level": "positive",
+                "label": "Contribution guide supports collaboration",
+                "source": "file",
+                "repo": "markdown-bold-lint"
+              },
+              {
+                "level": "positive",
+                "label": "Code of conduct supports collaboration",
+                "source": "file",
+                "repo": "markdown-bold-lint"
+              }
+            ]
+          },
+          "shipping": {
+            "key": "shipping",
+            "label": "Shipping Evidence",
+            "score": 62,
+            "maxScore": 100,
+            "evidence": [
+              {
+                "level": "positive",
+                "label": "Package or installable artifact found",
+                "source": "repository",
+                "repo": "markdown-bold-lint"
+              },
+              {
+                "level": "positive",
+                "label": "Demo or documentation link found",
+                "source": "repository",
+                "repo": "markdown-bold-lint"
+              },
+              {
+                "level": "positive",
+                "label": "Recent shipping or maintenance trace found",
+                "source": "repository",
+                "repo": "markdown-bold-lint"
+              }
+            ]
+          },
+          "consistency": {
+            "key": "consistency",
+            "label": "Consistency",
+            "score": 40,
+            "maxScore": 100,
+            "evidence": [
+              {
+                "level": "positive",
+                "label": "Repository has recent public activity",
+                "source": "repository",
+                "repo": "markdown-bold-lint"
+              },
+              {
+                "level": "positive",
+                "label": "Changelog trace found",
+                "source": "file",
+                "repo": "markdown-bold-lint"
+              }
+            ]
+          },
+          "externalValidation": {
+            "key": "externalValidation",
+            "label": "External Validation",
+            "score": 0,
+            "maxScore": 100,
+            "evidence": [
+              {
+                "level": "neutral",
+                "label": "Stars, forks, and public participation are capped weak signals",
+                "source": "repository",
+                "repo": "markdown-bold-lint"
+              }
+            ]
+          }
+        },
+        "overall": 46,
+        "weight": 1.539,
+        "evidence": [
+          {
+            "level": "positive",
+            "label": "Changelog or release notes found",
+            "source": "file",
+            "repo": "markdown-bold-lint"
+          },
+          {
+            "level": "positive",
+            "label": "Contribution guide found",
+            "source": "file",
+            "repo": "markdown-bold-lint"
+          },
+          {
+            "level": "positive",
+            "label": "Code of conduct found",
+            "source": "file",
+            "repo": "markdown-bold-lint"
+          },
+          {
+            "level": "positive",
+            "label": "Recent maintenance trace found",
+            "source": "repository",
+            "repo": "markdown-bold-lint"
+          },
+          {
+            "level": "positive",
+            "label": "README found",
+            "source": "file",
+            "repo": "markdown-bold-lint"
+          }
+        ]
+      },
+      {
+        "owner": "0disoft",
+        "name": "split-or-die",
+        "url": "https://github.com/0disoft/split-or-die",
+        "dimensions": {
+          "completeness": {
+            "key": "completeness",
+            "label": "Project Completeness",
+            "score": 67,
+            "maxScore": 100,
+            "evidence": [
+              {
+                "level": "positive",
+                "label": "README found",
+                "source": "file",
+                "repo": "split-or-die"
+              },
+              {
+                "level": "positive",
+                "label": "README includes usage guidance",
+                "source": "file",
+                "repo": "split-or-die"
+              },
+              {
+                "level": "positive",
+                "label": "License file found",
+                "source": "file",
+                "repo": "split-or-die"
+              },
+              {
+                "level": "positive",
+                "label": "Package or installable artifact found",
+                "source": "repository",
+                "repo": "split-or-die"
+              }
+            ]
+          },
+          "maintainability": {
+            "key": "maintainability",
+            "label": "Maintainability",
+            "score": 45,
+            "maxScore": 100,
+            "evidence": [
+              {
+                "level": "positive",
+                "label": "Changelog or release notes found",
+                "source": "file",
+                "repo": "split-or-die"
+              },
+              {
+                "level": "positive",
+                "label": "Contribution guide found",
+                "source": "file",
+                "repo": "split-or-die"
+              },
+              {
+                "level": "positive",
+                "label": "Code of conduct found",
+                "source": "file",
+                "repo": "split-or-die"
+              },
+              {
+                "level": "positive",
+                "label": "Recent maintenance trace found",
+                "source": "repository",
+                "repo": "split-or-die"
+              }
+            ]
+          },
+          "collaboration": {
+            "key": "collaboration",
+            "label": "Collaboration",
+            "score": 25,
+            "maxScore": 100,
+            "evidence": [
+              {
+                "level": "positive",
+                "label": "Contribution guide supports collaboration",
+                "source": "file",
+                "repo": "split-or-die"
+              },
+              {
+                "level": "positive",
+                "label": "Code of conduct supports collaboration",
+                "source": "file",
+                "repo": "split-or-die"
+              }
+            ]
+          },
+          "shipping": {
+            "key": "shipping",
+            "label": "Shipping Evidence",
+            "score": 38,
+            "maxScore": 100,
+            "evidence": [
+              {
+                "level": "positive",
+                "label": "Package or installable artifact found",
+                "source": "repository",
+                "repo": "split-or-die"
+              },
+              {
+                "level": "positive",
+                "label": "Recent shipping or maintenance trace found",
+                "source": "repository",
+                "repo": "split-or-die"
+              }
+            ]
+          },
+          "consistency": {
+            "key": "consistency",
+            "label": "Consistency",
+            "score": 40,
+            "maxScore": 100,
+            "evidence": [
+              {
+                "level": "positive",
+                "label": "Repository has recent public activity",
+                "source": "repository",
+                "repo": "split-or-die"
+              },
+              {
+                "level": "positive",
+                "label": "Changelog trace found",
+                "source": "file",
+                "repo": "split-or-die"
+              }
+            ]
+          },
+          "externalValidation": {
+            "key": "externalValidation",
+            "label": "External Validation",
+            "score": 3,
+            "maxScore": 100,
+            "evidence": [
+              {
+                "level": "neutral",
+                "label": "Stars, forks, and public participation are capped weak signals",
+                "source": "repository",
+                "repo": "split-or-die"
+              }
+            ]
+          }
+        },
+        "overall": 40,
+        "weight": 1.435,
+        "evidence": [
+          {
+            "level": "positive",
+            "label": "Changelog or release notes found",
+            "source": "file",
+            "repo": "split-or-die"
+          },
+          {
+            "level": "positive",
+            "label": "Contribution guide found",
+            "source": "file",
+            "repo": "split-or-die"
+          },
+          {
+            "level": "positive",
+            "label": "Code of conduct found",
+            "source": "file",
+            "repo": "split-or-die"
+          },
+          {
+            "level": "positive",
+            "label": "Recent maintenance trace found",
+            "source": "repository",
+            "repo": "split-or-die"
+          },
+          {
+            "level": "positive",
+            "label": "README found",
+            "source": "file",
+            "repo": "split-or-die"
+          }
+        ]
+      },
+      {
+        "owner": "0disoft",
+        "name": "typelock-timer",
+        "url": "https://github.com/0disoft/typelock-timer",
+        "dimensions": {
+          "completeness": {
+            "key": "completeness",
+            "label": "Project Completeness",
+            "score": 67,
+            "maxScore": 100,
+            "evidence": [
+              {
+                "level": "positive",
+                "label": "README found",
+                "source": "file",
+                "repo": "typelock-timer"
+              },
+              {
+                "level": "positive",
+                "label": "README includes usage guidance",
+                "source": "file",
+                "repo": "typelock-timer"
+              },
+              {
+                "level": "positive",
+                "label": "License file found",
+                "source": "file",
+                "repo": "typelock-timer"
+              },
+              {
+                "level": "positive",
+                "label": "Package or installable artifact found",
+                "source": "repository",
+                "repo": "typelock-timer"
+              }
+            ]
+          },
+          "maintainability": {
+            "key": "maintainability",
+            "label": "Maintainability",
+            "score": 45,
+            "maxScore": 100,
+            "evidence": [
+              {
+                "level": "positive",
+                "label": "Changelog or release notes found",
+                "source": "file",
+                "repo": "typelock-timer"
+              },
+              {
+                "level": "positive",
+                "label": "Contribution guide found",
+                "source": "file",
+                "repo": "typelock-timer"
+              },
+              {
+                "level": "positive",
+                "label": "Code of conduct found",
+                "source": "file",
+                "repo": "typelock-timer"
+              },
+              {
+                "level": "positive",
+                "label": "Recent maintenance trace found",
+                "source": "repository",
+                "repo": "typelock-timer"
+              }
+            ]
+          },
+          "collaboration": {
+            "key": "collaboration",
+            "label": "Collaboration",
+            "score": 25,
+            "maxScore": 100,
+            "evidence": [
+              {
+                "level": "positive",
+                "label": "Contribution guide supports collaboration",
+                "source": "file",
+                "repo": "typelock-timer"
+              },
+              {
+                "level": "positive",
+                "label": "Code of conduct supports collaboration",
+                "source": "file",
+                "repo": "typelock-timer"
+              }
+            ]
+          },
+          "shipping": {
+            "key": "shipping",
+            "label": "Shipping Evidence",
+            "score": 38,
+            "maxScore": 100,
+            "evidence": [
+              {
+                "level": "positive",
+                "label": "Package or installable artifact found",
+                "source": "repository",
+                "repo": "typelock-timer"
+              },
+              {
+                "level": "positive",
+                "label": "Recent shipping or maintenance trace found",
+                "source": "repository",
+                "repo": "typelock-timer"
+              }
+            ]
+          },
+          "consistency": {
+            "key": "consistency",
+            "label": "Consistency",
+            "score": 40,
+            "maxScore": 100,
+            "evidence": [
+              {
+                "level": "positive",
+                "label": "Repository has recent public activity",
+                "source": "repository",
+                "repo": "typelock-timer"
+              },
+              {
+                "level": "positive",
+                "label": "Changelog trace found",
+                "source": "file",
+                "repo": "typelock-timer"
+              }
+            ]
+          },
+          "externalValidation": {
+            "key": "externalValidation",
+            "label": "External Validation",
+            "score": 0,
+            "maxScore": 100,
+            "evidence": [
+              {
+                "level": "neutral",
+                "label": "Stars, forks, and public participation are capped weak signals",
+                "source": "repository",
+                "repo": "typelock-timer"
+              }
+            ]
+          }
+        },
+        "overall": 39,
+        "weight": 1.431,
+        "evidence": [
+          {
+            "level": "positive",
+            "label": "Changelog or release notes found",
+            "source": "file",
+            "repo": "typelock-timer"
+          },
+          {
+            "level": "positive",
+            "label": "Contribution guide found",
+            "source": "file",
+            "repo": "typelock-timer"
+          },
+          {
+            "level": "positive",
+            "label": "Code of conduct found",
+            "source": "file",
+            "repo": "typelock-timer"
+          },
+          {
+            "level": "positive",
+            "label": "Recent maintenance trace found",
+            "source": "repository",
+            "repo": "typelock-timer"
+          },
+          {
+            "level": "positive",
+            "label": "README found",
+            "source": "file",
+            "repo": "typelock-timer"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "level": "positive",
+        "label": "Test signal found",
+        "source": "file",
+        "repo": "mustflow"
+      },
+      {
+        "level": "positive",
+        "label": "CI workflow found",
+        "source": "workflow",
+        "repo": "mustflow"
+      },
+      {
+        "level": "positive",
+        "label": "Changelog or release notes found",
+        "source": "file",
+        "repo": "mustflow"
+      },
+      {
+        "level": "positive",
+        "label": "Contribution guide found",
+        "source": "file",
+        "repo": "mustflow"
+      },
+      {
+        "level": "positive",
+        "label": "Code of conduct found",
+        "source": "file",
+        "repo": "mustflow"
+      },
+      {
+        "level": "positive",
+        "label": "Test signal found",
+        "source": "file",
+        "repo": "buildmarks"
+      }
+    ],
+    "limitations": [
+      "Public GitHub data only.",
+      "Private repositories, employer work, code review outside GitHub, and design work are not inferred.",
+      "Raw commit counts, contribution streaks, follower counts, and language percentages are not primary scores.",
+      "Forked and archived repositories are excluded by default.",
+      "Only the strongest 8 eligible repositories are summarized in this card."
+    ]
+  },
+  "gaps": {
+    "username": "0disoft",
+    "generatedAt": "2026-05-30T03:55:38.916Z",
+    "gaps": [
+      {
+        "repository": "0disoft",
+        "dimension": "maintainability",
+        "missing": [
+          "tests",
+          "changelog",
+          "security policy"
+        ],
+        "whyItMatters": "Maintenance signals are easier to trust when tests, automation, and change history are visible."
+      },
+      {
+        "repository": "0disoft",
+        "dimension": "completeness",
+        "missing": [
+          "usage guide",
+          "license",
+          "docs or demo"
+        ],
+        "whyItMatters": "Completeness signals help other people understand, run, and reuse the project."
+      },
+      {
+        "repository": "0disoft",
+        "dimension": "shipping",
+        "missing": [
+          "release or tag",
+          "package manifest",
+          "docs or demo"
+        ],
+        "whyItMatters": "Shipping signals show that the repository can be used beyond source browsing."
+      },
+      {
+        "repository": "0disoft",
+        "dimension": "collaboration",
+        "missing": [
+          "public issue response trace",
+          "public review trace"
+        ],
+        "whyItMatters": "Collaboration signals make it easier for outsiders to participate safely and predictably."
+      },
+      {
+        "repository": "buildmarks",
+        "dimension": "collaboration",
+        "missing": [
+          "public issue response trace",
+          "public review trace"
+        ],
+        "whyItMatters": "Collaboration signals make it easier for outsiders to participate safely and predictably."
+      },
+      {
+        "repository": "workduck",
+        "dimension": "maintainability",
+        "missing": [
+          "tests",
+          "changelog",
+          "security policy"
+        ],
+        "whyItMatters": "Maintenance signals are easier to trust when tests, automation, and change history are visible."
+      },
+      {
+        "repository": "workduck",
+        "dimension": "completeness",
+        "missing": [
+          "docs or demo"
+        ],
+        "whyItMatters": "Completeness signals help other people understand, run, and reuse the project."
+      },
+      {
+        "repository": "workduck",
+        "dimension": "shipping",
+        "missing": [
+          "docs or demo"
+        ],
+        "whyItMatters": "Shipping signals show that the repository can be used beyond source browsing."
+      }
+    ],
+    "limitations": [
+      "Public GitHub data only.",
+      "These are improvement hints, not a developer ranking.",
+      "Private work and non-GitHub maintenance are not inferred."
+    ]
+  },
+  "repositories": [
+    {
+      "owner": "0disoft",
+      "name": "mustflow",
+      "url": "https://github.com/0disoft/mustflow",
+      "dimensions": {
+        "completeness": {
+          "key": "completeness",
+          "label": "Project Completeness",
+          "score": 100,
+          "maxScore": 100,
+          "evidence": [
+            {
+              "level": "positive",
+              "label": "README found",
+              "source": "file",
+              "repo": "mustflow"
+            },
+            {
+              "level": "positive",
+              "label": "README includes usage guidance",
+              "source": "file",
+              "repo": "mustflow"
+            },
+            {
+              "level": "positive",
+              "label": "License file found",
+              "source": "file",
+              "repo": "mustflow"
+            },
+            {
+              "level": "positive",
+              "label": "Release or tag trace found",
+              "source": "release",
+              "repo": "mustflow"
+            },
+            {
+              "level": "positive",
+              "label": "Demo or documentation link found",
+              "source": "repository",
+              "repo": "mustflow"
+            },
+            {
+              "level": "positive",
+              "label": "Package or installable artifact found",
+              "source": "repository",
+              "repo": "mustflow"
+            }
+          ]
+        },
+        "maintainability": {
+          "key": "maintainability",
+          "label": "Maintainability",
+          "score": 100,
+          "maxScore": 100,
+          "evidence": [
+            {
+              "level": "positive",
+              "label": "Test signal found",
+              "source": "file",
+              "repo": "mustflow"
+            },
+            {
+              "level": "positive",
+              "label": "CI workflow found",
+              "source": "workflow",
+              "repo": "mustflow"
+            },
+            {
+              "level": "positive",
+              "label": "Changelog or release notes found",
+              "source": "file",
+              "repo": "mustflow"
+            },
+            {
+              "level": "positive",
+              "label": "Contribution guide found",
+              "source": "file",
+              "repo": "mustflow"
+            },
+            {
+              "level": "positive",
+              "label": "Code of conduct found",
+              "source": "file",
+              "repo": "mustflow"
+            },
+            {
+              "level": "positive",
+              "label": "Security policy found",
+              "source": "file",
+              "repo": "mustflow"
+            },
+            {
+              "level": "positive",
+              "label": "Recent maintenance trace found",
+              "source": "repository",
+              "repo": "mustflow"
+            }
+          ]
+        },
+        "collaboration": {
+          "key": "collaboration",
+          "label": "Collaboration",
+          "score": 25,
+          "maxScore": 100,
+          "evidence": [
+            {
+              "level": "positive",
+              "label": "Contribution guide supports collaboration",
+              "source": "file",
+              "repo": "mustflow"
+            },
+            {
+              "level": "positive",
+              "label": "Code of conduct supports collaboration",
+              "source": "file",
+              "repo": "mustflow"
+            }
+          ]
+        },
+        "shipping": {
+          "key": "shipping",
+          "label": "Shipping Evidence",
+          "score": 100,
+          "maxScore": 100,
+          "evidence": [
+            {
+              "level": "positive",
+              "label": "Release or tag trace found",
+              "source": "release",
+              "repo": "mustflow"
+            },
+            {
+              "level": "positive",
+              "label": "Package or installable artifact found",
+              "source": "repository",
+              "repo": "mustflow"
+            },
+            {
+              "level": "positive",
+              "label": "Demo or documentation link found",
+              "source": "repository",
+              "repo": "mustflow"
+            },
+            {
+              "level": "positive",
+              "label": "Recent shipping or maintenance trace found",
+              "source": "repository",
+              "repo": "mustflow"
+            },
+            {
+              "level": "positive",
+              "label": "Security policy found",
+              "source": "file",
+              "repo": "mustflow"
+            }
+          ]
+        },
+        "consistency": {
+          "key": "consistency",
+          "label": "Consistency",
+          "score": 60,
+          "maxScore": 100,
+          "evidence": [
+            {
+              "level": "positive",
+              "label": "Repository has recent public activity",
+              "source": "repository",
+              "repo": "mustflow"
+            },
+            {
+              "level": "positive",
+              "label": "Changelog trace found",
+              "source": "file",
+              "repo": "mustflow"
+            },
+            {
+              "level": "positive",
+              "label": "Release trace found",
+              "source": "release",
+              "repo": "mustflow"
+            }
+          ]
+        },
+        "externalValidation": {
+          "key": "externalValidation",
+          "label": "External Validation",
+          "score": 3,
+          "maxScore": 100,
+          "evidence": [
+            {
+              "level": "neutral",
+              "label": "Stars, forks, and public participation are capped weak signals",
+              "source": "repository",
+              "repo": "mustflow"
+            }
+          ]
+        }
+      },
+      "overall": 71,
+      "weight": 1.855,
+      "evidence": [
+        {
+          "level": "positive",
+          "label": "Test signal found",
+          "source": "file",
+          "repo": "mustflow"
+        },
+        {
+          "level": "positive",
+          "label": "CI workflow found",
+          "source": "workflow",
+          "repo": "mustflow"
+        },
+        {
+          "level": "positive",
+          "label": "Changelog or release notes found",
+          "source": "file",
+          "repo": "mustflow"
+        },
+        {
+          "level": "positive",
+          "label": "Contribution guide found",
+          "source": "file",
+          "repo": "mustflow"
+        },
+        {
+          "level": "positive",
+          "label": "Code of conduct found",
+          "source": "file",
+          "repo": "mustflow"
+        }
+      ]
+    },
+    {
+      "owner": "0disoft",
+      "name": "buildmarks",
+      "url": "https://github.com/0disoft/buildmarks",
+      "dimensions": {
+        "completeness": {
+          "key": "completeness",
+          "label": "Project Completeness",
+          "score": 100,
+          "maxScore": 100,
+          "evidence": [
+            {
+              "level": "positive",
+              "label": "README found",
+              "source": "file",
+              "repo": "buildmarks"
+            },
+            {
+              "level": "positive",
+              "label": "README includes usage guidance",
+              "source": "file",
+              "repo": "buildmarks"
+            },
+            {
+              "level": "positive",
+              "label": "License file found",
+              "source": "file",
+              "repo": "buildmarks"
+            },
+            {
+              "level": "positive",
+              "label": "Release or tag trace found",
+              "source": "release",
+              "repo": "buildmarks"
+            },
+            {
+              "level": "positive",
+              "label": "Demo or documentation link found",
+              "source": "repository",
+              "repo": "buildmarks"
+            },
+            {
+              "level": "positive",
+              "label": "Package or installable artifact found",
+              "source": "repository",
+              "repo": "buildmarks"
+            }
+          ]
+        },
+        "maintainability": {
+          "key": "maintainability",
+          "label": "Maintainability",
+          "score": 100,
+          "maxScore": 100,
+          "evidence": [
+            {
+              "level": "positive",
+              "label": "Test signal found",
+              "source": "file",
+              "repo": "buildmarks"
+            },
+            {
+              "level": "positive",
+              "label": "CI workflow found",
+              "source": "workflow",
+              "repo": "buildmarks"
+            },
+            {
+              "level": "positive",
+              "label": "Changelog or release notes found",
+              "source": "file",
+              "repo": "buildmarks"
+            },
+            {
+              "level": "positive",
+              "label": "Contribution guide found",
+              "source": "file",
+              "repo": "buildmarks"
+            },
+            {
+              "level": "positive",
+              "label": "Code of conduct found",
+              "source": "file",
+              "repo": "buildmarks"
+            },
+            {
+              "level": "positive",
+              "label": "Security policy found",
+              "source": "file",
+              "repo": "buildmarks"
+            },
+            {
+              "level": "positive",
+              "label": "Recent maintenance trace found",
+              "source": "repository",
+              "repo": "buildmarks"
+            }
+          ]
+        },
+        "collaboration": {
+          "key": "collaboration",
+          "label": "Collaboration",
+          "score": 25,
+          "maxScore": 100,
+          "evidence": [
+            {
+              "level": "positive",
+              "label": "Contribution guide supports collaboration",
+              "source": "file",
+              "repo": "buildmarks"
+            },
+            {
+              "level": "positive",
+              "label": "Code of conduct supports collaboration",
+              "source": "file",
+              "repo": "buildmarks"
+            }
+          ]
+        },
+        "shipping": {
+          "key": "shipping",
+          "label": "Shipping Evidence",
+          "score": 100,
+          "maxScore": 100,
+          "evidence": [
+            {
+              "level": "positive",
+              "label": "Release or tag trace found",
+              "source": "release",
+              "repo": "buildmarks"
+            },
+            {
+              "level": "positive",
+              "label": "Package or installable artifact found",
+              "source": "repository",
+              "repo": "buildmarks"
+            },
+            {
+              "level": "positive",
+              "label": "Demo or documentation link found",
+              "source": "repository",
+              "repo": "buildmarks"
+            },
+            {
+              "level": "positive",
+              "label": "Recent shipping or maintenance trace found",
+              "source": "repository",
+              "repo": "buildmarks"
+            },
+            {
+              "level": "positive",
+              "label": "Security policy found",
+              "source": "file",
+              "repo": "buildmarks"
+            }
+          ]
+        },
+        "consistency": {
+          "key": "consistency",
+          "label": "Consistency",
+          "score": 60,
+          "maxScore": 100,
+          "evidence": [
+            {
+              "level": "positive",
+              "label": "Repository has recent public activity",
+              "source": "repository",
+              "repo": "buildmarks"
+            },
+            {
+              "level": "positive",
+              "label": "Changelog trace found",
+              "source": "file",
+              "repo": "buildmarks"
+            },
+            {
+              "level": "positive",
+              "label": "Release trace found",
+              "source": "release",
+              "repo": "buildmarks"
+            }
+          ]
+        },
+        "externalValidation": {
+          "key": "externalValidation",
+          "label": "External Validation",
+          "score": 0,
+          "maxScore": 100,
+          "evidence": [
+            {
+              "level": "neutral",
+              "label": "Stars, forks, and public participation are capped weak signals",
+              "source": "repository",
+              "repo": "buildmarks"
+            }
+          ]
+        }
+      },
+      "overall": 71,
+      "weight": 1.85,
+      "evidence": [
+        {
+          "level": "positive",
+          "label": "Test signal found",
+          "source": "file",
+          "repo": "buildmarks"
+        },
+        {
+          "level": "positive",
+          "label": "CI workflow found",
+          "source": "workflow",
+          "repo": "buildmarks"
+        },
+        {
+          "level": "positive",
+          "label": "Changelog or release notes found",
+          "source": "file",
+          "repo": "buildmarks"
+        },
+        {
+          "level": "positive",
+          "label": "Contribution guide found",
+          "source": "file",
+          "repo": "buildmarks"
+        },
+        {
+          "level": "positive",
+          "label": "Code of conduct found",
+          "source": "file",
+          "repo": "buildmarks"
+        }
+      ]
+    },
+    {
+      "owner": "0disoft",
+      "name": "workduck",
+      "url": "https://github.com/0disoft/workduck",
+      "dimensions": {
+        "completeness": {
+          "key": "completeness",
+          "label": "Project Completeness",
+          "score": 83,
+          "maxScore": 100,
+          "evidence": [
+            {
+              "level": "positive",
+              "label": "README found",
+              "source": "file",
+              "repo": "workduck"
+            },
+            {
+              "level": "positive",
+              "label": "README includes usage guidance",
+              "source": "file",
+              "repo": "workduck"
+            },
+            {
+              "level": "positive",
+              "label": "License file found",
+              "source": "file",
+              "repo": "workduck"
+            },
+            {
+              "level": "positive",
+              "label": "Release or tag trace found",
+              "source": "release",
+              "repo": "workduck"
+            },
+            {
+              "level": "positive",
+              "label": "Package or installable artifact found",
+              "source": "repository",
+              "repo": "workduck"
+            }
+          ]
+        },
+        "maintainability": {
+          "key": "maintainability",
+          "label": "Maintainability",
+          "score": 55,
+          "maxScore": 100,
+          "evidence": [
+            {
+              "level": "positive",
+              "label": "CI workflow found",
+              "source": "workflow",
+              "repo": "workduck"
+            },
+            {
+              "level": "positive",
+              "label": "Contribution guide found",
+              "source": "file",
+              "repo": "workduck"
+            },
+            {
+              "level": "positive",
+              "label": "Code of conduct found",
+              "source": "file",
+              "repo": "workduck"
+            },
+            {
+              "level": "positive",
+              "label": "Recent maintenance trace found",
+              "source": "repository",
+              "repo": "workduck"
+            }
+          ]
+        },
+        "collaboration": {
+          "key": "collaboration",
+          "label": "Collaboration",
+          "score": 25,
+          "maxScore": 100,
+          "evidence": [
+            {
+              "level": "positive",
+              "label": "Contribution guide supports collaboration",
+              "source": "file",
+              "repo": "workduck"
+            },
+            {
+              "level": "positive",
+              "label": "Code of conduct supports collaboration",
+              "source": "file",
+              "repo": "workduck"
+            }
+          ]
+        },
+        "shipping": {
+          "key": "shipping",
+          "label": "Shipping Evidence",
+          "score": 69,
+          "maxScore": 100,
+          "evidence": [
+            {
+              "level": "positive",
+              "label": "Release or tag trace found",
+              "source": "release",
+              "repo": "workduck"
+            },
+            {
+              "level": "positive",
+              "label": "Package or installable artifact found",
+              "source": "repository",
+              "repo": "workduck"
+            },
+            {
+              "level": "positive",
+              "label": "Recent shipping or maintenance trace found",
+              "source": "repository",
+              "repo": "workduck"
+            }
+          ]
+        },
+        "consistency": {
+          "key": "consistency",
+          "label": "Consistency",
+          "score": 50,
+          "maxScore": 100,
+          "evidence": [
+            {
+              "level": "positive",
+              "label": "Repository has recent public activity",
+              "source": "repository",
+              "repo": "workduck"
+            },
+            {
+              "level": "positive",
+              "label": "Release trace found",
+              "source": "release",
+              "repo": "workduck"
+            }
+          ]
+        },
+        "externalValidation": {
+          "key": "externalValidation",
+          "label": "External Validation",
+          "score": 0,
+          "maxScore": 100,
+          "evidence": [
+            {
+              "level": "neutral",
+              "label": "Stars, forks, and public participation are capped weak signals",
+              "source": "repository",
+              "repo": "workduck"
+            }
+          ]
+        }
+      },
+      "overall": 51,
+      "weight": 1.587,
+      "evidence": [
+        {
+          "level": "positive",
+          "label": "CI workflow found",
+          "source": "workflow",
+          "repo": "workduck"
+        },
+        {
+          "level": "positive",
+          "label": "Contribution guide found",
+          "source": "file",
+          "repo": "workduck"
+        },
+        {
+          "level": "positive",
+          "label": "Code of conduct found",
+          "source": "file",
+          "repo": "workduck"
+        },
+        {
+          "level": "positive",
+          "label": "Recent maintenance trace found",
+          "source": "repository",
+          "repo": "workduck"
+        },
+        {
+          "level": "positive",
+          "label": "README found",
+          "source": "file",
+          "repo": "workduck"
+        }
+      ]
+    },
+    {
+      "owner": "0disoft",
+      "name": "0disoft.github.io",
+      "url": "https://github.com/0disoft/0disoft.github.io",
+      "dimensions": {
+        "completeness": {
+          "key": "completeness",
+          "label": "Project Completeness",
+          "score": 83,
+          "maxScore": 100,
+          "evidence": [
+            {
+              "level": "positive",
+              "label": "README found",
+              "source": "file",
+              "repo": "0disoft.github.io"
+            },
+            {
+              "level": "positive",
+              "label": "README includes usage guidance",
+              "source": "file",
+              "repo": "0disoft.github.io"
+            },
+            {
+              "level": "positive",
+              "label": "License file found",
+              "source": "file",
+              "repo": "0disoft.github.io"
+            },
+            {
+              "level": "positive",
+              "label": "Demo or documentation link found",
+              "source": "repository",
+              "repo": "0disoft.github.io"
+            },
+            {
+              "level": "positive",
+              "label": "Package or installable artifact found",
+              "source": "repository",
+              "repo": "0disoft.github.io"
+            }
+          ]
+        },
+        "maintainability": {
+          "key": "maintainability",
+          "label": "Maintainability",
+          "score": 55,
+          "maxScore": 100,
+          "evidence": [
+            {
+              "level": "positive",
+              "label": "CI workflow found",
+              "source": "workflow",
+              "repo": "0disoft.github.io"
+            },
+            {
+              "level": "positive",
+              "label": "Contribution guide found",
+              "source": "file",
+              "repo": "0disoft.github.io"
+            },
+            {
+              "level": "positive",
+              "label": "Code of conduct found",
+              "source": "file",
+              "repo": "0disoft.github.io"
+            },
+            {
+              "level": "positive",
+              "label": "Recent maintenance trace found",
+              "source": "repository",
+              "repo": "0disoft.github.io"
+            }
+          ]
+        },
+        "collaboration": {
+          "key": "collaboration",
+          "label": "Collaboration",
+          "score": 25,
+          "maxScore": 100,
+          "evidence": [
+            {
+              "level": "positive",
+              "label": "Contribution guide supports collaboration",
+              "source": "file",
+              "repo": "0disoft.github.io"
+            },
+            {
+              "level": "positive",
+              "label": "Code of conduct supports collaboration",
+              "source": "file",
+              "repo": "0disoft.github.io"
+            }
+          ]
+        },
+        "shipping": {
+          "key": "shipping",
+          "label": "Shipping Evidence",
+          "score": 62,
+          "maxScore": 100,
+          "evidence": [
+            {
+              "level": "positive",
+              "label": "Package or installable artifact found",
+              "source": "repository",
+              "repo": "0disoft.github.io"
+            },
+            {
+              "level": "positive",
+              "label": "Demo or documentation link found",
+              "source": "repository",
+              "repo": "0disoft.github.io"
+            },
+            {
+              "level": "positive",
+              "label": "Recent shipping or maintenance trace found",
+              "source": "repository",
+              "repo": "0disoft.github.io"
+            }
+          ]
+        },
+        "consistency": {
+          "key": "consistency",
+          "label": "Consistency",
+          "score": 30,
+          "maxScore": 100,
+          "evidence": [
+            {
+              "level": "positive",
+              "label": "Repository has recent public activity",
+              "source": "repository",
+              "repo": "0disoft.github.io"
+            }
+          ]
+        },
+        "externalValidation": {
+          "key": "externalValidation",
+          "label": "External Validation",
+          "score": 0,
+          "maxScore": 100,
+          "evidence": [
+            {
+              "level": "neutral",
+              "label": "Stars, forks, and public participation are capped weak signals",
+              "source": "repository",
+              "repo": "0disoft.github.io"
+            }
+          ]
+        }
+      },
+      "overall": 48,
+      "weight": 1.569,
+      "evidence": [
+        {
+          "level": "positive",
+          "label": "CI workflow found",
+          "source": "workflow",
+          "repo": "0disoft.github.io"
+        },
+        {
+          "level": "positive",
+          "label": "Contribution guide found",
+          "source": "file",
+          "repo": "0disoft.github.io"
+        },
+        {
+          "level": "positive",
+          "label": "Code of conduct found",
+          "source": "file",
+          "repo": "0disoft.github.io"
+        },
+        {
+          "level": "positive",
+          "label": "Recent maintenance trace found",
+          "source": "repository",
+          "repo": "0disoft.github.io"
+        },
+        {
+          "level": "positive",
+          "label": "README found",
+          "source": "file",
+          "repo": "0disoft.github.io"
+        }
+      ]
+    },
+    {
+      "owner": "0disoft",
+      "name": "oklch-shade",
+      "url": "https://github.com/0disoft/oklch-shade",
+      "dimensions": {
+        "completeness": {
+          "key": "completeness",
+          "label": "Project Completeness",
+          "score": 83,
+          "maxScore": 100,
+          "evidence": [
+            {
+              "level": "positive",
+              "label": "README found",
+              "source": "file",
+              "repo": "oklch-shade"
+            },
+            {
+              "level": "positive",
+              "label": "README includes usage guidance",
+              "source": "file",
+              "repo": "oklch-shade"
+            },
+            {
+              "level": "positive",
+              "label": "License file found",
+              "source": "file",
+              "repo": "oklch-shade"
+            },
+            {
+              "level": "positive",
+              "label": "Demo or documentation link found",
+              "source": "repository",
+              "repo": "oklch-shade"
+            },
+            {
+              "level": "positive",
+              "label": "Package or installable artifact found",
+              "source": "repository",
+              "repo": "oklch-shade"
+            }
+          ]
+        },
+        "maintainability": {
+          "key": "maintainability",
+          "label": "Maintainability",
+          "score": 45,
+          "maxScore": 100,
+          "evidence": [
+            {
+              "level": "positive",
+              "label": "Changelog or release notes found",
+              "source": "file",
+              "repo": "oklch-shade"
+            },
+            {
+              "level": "positive",
+              "label": "Contribution guide found",
+              "source": "file",
+              "repo": "oklch-shade"
+            },
+            {
+              "level": "positive",
+              "label": "Code of conduct found",
+              "source": "file",
+              "repo": "oklch-shade"
+            },
+            {
+              "level": "positive",
+              "label": "Recent maintenance trace found",
+              "source": "repository",
+              "repo": "oklch-shade"
+            }
+          ]
+        },
+        "collaboration": {
+          "key": "collaboration",
+          "label": "Collaboration",
+          "score": 25,
+          "maxScore": 100,
+          "evidence": [
+            {
+              "level": "positive",
+              "label": "Contribution guide supports collaboration",
+              "source": "file",
+              "repo": "oklch-shade"
+            },
+            {
+              "level": "positive",
+              "label": "Code of conduct supports collaboration",
+              "source": "file",
+              "repo": "oklch-shade"
+            }
+          ]
+        },
+        "shipping": {
+          "key": "shipping",
+          "label": "Shipping Evidence",
+          "score": 62,
+          "maxScore": 100,
+          "evidence": [
+            {
+              "level": "positive",
+              "label": "Package or installable artifact found",
+              "source": "repository",
+              "repo": "oklch-shade"
+            },
+            {
+              "level": "positive",
+              "label": "Demo or documentation link found",
+              "source": "repository",
+              "repo": "oklch-shade"
+            },
+            {
+              "level": "positive",
+              "label": "Recent shipping or maintenance trace found",
+              "source": "repository",
+              "repo": "oklch-shade"
+            }
+          ]
+        },
+        "consistency": {
+          "key": "consistency",
+          "label": "Consistency",
+          "score": 40,
+          "maxScore": 100,
+          "evidence": [
+            {
+              "level": "positive",
+              "label": "Repository has recent public activity",
+              "source": "repository",
+              "repo": "oklch-shade"
+            },
+            {
+              "level": "positive",
+              "label": "Changelog trace found",
+              "source": "file",
+              "repo": "oklch-shade"
+            }
+          ]
+        },
+        "externalValidation": {
+          "key": "externalValidation",
+          "label": "External Validation",
+          "score": 0,
+          "maxScore": 100,
+          "evidence": [
+            {
+              "level": "neutral",
+              "label": "Stars, forks, and public participation are capped weak signals",
+              "source": "repository",
+              "repo": "oklch-shade"
+            }
+          ]
+        }
+      },
+      "overall": 46,
+      "weight": 1.539,
+      "evidence": [
+        {
+          "level": "positive",
+          "label": "Changelog or release notes found",
+          "source": "file",
+          "repo": "oklch-shade"
+        },
+        {
+          "level": "positive",
+          "label": "Contribution guide found",
+          "source": "file",
+          "repo": "oklch-shade"
+        },
+        {
+          "level": "positive",
+          "label": "Code of conduct found",
+          "source": "file",
+          "repo": "oklch-shade"
+        },
+        {
+          "level": "positive",
+          "label": "Recent maintenance trace found",
+          "source": "repository",
+          "repo": "oklch-shade"
+        },
+        {
+          "level": "positive",
+          "label": "README found",
+          "source": "file",
+          "repo": "oklch-shade"
+        }
+      ]
+    },
+    {
+      "owner": "0disoft",
+      "name": "markdown-bold-lint",
+      "url": "https://github.com/0disoft/markdown-bold-lint",
+      "dimensions": {
+        "completeness": {
+          "key": "completeness",
+          "label": "Project Completeness",
+          "score": 83,
+          "maxScore": 100,
+          "evidence": [
+            {
+              "level": "positive",
+              "label": "README found",
+              "source": "file",
+              "repo": "markdown-bold-lint"
+            },
+            {
+              "level": "positive",
+              "label": "README includes usage guidance",
+              "source": "file",
+              "repo": "markdown-bold-lint"
+            },
+            {
+              "level": "positive",
+              "label": "License file found",
+              "source": "file",
+              "repo": "markdown-bold-lint"
+            },
+            {
+              "level": "positive",
+              "label": "Demo or documentation link found",
+              "source": "repository",
+              "repo": "markdown-bold-lint"
+            },
+            {
+              "level": "positive",
+              "label": "Package or installable artifact found",
+              "source": "repository",
+              "repo": "markdown-bold-lint"
+            }
+          ]
+        },
+        "maintainability": {
+          "key": "maintainability",
+          "label": "Maintainability",
+          "score": 45,
+          "maxScore": 100,
+          "evidence": [
+            {
+              "level": "positive",
+              "label": "Changelog or release notes found",
+              "source": "file",
+              "repo": "markdown-bold-lint"
+            },
+            {
+              "level": "positive",
+              "label": "Contribution guide found",
+              "source": "file",
+              "repo": "markdown-bold-lint"
+            },
+            {
+              "level": "positive",
+              "label": "Code of conduct found",
+              "source": "file",
+              "repo": "markdown-bold-lint"
+            },
+            {
+              "level": "positive",
+              "label": "Recent maintenance trace found",
+              "source": "repository",
+              "repo": "markdown-bold-lint"
+            }
+          ]
+        },
+        "collaboration": {
+          "key": "collaboration",
+          "label": "Collaboration",
+          "score": 25,
+          "maxScore": 100,
+          "evidence": [
+            {
+              "level": "positive",
+              "label": "Contribution guide supports collaboration",
+              "source": "file",
+              "repo": "markdown-bold-lint"
+            },
+            {
+              "level": "positive",
+              "label": "Code of conduct supports collaboration",
+              "source": "file",
+              "repo": "markdown-bold-lint"
+            }
+          ]
+        },
+        "shipping": {
+          "key": "shipping",
+          "label": "Shipping Evidence",
+          "score": 62,
+          "maxScore": 100,
+          "evidence": [
+            {
+              "level": "positive",
+              "label": "Package or installable artifact found",
+              "source": "repository",
+              "repo": "markdown-bold-lint"
+            },
+            {
+              "level": "positive",
+              "label": "Demo or documentation link found",
+              "source": "repository",
+              "repo": "markdown-bold-lint"
+            },
+            {
+              "level": "positive",
+              "label": "Recent shipping or maintenance trace found",
+              "source": "repository",
+              "repo": "markdown-bold-lint"
+            }
+          ]
+        },
+        "consistency": {
+          "key": "consistency",
+          "label": "Consistency",
+          "score": 40,
+          "maxScore": 100,
+          "evidence": [
+            {
+              "level": "positive",
+              "label": "Repository has recent public activity",
+              "source": "repository",
+              "repo": "markdown-bold-lint"
+            },
+            {
+              "level": "positive",
+              "label": "Changelog trace found",
+              "source": "file",
+              "repo": "markdown-bold-lint"
+            }
+          ]
+        },
+        "externalValidation": {
+          "key": "externalValidation",
+          "label": "External Validation",
+          "score": 0,
+          "maxScore": 100,
+          "evidence": [
+            {
+              "level": "neutral",
+              "label": "Stars, forks, and public participation are capped weak signals",
+              "source": "repository",
+              "repo": "markdown-bold-lint"
+            }
+          ]
+        }
+      },
+      "overall": 46,
+      "weight": 1.539,
+      "evidence": [
+        {
+          "level": "positive",
+          "label": "Changelog or release notes found",
+          "source": "file",
+          "repo": "markdown-bold-lint"
+        },
+        {
+          "level": "positive",
+          "label": "Contribution guide found",
+          "source": "file",
+          "repo": "markdown-bold-lint"
+        },
+        {
+          "level": "positive",
+          "label": "Code of conduct found",
+          "source": "file",
+          "repo": "markdown-bold-lint"
+        },
+        {
+          "level": "positive",
+          "label": "Recent maintenance trace found",
+          "source": "repository",
+          "repo": "markdown-bold-lint"
+        },
+        {
+          "level": "positive",
+          "label": "README found",
+          "source": "file",
+          "repo": "markdown-bold-lint"
+        }
+      ]
+    },
+    {
+      "owner": "0disoft",
+      "name": "split-or-die",
+      "url": "https://github.com/0disoft/split-or-die",
+      "dimensions": {
+        "completeness": {
+          "key": "completeness",
+          "label": "Project Completeness",
+          "score": 67,
+          "maxScore": 100,
+          "evidence": [
+            {
+              "level": "positive",
+              "label": "README found",
+              "source": "file",
+              "repo": "split-or-die"
+            },
+            {
+              "level": "positive",
+              "label": "README includes usage guidance",
+              "source": "file",
+              "repo": "split-or-die"
+            },
+            {
+              "level": "positive",
+              "label": "License file found",
+              "source": "file",
+              "repo": "split-or-die"
+            },
+            {
+              "level": "positive",
+              "label": "Package or installable artifact found",
+              "source": "repository",
+              "repo": "split-or-die"
+            }
+          ]
+        },
+        "maintainability": {
+          "key": "maintainability",
+          "label": "Maintainability",
+          "score": 45,
+          "maxScore": 100,
+          "evidence": [
+            {
+              "level": "positive",
+              "label": "Changelog or release notes found",
+              "source": "file",
+              "repo": "split-or-die"
+            },
+            {
+              "level": "positive",
+              "label": "Contribution guide found",
+              "source": "file",
+              "repo": "split-or-die"
+            },
+            {
+              "level": "positive",
+              "label": "Code of conduct found",
+              "source": "file",
+              "repo": "split-or-die"
+            },
+            {
+              "level": "positive",
+              "label": "Recent maintenance trace found",
+              "source": "repository",
+              "repo": "split-or-die"
+            }
+          ]
+        },
+        "collaboration": {
+          "key": "collaboration",
+          "label": "Collaboration",
+          "score": 25,
+          "maxScore": 100,
+          "evidence": [
+            {
+              "level": "positive",
+              "label": "Contribution guide supports collaboration",
+              "source": "file",
+              "repo": "split-or-die"
+            },
+            {
+              "level": "positive",
+              "label": "Code of conduct supports collaboration",
+              "source": "file",
+              "repo": "split-or-die"
+            }
+          ]
+        },
+        "shipping": {
+          "key": "shipping",
+          "label": "Shipping Evidence",
+          "score": 38,
+          "maxScore": 100,
+          "evidence": [
+            {
+              "level": "positive",
+              "label": "Package or installable artifact found",
+              "source": "repository",
+              "repo": "split-or-die"
+            },
+            {
+              "level": "positive",
+              "label": "Recent shipping or maintenance trace found",
+              "source": "repository",
+              "repo": "split-or-die"
+            }
+          ]
+        },
+        "consistency": {
+          "key": "consistency",
+          "label": "Consistency",
+          "score": 40,
+          "maxScore": 100,
+          "evidence": [
+            {
+              "level": "positive",
+              "label": "Repository has recent public activity",
+              "source": "repository",
+              "repo": "split-or-die"
+            },
+            {
+              "level": "positive",
+              "label": "Changelog trace found",
+              "source": "file",
+              "repo": "split-or-die"
+            }
+          ]
+        },
+        "externalValidation": {
+          "key": "externalValidation",
+          "label": "External Validation",
+          "score": 3,
+          "maxScore": 100,
+          "evidence": [
+            {
+              "level": "neutral",
+              "label": "Stars, forks, and public participation are capped weak signals",
+              "source": "repository",
+              "repo": "split-or-die"
+            }
+          ]
+        }
+      },
+      "overall": 40,
+      "weight": 1.435,
+      "evidence": [
+        {
+          "level": "positive",
+          "label": "Changelog or release notes found",
+          "source": "file",
+          "repo": "split-or-die"
+        },
+        {
+          "level": "positive",
+          "label": "Contribution guide found",
+          "source": "file",
+          "repo": "split-or-die"
+        },
+        {
+          "level": "positive",
+          "label": "Code of conduct found",
+          "source": "file",
+          "repo": "split-or-die"
+        },
+        {
+          "level": "positive",
+          "label": "Recent maintenance trace found",
+          "source": "repository",
+          "repo": "split-or-die"
+        },
+        {
+          "level": "positive",
+          "label": "README found",
+          "source": "file",
+          "repo": "split-or-die"
+        }
+      ]
+    },
+    {
+      "owner": "0disoft",
+      "name": "typelock-timer",
+      "url": "https://github.com/0disoft/typelock-timer",
+      "dimensions": {
+        "completeness": {
+          "key": "completeness",
+          "label": "Project Completeness",
+          "score": 67,
+          "maxScore": 100,
+          "evidence": [
+            {
+              "level": "positive",
+              "label": "README found",
+              "source": "file",
+              "repo": "typelock-timer"
+            },
+            {
+              "level": "positive",
+              "label": "README includes usage guidance",
+              "source": "file",
+              "repo": "typelock-timer"
+            },
+            {
+              "level": "positive",
+              "label": "License file found",
+              "source": "file",
+              "repo": "typelock-timer"
+            },
+            {
+              "level": "positive",
+              "label": "Package or installable artifact found",
+              "source": "repository",
+              "repo": "typelock-timer"
+            }
+          ]
+        },
+        "maintainability": {
+          "key": "maintainability",
+          "label": "Maintainability",
+          "score": 45,
+          "maxScore": 100,
+          "evidence": [
+            {
+              "level": "positive",
+              "label": "Changelog or release notes found",
+              "source": "file",
+              "repo": "typelock-timer"
+            },
+            {
+              "level": "positive",
+              "label": "Contribution guide found",
+              "source": "file",
+              "repo": "typelock-timer"
+            },
+            {
+              "level": "positive",
+              "label": "Code of conduct found",
+              "source": "file",
+              "repo": "typelock-timer"
+            },
+            {
+              "level": "positive",
+              "label": "Recent maintenance trace found",
+              "source": "repository",
+              "repo": "typelock-timer"
+            }
+          ]
+        },
+        "collaboration": {
+          "key": "collaboration",
+          "label": "Collaboration",
+          "score": 25,
+          "maxScore": 100,
+          "evidence": [
+            {
+              "level": "positive",
+              "label": "Contribution guide supports collaboration",
+              "source": "file",
+              "repo": "typelock-timer"
+            },
+            {
+              "level": "positive",
+              "label": "Code of conduct supports collaboration",
+              "source": "file",
+              "repo": "typelock-timer"
+            }
+          ]
+        },
+        "shipping": {
+          "key": "shipping",
+          "label": "Shipping Evidence",
+          "score": 38,
+          "maxScore": 100,
+          "evidence": [
+            {
+              "level": "positive",
+              "label": "Package or installable artifact found",
+              "source": "repository",
+              "repo": "typelock-timer"
+            },
+            {
+              "level": "positive",
+              "label": "Recent shipping or maintenance trace found",
+              "source": "repository",
+              "repo": "typelock-timer"
+            }
+          ]
+        },
+        "consistency": {
+          "key": "consistency",
+          "label": "Consistency",
+          "score": 40,
+          "maxScore": 100,
+          "evidence": [
+            {
+              "level": "positive",
+              "label": "Repository has recent public activity",
+              "source": "repository",
+              "repo": "typelock-timer"
+            },
+            {
+              "level": "positive",
+              "label": "Changelog trace found",
+              "source": "file",
+              "repo": "typelock-timer"
+            }
+          ]
+        },
+        "externalValidation": {
+          "key": "externalValidation",
+          "label": "External Validation",
+          "score": 0,
+          "maxScore": 100,
+          "evidence": [
+            {
+              "level": "neutral",
+              "label": "Stars, forks, and public participation are capped weak signals",
+              "source": "repository",
+              "repo": "typelock-timer"
+            }
+          ]
+        }
+      },
+      "overall": 39,
+      "weight": 1.431,
+      "evidence": [
+        {
+          "level": "positive",
+          "label": "Changelog or release notes found",
+          "source": "file",
+          "repo": "typelock-timer"
+        },
+        {
+          "level": "positive",
+          "label": "Contribution guide found",
+          "source": "file",
+          "repo": "typelock-timer"
+        },
+        {
+          "level": "positive",
+          "label": "Code of conduct found",
+          "source": "file",
+          "repo": "typelock-timer"
+        },
+        {
+          "level": "positive",
+          "label": "Recent maintenance trace found",
+          "source": "repository",
+          "repo": "typelock-timer"
+        },
+        {
+          "level": "positive",
+          "label": "README found",
+          "source": "file",
+          "repo": "typelock-timer"
+        }
+      ]
+    },
+    {
+      "owner": "0disoft",
+      "name": "agent-console",
+      "url": "https://github.com/0disoft/agent-console",
+      "dimensions": {
+        "completeness": {
+          "key": "completeness",
+          "label": "Project Completeness",
+          "score": 56,
+          "maxScore": 100,
+          "evidence": [
+            {
+              "level": "positive",
+              "label": "README found",
+              "source": "file",
+              "repo": "agent-console"
+            },
+            {
+              "level": "positive",
+              "label": "README includes usage guidance",
+              "source": "file",
+              "repo": "agent-console"
+            },
+            {
+              "level": "positive",
+              "label": "Package or installable artifact found",
+              "source": "repository",
+              "repo": "agent-console"
+            }
+          ]
+        },
+        "maintainability": {
+          "key": "maintainability",
+          "label": "Maintainability",
+          "score": 55,
+          "maxScore": 100,
+          "evidence": [
+            {
+              "level": "positive",
+              "label": "Test signal found",
+              "source": "file",
+              "repo": "agent-console"
+            },
+            {
+              "level": "positive",
+              "label": "Contribution guide found",
+              "source": "file",
+              "repo": "agent-console"
+            },
+            {
+              "level": "positive",
+              "label": "Code of conduct found",
+              "source": "file",
+              "repo": "agent-console"
+            },
+            {
+              "level": "positive",
+              "label": "Recent maintenance trace found",
+              "source": "repository",
+              "repo": "agent-console"
+            }
+          ]
+        },
+        "collaboration": {
+          "key": "collaboration",
+          "label": "Collaboration",
+          "score": 25,
+          "maxScore": 100,
+          "evidence": [
+            {
+              "level": "positive",
+              "label": "Contribution guide supports collaboration",
+              "source": "file",
+              "repo": "agent-console"
+            },
+            {
+              "level": "positive",
+              "label": "Code of conduct supports collaboration",
+              "source": "file",
+              "repo": "agent-console"
+            }
+          ]
+        },
+        "shipping": {
+          "key": "shipping",
+          "label": "Shipping Evidence",
+          "score": 38,
+          "maxScore": 100,
+          "evidence": [
+            {
+              "level": "positive",
+              "label": "Package or installable artifact found",
+              "source": "repository",
+              "repo": "agent-console"
+            },
+            {
+              "level": "positive",
+              "label": "Recent shipping or maintenance trace found",
+              "source": "repository",
+              "repo": "agent-console"
+            }
+          ]
+        },
+        "consistency": {
+          "key": "consistency",
+          "label": "Consistency",
+          "score": 30,
+          "maxScore": 100,
+          "evidence": [
+            {
+              "level": "positive",
+              "label": "Repository has recent public activity",
+              "source": "repository",
+              "repo": "agent-console"
+            }
+          ]
+        },
+        "externalValidation": {
+          "key": "externalValidation",
+          "label": "External Validation",
+          "score": 0,
+          "maxScore": 100,
+          "evidence": [
+            {
+              "level": "neutral",
+              "label": "Stars, forks, and public participation are capped weak signals",
+              "source": "repository",
+              "repo": "agent-console"
+            }
+          ]
+        }
+      },
+      "overall": 39,
+      "weight": 1.428,
+      "evidence": [
+        {
+          "level": "positive",
+          "label": "Test signal found",
+          "source": "file",
+          "repo": "agent-console"
+        },
+        {
+          "level": "positive",
+          "label": "Contribution guide found",
+          "source": "file",
+          "repo": "agent-console"
+        },
+        {
+          "level": "positive",
+          "label": "Code of conduct found",
+          "source": "file",
+          "repo": "agent-console"
+        },
+        {
+          "level": "positive",
+          "label": "Recent maintenance trace found",
+          "source": "repository",
+          "repo": "agent-console"
+        },
+        {
+          "level": "positive",
+          "label": "README found",
+          "source": "file",
+          "repo": "agent-console"
+        }
+      ]
+    },
+    {
+      "owner": "0disoft",
+      "name": "ai-tags",
+      "url": "https://github.com/0disoft/ai-tags",
+      "dimensions": {
+        "completeness": {
+          "key": "completeness",
+          "label": "Project Completeness",
+          "score": 44,
+          "maxScore": 100,
+          "evidence": [
+            {
+              "level": "positive",
+              "label": "README found",
+              "source": "file",
+              "repo": "ai-tags"
+            },
+            {
+              "level": "positive",
+              "label": "License file found",
+              "source": "file",
+              "repo": "ai-tags"
+            },
+            {
+              "level": "positive",
+              "label": "Package or installable artifact found",
+              "source": "repository",
+              "repo": "ai-tags"
+            }
+          ]
+        },
+        "maintainability": {
+          "key": "maintainability",
+          "label": "Maintainability",
+          "score": 45,
+          "maxScore": 100,
+          "evidence": [
+            {
+              "level": "positive",
+              "label": "Changelog or release notes found",
+              "source": "file",
+              "repo": "ai-tags"
+            },
+            {
+              "level": "positive",
+              "label": "Contribution guide found",
+              "source": "file",
+              "repo": "ai-tags"
+            },
+            {
+              "level": "positive",
+              "label": "Code of conduct found",
+              "source": "file",
+              "repo": "ai-tags"
+            },
+            {
+              "level": "positive",
+              "label": "Recent maintenance trace found",
+              "source": "repository",
+              "repo": "ai-tags"
+            }
+          ]
+        },
+        "collaboration": {
+          "key": "collaboration",
+          "label": "Collaboration",
+          "score": 25,
+          "maxScore": 100,
+          "evidence": [
+            {
+              "level": "positive",
+              "label": "Contribution guide supports collaboration",
+              "source": "file",
+              "repo": "ai-tags"
+            },
+            {
+              "level": "positive",
+              "label": "Code of conduct supports collaboration",
+              "source": "file",
+              "repo": "ai-tags"
+            }
+          ]
+        },
+        "shipping": {
+          "key": "shipping",
+          "label": "Shipping Evidence",
+          "score": 38,
+          "maxScore": 100,
+          "evidence": [
+            {
+              "level": "positive",
+              "label": "Package or installable artifact found",
+              "source": "repository",
+              "repo": "ai-tags"
+            },
+            {
+              "level": "positive",
+              "label": "Recent shipping or maintenance trace found",
+              "source": "repository",
+              "repo": "ai-tags"
+            }
+          ]
+        },
+        "consistency": {
+          "key": "consistency",
+          "label": "Consistency",
+          "score": 40,
+          "maxScore": 100,
+          "evidence": [
+            {
+              "level": "positive",
+              "label": "Repository has recent public activity",
+              "source": "repository",
+              "repo": "ai-tags"
+            },
+            {
+              "level": "positive",
+              "label": "Changelog trace found",
+              "source": "file",
+              "repo": "ai-tags"
+            }
+          ]
+        },
+        "externalValidation": {
+          "key": "externalValidation",
+          "label": "External Validation",
+          "score": 0,
+          "maxScore": 100,
+          "evidence": [
+            {
+              "level": "neutral",
+              "label": "Stars, forks, and public participation are capped weak signals",
+              "source": "repository",
+              "repo": "ai-tags"
+            }
+          ]
+        }
+      },
+      "overall": 35,
+      "weight": 1.362,
+      "evidence": [
+        {
+          "level": "positive",
+          "label": "Changelog or release notes found",
+          "source": "file",
+          "repo": "ai-tags"
+        },
+        {
+          "level": "positive",
+          "label": "Contribution guide found",
+          "source": "file",
+          "repo": "ai-tags"
+        },
+        {
+          "level": "positive",
+          "label": "Code of conduct found",
+          "source": "file",
+          "repo": "ai-tags"
+        },
+        {
+          "level": "positive",
+          "label": "Recent maintenance trace found",
+          "source": "repository",
+          "repo": "ai-tags"
+        },
+        {
+          "level": "positive",
+          "label": "README found",
+          "source": "file",
+          "repo": "ai-tags"
+        }
+      ]
+    },
+    {
+      "owner": "0disoft",
+      "name": ".github",
+      "url": "https://github.com/0disoft/.github",
+      "dimensions": {
+        "completeness": {
+          "key": "completeness",
+          "label": "Project Completeness",
+          "score": 17,
+          "maxScore": 100,
+          "evidence": [
+            {
+              "level": "positive",
+              "label": "Demo or documentation link found",
+              "source": "repository",
+              "repo": ".github"
+            }
+          ]
+        },
+        "maintainability": {
+          "key": "maintainability",
+          "label": "Maintainability",
+          "score": 35,
+          "maxScore": 100,
+          "evidence": [
+            {
+              "level": "positive",
+              "label": "Contribution guide found",
+              "source": "file",
+              "repo": ".github"
+            },
+            {
+              "level": "positive",
+              "label": "Code of conduct found",
+              "source": "file",
+              "repo": ".github"
+            },
+            {
+              "level": "positive",
+              "label": "Security policy found",
+              "source": "file",
+              "repo": ".github"
+            },
+            {
+              "level": "positive",
+              "label": "Recent maintenance trace found",
+              "source": "repository",
+              "repo": ".github"
+            }
+          ]
+        },
+        "collaboration": {
+          "key": "collaboration",
+          "label": "Collaboration",
+          "score": 25,
+          "maxScore": 100,
+          "evidence": [
+            {
+              "level": "positive",
+              "label": "Contribution guide supports collaboration",
+              "source": "file",
+              "repo": ".github"
+            },
+            {
+              "level": "positive",
+              "label": "Code of conduct supports collaboration",
+              "source": "file",
+              "repo": ".github"
+            }
+          ]
+        },
+        "shipping": {
+          "key": "shipping",
+          "label": "Shipping Evidence",
+          "score": 46,
+          "maxScore": 100,
+          "evidence": [
+            {
+              "level": "positive",
+              "label": "Demo or documentation link found",
+              "source": "repository",
+              "repo": ".github"
+            },
+            {
+              "level": "positive",
+              "label": "Recent shipping or maintenance trace found",
+              "source": "repository",
+              "repo": ".github"
+            },
+            {
+              "level": "positive",
+              "label": "Security policy found",
+              "source": "file",
+              "repo": ".github"
+            }
+          ]
+        },
+        "consistency": {
+          "key": "consistency",
+          "label": "Consistency",
+          "score": 30,
+          "maxScore": 100,
+          "evidence": [
+            {
+              "level": "positive",
+              "label": "Repository has recent public activity",
+              "source": "repository",
+              "repo": ".github"
+            }
+          ]
+        },
+        "externalValidation": {
+          "key": "externalValidation",
+          "label": "External Validation",
+          "score": 0,
+          "maxScore": 100,
+          "evidence": [
+            {
+              "level": "neutral",
+              "label": "Stars, forks, and public participation are capped weak signals",
+              "source": "repository",
+              "repo": ".github"
+            }
+          ]
+        }
+      },
+      "overall": 27,
+      "weight": 1.271,
+      "evidence": [
+        {
+          "level": "positive",
+          "label": "Contribution guide found",
+          "source": "file",
+          "repo": ".github"
+        },
+        {
+          "level": "positive",
+          "label": "Code of conduct found",
+          "source": "file",
+          "repo": ".github"
+        },
+        {
+          "level": "positive",
+          "label": "Security policy found",
+          "source": "file",
+          "repo": ".github"
+        },
+        {
+          "level": "positive",
+          "label": "Recent maintenance trace found",
+          "source": "repository",
+          "repo": ".github"
+        },
+        {
+          "level": "positive",
+          "label": "Demo or documentation link found",
+          "source": "repository",
+          "repo": ".github"
+        }
+      ]
+    },
+    {
+      "owner": "0disoft",
+      "name": "0disoft",
+      "url": "https://github.com/0disoft/0disoft",
+      "dimensions": {
+        "completeness": {
+          "key": "completeness",
+          "label": "Project Completeness",
+          "score": 17,
+          "maxScore": 100,
+          "evidence": [
+            {
+              "level": "positive",
+              "label": "README found",
+              "source": "file",
+              "repo": "0disoft"
+            }
+          ]
+        },
+        "maintainability": {
+          "key": "maintainability",
+          "label": "Maintainability",
+          "score": 55,
+          "maxScore": 100,
+          "evidence": [
+            {
+              "level": "positive",
+              "label": "CI workflow found",
+              "source": "workflow",
+              "repo": "0disoft"
+            },
+            {
+              "level": "positive",
+              "label": "Contribution guide found",
+              "source": "file",
+              "repo": "0disoft"
+            },
+            {
+              "level": "positive",
+              "label": "Code of conduct found",
+              "source": "file",
+              "repo": "0disoft"
+            },
+            {
+              "level": "positive",
+              "label": "Recent maintenance trace found",
+              "source": "repository",
+              "repo": "0disoft"
+            }
+          ]
+        },
+        "collaboration": {
+          "key": "collaboration",
+          "label": "Collaboration",
+          "score": 25,
+          "maxScore": 100,
+          "evidence": [
+            {
+              "level": "positive",
+              "label": "Contribution guide supports collaboration",
+              "source": "file",
+              "repo": "0disoft"
+            },
+            {
+              "level": "positive",
+              "label": "Code of conduct supports collaboration",
+              "source": "file",
+              "repo": "0disoft"
+            }
+          ]
+        },
+        "shipping": {
+          "key": "shipping",
+          "label": "Shipping Evidence",
+          "score": 15,
+          "maxScore": 100,
+          "evidence": [
+            {
+              "level": "positive",
+              "label": "Recent shipping or maintenance trace found",
+              "source": "repository",
+              "repo": "0disoft"
+            }
+          ]
+        },
+        "consistency": {
+          "key": "consistency",
+          "label": "Consistency",
+          "score": 30,
+          "maxScore": 100,
+          "evidence": [
+            {
+              "level": "positive",
+              "label": "Repository has recent public activity",
+              "source": "repository",
+              "repo": "0disoft"
+            }
+          ]
+        },
+        "externalValidation": {
+          "key": "externalValidation",
+          "label": "External Validation",
+          "score": 0,
+          "maxScore": 100,
+          "evidence": [
+            {
+              "level": "neutral",
+              "label": "Stars, forks, and public participation are capped weak signals",
+              "source": "repository",
+              "repo": "0disoft"
+            }
+          ]
+        }
+      },
+      "overall": 27,
+      "weight": 1.254,
+      "evidence": [
+        {
+          "level": "positive",
+          "label": "CI workflow found",
+          "source": "workflow",
+          "repo": "0disoft"
+        },
+        {
+          "level": "positive",
+          "label": "Contribution guide found",
+          "source": "file",
+          "repo": "0disoft"
+        },
+        {
+          "level": "positive",
+          "label": "Code of conduct found",
+          "source": "file",
+          "repo": "0disoft"
+        },
+        {
+          "level": "positive",
+          "label": "Recent maintenance trace found",
+          "source": "repository",
+          "repo": "0disoft"
+        },
+        {
+          "level": "positive",
+          "label": "README found",
+          "source": "file",
+          "repo": "0disoft"
+        }
+      ]
+    }
+  ]
+}
