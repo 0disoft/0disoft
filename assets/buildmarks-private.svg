@@ -118,7 +118,7 @@
   <text x="604" y="122" class="overall">42</text>
   <text x="690" y="122" class="overall-unit">/100</text>
   <g aria-label="Dimension scores out of 100">
-  
+
     <g role="img" aria-label="Maintainability: 65 points out of 100">
       <text x="36" y="158" class="label">Maintainability</text>
       <text x="268" y="158" class="score">65/100</text>
@@ -158,7 +158,7 @@
   </g>
   <text x="36" y="338" class="section-label">Evidence</text>
   <g aria-label="Top owner-supplied evidence traces">
-  
+
     <g role="img" aria-label="Evidence: Test signal found">
       <rect x="36" y="350" width="208" height="28" rx="6" class="chip-bg" />
       <text x="48" y="369" class="chip">+ Test signal found</text>
@@ -173,5 +173,5 @@
     </g>
   </g>
   <text x="36" y="390" class="footer">Not a ranking · Private repositories included by owner · Updated 2026-05-30</text>
-  
+
 </svg>
