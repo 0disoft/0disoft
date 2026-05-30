@@ -1,8 +1,7 @@
-<a href="./assets/buildmarks-report/buildmarks-report.html">
-  <img src="./assets/buildmarks.svg" alt="Buildmarks public GitHub signal card" width="98.5%" />
-</a>
+<img src="./assets/buildmarks-private.svg" alt="Buildmarks public and owner-supplied private GitHub signal card" width="98.5%" />
 
 <p>
+  Private repositories are included by owner and redacted by default. Public-only evidence report:
   <a href="./assets/buildmarks-report/buildmarks-report.html">View the Buildmarks evidence report</a>
 </p>
 
