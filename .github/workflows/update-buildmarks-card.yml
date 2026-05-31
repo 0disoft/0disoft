@@ -3,7 +3,8 @@ name: Update Buildmarks card
 on:
   workflow_dispatch:
   schedule:
-    - cron: "17 3 * * *"
+    # GitHub schedules use UTC. 10:15 UTC is 19:15 in Korea.
+    - cron: "15 10 * * 3"
 
 permissions:
   contents: write
@@ -19,18 +20,44 @@ jobs:
       - name: Check out profile repository
         uses: actions/checkout@v4
 
+      - name: Check four-week cadence
+        id: cadence
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          if [ "${{ github.event_name }}" != "schedule" ]; then
+            echo "should_run=true" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          anchor="2026-06-03"
+          today="$(date -u +%F)"
+          days=$(( ( $(date -u -d "$today" +%s) - $(date -u -d "$anchor" +%s) ) / 86400 ))
+
+          if [ "$days" -lt 0 ] || [ $((days % 28)) -ne 0 ]; then
+            echo "Not a four-week Buildmarks update day."
+            echo "should_run=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          echo "should_run=true" >> "$GITHUB_OUTPUT"
+
       - name: Generate Buildmarks artifacts
+        if: steps.cadence.outputs.should_run == 'true'
         uses: 0disoft/buildmarks@v0
         with:
           username: ${{ github.repository_owner }}
-          output: assets/buildmarks.svg
-          generate-report: "true"
-          report-output: assets/buildmarks-report
-          token: ${{ github.token }}
+          output: assets/buildmarks-private.svg
+          generate-report: "false"
+          private-local: "true"
+          token: ${{ secrets.BUILDMARKS_PRIVATE_TOKEN }}
+          activity-window-days: "180"
 
       - name: Commit updated Buildmarks artifacts
+        if: steps.cadence.outputs.should_run == 'true'
         run: |
-          git add assets/buildmarks.svg assets/buildmarks-report
+          git add assets/buildmarks-private.svg
 
           if git diff --cached --quiet; then
             echo "Buildmarks artifacts are already up to date."
