@@ -7,15 +7,15 @@
       <stop offset="0%" class="stroke-start" />
       <stop offset="100%" class="stroke-end" />
     </linearGradient>
-    <linearGradient id="barStrong" x1="324" y1="0" x2="578" y2="0" gradientUnits="userSpaceOnUse">
+    <linearGradient id="barStrong" x1="336" y1="0" x2="708" y2="0" gradientUnits="userSpaceOnUse">
       <stop offset="0%" class="bar-strong-start" />
       <stop offset="100%" class="bar-strong-end" />
     </linearGradient>
-    <linearGradient id="barMiddle" x1="324" y1="0" x2="578" y2="0" gradientUnits="userSpaceOnUse">
+    <linearGradient id="barMiddle" x1="336" y1="0" x2="708" y2="0" gradientUnits="userSpaceOnUse">
       <stop offset="0%" class="bar-middle-start" />
       <stop offset="100%" class="bar-middle-end" />
     </linearGradient>
-    <linearGradient id="barLow" x1="324" y1="0" x2="578" y2="0" gradientUnits="userSpaceOnUse">
+    <linearGradient id="barLow" x1="336" y1="0" x2="708" y2="0" gradientUnits="userSpaceOnUse">
       <stop offset="0%" class="bar-low-start" />
       <stop offset="100%" class="bar-low-end" />
     </linearGradient>
@@ -82,9 +82,10 @@
     .top-line { stroke: url(#panelStroke); stroke-width: 2; stroke-linecap: round; opacity: 0.75; }
     .title { fill: var(--text); font: 700 24px ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
     .subtitle, .footer, .section-label, .metric-note, .legend { fill: var(--muted); font: 500 13px ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    .right { text-anchor: end; }
     .name { fill: var(--text); font: 700 20px ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
     .type { fill: var(--accent); font: 700 14px ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
-    .overall { fill: var(--warning); font: 800 34px ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    .overall { fill: var(--warning); font: 800 26px ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; text-anchor: end; }
     .overall-strong { fill: var(--accent); }
     .overall-middle { fill: var(--warning); }
     .overall-low { fill: var(--low); }
@@ -116,44 +117,43 @@
   <path d="M24 22 H736" class="top-line" />
   <text x="36" y="56" class="title">Buildmarks</text>
   <text x="36" y="96" class="name">0disoft</text>
-  <text x="604" y="72" class="subtitle">Project Care</text>
-  <text x="604" y="108" class="overall overall-middle">63</text>
-  <text x="654" y="112" class="overall-unit">/100</text>
+  <text x="704" y="58" class="subtitle right">Project Care</text>
+  <text x="704" y="92" class="overall overall-middle">63/100</text>
   <g aria-label="Dimension scores out of 100">
 
     <g role="img" aria-label="Maintainability: 72 points out of 100">
       <text x="36" y="128" class="label">Maintainability</text>
-      <text x="268" y="128" class="score">72/100</text>
-      <rect x="324" y="119" width="254" height="6" rx="3" class="track" aria-hidden="true" />
-      <rect x="324" y="119" width="183" height="6" rx="3" class="bar bar-middle" role="progressbar" aria-label="Maintainability score" aria-valuemin="0" aria-valuemax="100" aria-valuenow="72" />
+      <text x="306" y="128" class="score">72/100</text>
+      <rect x="336" y="119" width="372" height="6" rx="3" class="track" aria-hidden="true" />
+      <rect x="336" y="119" width="268" height="6" rx="3" class="bar bar-middle" role="progressbar" aria-label="Maintainability score" aria-valuemin="0" aria-valuemax="100" aria-valuenow="72" />
     </g>
     <g role="img" aria-label="Project Completeness: 69 points out of 100">
       <text x="36" y="157" class="label">Project Completeness</text>
-      <text x="268" y="157" class="score">69/100</text>
-      <rect x="324" y="148" width="254" height="6" rx="3" class="track" aria-hidden="true" />
-      <rect x="324" y="148" width="175" height="6" rx="3" class="bar bar-middle" role="progressbar" aria-label="Project Completeness score" aria-valuemin="0" aria-valuemax="100" aria-valuenow="69" />
+      <text x="306" y="157" class="score">69/100</text>
+      <rect x="336" y="148" width="372" height="6" rx="3" class="track" aria-hidden="true" />
+      <rect x="336" y="148" width="257" height="6" rx="3" class="bar bar-middle" role="progressbar" aria-label="Project Completeness score" aria-valuemin="0" aria-valuemax="100" aria-valuenow="69" />
     </g>
     <g role="img" aria-label="Collaboration Context: solo">
       <text x="36" y="186" class="label">Collaboration Context</text>
-      <text x="268" y="186" class="score">solo</text>
-      <rect x="324" y="177" width="254" height="6" rx="3" class="track" aria-hidden="true" />
+      <text x="306" y="186" class="score">solo</text>
+      <rect x="336" y="177" width="372" height="6" rx="3" class="track" aria-hidden="true" />
     </g>
     <g role="img" aria-label="Shipping Evidence: 65 points out of 100">
       <text x="36" y="215" class="label">Shipping Evidence</text>
-      <text x="268" y="215" class="score">65/100</text>
-      <rect x="324" y="206" width="254" height="6" rx="3" class="track" aria-hidden="true" />
-      <rect x="324" y="206" width="165" height="6" rx="3" class="bar bar-middle" role="progressbar" aria-label="Shipping Evidence score" aria-valuemin="0" aria-valuemax="100" aria-valuenow="65" />
+      <text x="306" y="215" class="score">65/100</text>
+      <rect x="336" y="206" width="372" height="6" rx="3" class="track" aria-hidden="true" />
+      <rect x="336" y="206" width="242" height="6" rx="3" class="bar bar-middle" role="progressbar" aria-label="Shipping Evidence score" aria-valuemin="0" aria-valuemax="100" aria-valuenow="65" />
     </g>
     <g role="img" aria-label="Consistency: 44 points out of 100">
       <text x="36" y="244" class="label">Consistency</text>
-      <text x="268" y="244" class="score">44/100</text>
-      <rect x="324" y="235" width="254" height="6" rx="3" class="track" aria-hidden="true" />
-      <rect x="324" y="235" width="112" height="6" rx="3" class="bar bar-low" role="progressbar" aria-label="Consistency score" aria-valuemin="0" aria-valuemax="100" aria-valuenow="44" />
+      <text x="306" y="244" class="score">44/100</text>
+      <rect x="336" y="235" width="372" height="6" rx="3" class="track" aria-hidden="true" />
+      <rect x="336" y="235" width="164" height="6" rx="3" class="bar bar-low" role="progressbar" aria-label="Consistency score" aria-valuemin="0" aria-valuemax="100" aria-valuenow="44" />
     </g>
     <g role="img" aria-label="Public Adoption: not available for this card">
       <text x="36" y="273" class="label">Public Adoption</text>
-      <text x="268" y="273" class="score">N/A</text>
-      <rect x="324" y="264" width="254" height="6" rx="3" class="track" aria-hidden="true" />
+      <text x="306" y="273" class="score">N/A</text>
+      <rect x="336" y="264" width="372" height="6" rx="3" class="track" aria-hidden="true" />
     </g>
   </g>
   <text x="36" y="318" class="section-label">Highlights</text>
