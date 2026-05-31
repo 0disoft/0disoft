@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" class="card card-auto" role="img" width="760" height="420" viewBox="0 0 760 420" aria-labelledby="title desc">
   <title id="title">Buildmarks GitHub signal card for 0disoft</title>
-  <desc id="desc">20 distinct signals found across 12 summarized repositories. Overall signal 51 out of 100 is available in the report. Maintainability 71 out of 100, Project Completeness 58 out of 100, Collaboration 25 out of 100, Shipping Evidence 58 out of 100, Consistency 41 out of 100. Public Adoption is not available for private-local cards. Owner-supplied private repository signals are included and are not independently verifiable from public GitHub; not a developer ranking.</desc>
+  <desc id="desc">20 distinct signals found across 12 summarized repositories. Overall signal 51 out of 100 is available in the report. Maintainability 72 out of 100, Project Completeness 58 out of 100, Collaboration 25 out of 100, Shipping Evidence 57 out of 100, Consistency 42 out of 100. Public Adoption is not available for private-local cards. Owner-supplied private repository signals are included and are not independently verifiable from public GitHub; not a developer ranking.</desc>
   <defs>
     <linearGradient id="panelStroke" x1="18" y1="18" x2="742" y2="402" gradientUnits="userSpaceOnUse">
       <stop offset="0%" class="stroke-start" />
@@ -117,17 +117,17 @@
   <rect x="18" y="18" width="724" height="384" rx="14" class="panel" filter="url(#cardShadow)" />
   <path d="M24 22 H736" class="top-line" />
   <text x="36" y="56" class="title">Buildmarks</text>
-  <text x="164" y="54" class="brand-version">v0.1.9</text>
+  <text x="190" y="54" class="brand-version">v0.1.10</text>
   <text x="36" y="96" class="name">0disoft</text>
   <text x="704" y="58" class="subtitle right">Project Care</text>
   <text x="704" y="92" class="overall overall-middle">51/100</text>
   <g aria-label="Dimension scores out of 100">
 
-    <g role="img" aria-label="Maintainability: 71 points out of 100">
+    <g role="img" aria-label="Maintainability: 72 points out of 100">
       <text x="36" y="128" class="label">Maintainability</text>
-      <text x="306" y="128" class="score">71/100</text>
+      <text x="306" y="128" class="score">72/100</text>
       <rect x="336" y="119" width="372" height="6" rx="3" class="track" aria-hidden="true" />
-      <rect x="336" y="119" width="264" height="6" rx="3" class="bar bar-middle" role="progressbar" aria-label="Maintainability score" aria-valuemin="0" aria-valuemax="100" aria-valuenow="71" />
+      <rect x="336" y="119" width="268" height="6" rx="3" class="bar bar-middle" role="progressbar" aria-label="Maintainability score" aria-valuemin="0" aria-valuemax="100" aria-valuenow="72" />
     </g>
     <g role="img" aria-label="Project Completeness: 58 points out of 100">
       <text x="36" y="157" class="label">Project Completeness</text>
@@ -141,17 +141,17 @@
       <rect x="336" y="177" width="372" height="6" rx="3" class="track" aria-hidden="true" />
       <rect x="336" y="177" width="93" height="6" rx="3" class="bar bar-low" role="progressbar" aria-label="Collaboration score" aria-valuemin="0" aria-valuemax="100" aria-valuenow="25" />
     </g>
-    <g role="img" aria-label="Shipping Evidence: 58 points out of 100">
+    <g role="img" aria-label="Shipping Evidence: 57 points out of 100">
       <text x="36" y="215" class="label">Shipping Evidence</text>
-      <text x="306" y="215" class="score">58/100</text>
+      <text x="306" y="215" class="score">57/100</text>
       <rect x="336" y="206" width="372" height="6" rx="3" class="track" aria-hidden="true" />
-      <rect x="336" y="206" width="216" height="6" rx="3" class="bar bar-middle" role="progressbar" aria-label="Shipping Evidence score" aria-valuemin="0" aria-valuemax="100" aria-valuenow="58" />
+      <rect x="336" y="206" width="212" height="6" rx="3" class="bar bar-middle" role="progressbar" aria-label="Shipping Evidence score" aria-valuemin="0" aria-valuemax="100" aria-valuenow="57" />
     </g>
-    <g role="img" aria-label="Consistency: 41 points out of 100">
+    <g role="img" aria-label="Consistency: 42 points out of 100">
       <text x="36" y="244" class="label">Consistency</text>
-      <text x="306" y="244" class="score">41/100</text>
+      <text x="306" y="244" class="score">42/100</text>
       <rect x="336" y="235" width="372" height="6" rx="3" class="track" aria-hidden="true" />
-      <rect x="336" y="235" width="153" height="6" rx="3" class="bar bar-low" role="progressbar" aria-label="Consistency score" aria-valuemin="0" aria-valuemax="100" aria-valuenow="41" />
+      <rect x="336" y="235" width="156" height="6" rx="3" class="bar bar-low" role="progressbar" aria-label="Consistency score" aria-valuemin="0" aria-valuemax="100" aria-valuenow="42" />
     </g>
     <g role="img" aria-label="Public Adoption: not available for this card">
       <text x="36" y="273" class="label">Public Adoption</text>
