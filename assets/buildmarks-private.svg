@@ -115,15 +115,15 @@
   <rect x="18" y="18" width="724" height="384" rx="14" class="panel" filter="url(#cardShadow)" />
   <path d="M24 22 H736" class="top-line" />
   <text x="36" y="56" class="title">Buildmarks</text>
-  <text x="36" y="80" class="subtitle">Owner-supplied GitHub signals</text>
+  <text x="36" y="80" class="subtitle">Owner-supplied GitHub activity</text>
   <text x="36" y="112" class="name">0disoft</text>
-  <text x="36" y="136" class="type">Public + Private Signals · Independent Builder</text>
+  <text x="36" y="136" class="type">Public + Private · Independent Builder</text>
   <text x="604" y="72" class="subtitle">Project Care</text>
   <text x="604" y="122" class="overall overall-middle">63</text>
   <text x="674" y="128" class="overall-unit">/100</text>
-  <text x="604" y="144" class="metric-note">20 signals</text>
+  <text x="604" y="144" class="metric-note">20 marks</text>
   <text x="604" y="160" class="metric-note">8 repos checked</text>
-  <text x="604" y="178" class="metric-note">50-74 signal band</text>
+  <text x="604" y="178" class="metric-note">50-74 band</text>
   <text x="604" y="194" class="metric-note">last 6 months</text>
 
   <g aria-label="Dimension scores out of 100">
@@ -172,20 +172,24 @@
     <rect x="478" y="312" width="28" height="6" rx="3" class="bar bar-low" />
     <text x="512" y="318" class="legend">0-49</text>
   </g>
-  <text x="36" y="338" class="section-label">Found Signals</text>
-  <g aria-label="Top owner-supplied signals">
+  <text x="36" y="338" class="section-label">Highlights</text>
+  <g aria-label="Owner-supplied highlights">
 
-    <g role="img" aria-label="Signal found: Test signal found">
-      <rect x="36" y="350" width="198" height="28" rx="6" class="chip-bg" />
-      <text x="48" y="369" class="chip">Test signal found</text>
+    <g role="img" aria-label="Highlight: Tests">
+      <rect x="36" y="350" width="156" height="28" rx="6" class="chip-bg" />
+      <text x="48" y="369" class="chip">Tests</text>
     </g>
-    <g role="img" aria-label="Signal found: CI workflow found">
-      <rect x="248" y="350" width="198" height="28" rx="6" class="chip-bg" />
-      <text x="260" y="369" class="chip">CI workflow found</text>
+    <g role="img" aria-label="Highlight: CI">
+      <rect x="204" y="350" width="156" height="28" rx="6" class="chip-bg" />
+      <text x="216" y="369" class="chip">CI</text>
     </g>
-    <g role="img" aria-label="Signal found: Changelog or release notes …">
-      <rect x="460" y="350" width="198" height="28" rx="6" class="chip-bg" />
-      <text x="472" y="369" class="chip">Changelog or release notes …</text>
+    <g role="img" aria-label="Highlight: Changelog">
+      <rect x="372" y="350" width="156" height="28" rx="6" class="chip-bg" />
+      <text x="384" y="369" class="chip">Changelog</text>
+    </g>
+    <g role="img" aria-label="Highlight: Test Files">
+      <rect x="540" y="350" width="156" height="28" rx="6" class="chip-bg" />
+      <text x="552" y="369" class="chip">Test Files</text>
     </g>
   </g>
   <text x="36" y="397" class="footer">Buildmarks Profile · Private Included · 2026-05-31</text>
