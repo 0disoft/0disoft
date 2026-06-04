@@ -20,16 +20,21 @@
 
 <p>
   <a href="https://bun.sh"><img src="https://img.shields.io/badge/Bun-000000?style=flat-square&logo=bun&logoColor=white" alt="Bun" /></a>
-  <a href="https://elysiajs.com"><img src="https://cdn.worldvectorlogo.com/logos/elysiajs-logo-1.svg" alt="Elysia" height="20" /></a>
+  <a href="https://elysiajs.com"><img src="./assets/badges/elysia.svg" alt="Elysia" /></a>
   <a href="https://hono.dev"><img src="https://img.shields.io/badge/Hono-E36002?style=flat-square&logo=hono&logoColor=white" alt="Hono" /></a>
+  <a href="https://gin-gonic.com"><img src="https://img.shields.io/badge/Gin-008ECF?style=flat-square&logo=gin&logoColor=white" alt="Gin" /></a>
+  <a href="https://github.com/tokio-rs/axum"><img src="https://img.shields.io/badge/Axum-111827?style=flat-square" alt="Axum" /></a>
+</p>
+
+<p>
   <a href="https://orm.drizzle.team"><img src="https://img.shields.io/badge/Drizzle-C5F74F?style=flat-square&logo=drizzle&logoColor=111111" alt="Drizzle" /></a>
-  <a href="https://github.com/sinclairzx81/typebox"><img src="https://raw.githubusercontent.com/sinclairzx81/typebox/main/typebox.png" alt="TypeBox" height="20" /></a>
+  <a href="https://github.com/sinclairzx81/typebox"><img src="./assets/badges/typebox.svg" alt="TypeBox" /></a>
   <a href="https://www.better-auth.com"><img src="https://img.shields.io/badge/better--auth-111827?style=flat-square&logo=betterauth&logoColor=white" alt="better-auth" /></a>
-  <a href="https://capjs.js.org"><img src="https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/capjs.png" alt="Cap.js" height="20" /></a>
+  <a href="https://capjs.js.org"><img src="./assets/badges/capjs.svg" alt="Cap.js" /></a>
 </p>
 
 <p>
   <a href="https://oxc.rs"><img src="https://img.shields.io/badge/Oxc-2B3C5A?style=flat-square&logo=oxc&logoColor=white" alt="Oxc" /></a>
-  <a href="https://shiki.style"><img src="https://shiki.matsu.io/logo.svg" alt="Shiki" height="20" /></a>
+  <a href="https://shiki.style"><img src="./assets/badges/shiki.svg" alt="Shiki" /></a>
   <a href="https://marked.js.org"><img src="https://img.shields.io/badge/Marked.js-475569?style=flat-square" alt="Marked.js" /></a>
 </p>
