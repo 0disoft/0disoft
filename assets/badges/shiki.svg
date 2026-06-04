@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="68" height="20" role="img" aria-labelledby="title">
+  <title id="title">Shiki</title>
+  <rect width="24" height="20" fill="#581c87" />
+  <rect x="24" width="44" height="20" fill="#6b21a8" />
+  <text x="12" y="14" text-anchor="middle" font-family="Verdana, Geneva, sans-serif" font-size="11" font-weight="700" fill="#ffffff">S</text>
+  <text x="32" y="14" font-family="Verdana, Geneva, sans-serif" font-size="11" fill="#ffffff">Shiki</text>
+</svg>

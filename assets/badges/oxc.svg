@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="68" height="20" role="img" aria-labelledby="title">
+  <title id="title">OXC</title>
+  <rect width="27" height="20" fill="#172554" />
+  <rect x="27" width="41" height="20" fill="#1d4ed8" />
+  <text x="13.5" y="14" text-anchor="middle" font-family="Verdana, Geneva, sans-serif" font-size="9" font-weight="700" fill="#ffffff">OX</text>
+  <text x="35" y="14" font-family="Verdana, Geneva, sans-serif" font-size="11" fill="#ffffff">OXC</text>
+</svg>
