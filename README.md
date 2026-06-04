@@ -16,6 +16,7 @@
   <a href="https://unocss.dev"><img src="https://img.shields.io/badge/UnoCSS-333333?style=flat-square&logo=unocss&logoColor=white" alt="UnoCSS" /></a>
   <a href="https://tauri.app"><img src="https://img.shields.io/badge/Tauri-24C8DB?style=flat-square&logo=tauri&logoColor=white" alt="Tauri" /></a>
   <a href="https://flutter.dev"><img src="https://img.shields.io/badge/Flutter-02569B?style=flat-square&logo=flutter&logoColor=white" alt="Flutter" /></a>
+  <a href="https://tiptap.dev"><img src="https://img.shields.io/badge/Tiptap-111827?style=flat-square" alt="Tiptap" /></a>
 </p>
 
 <p>
@@ -37,4 +38,9 @@
   <a href="https://oxc.rs"><img src="https://img.shields.io/badge/Oxc-2B3C5A?style=flat-square&logo=oxc&logoColor=white" alt="Oxc" /></a>
   <a href="https://shiki.style"><img src="https://img.shields.io/badge/Shiki-475569?style=flat-square" alt="Shiki" /></a>
   <a href="https://marked.js.org"><img src="https://img.shields.io/badge/Marked.js-475569?style=flat-square" alt="Marked.js" /></a>
+</p>
+
+<p>
+  <a href="https://coolify.io"><img src="https://img.shields.io/badge/Coolify-000000?style=flat-square&logo=coolify&logoColor=white" alt="Coolify" /></a>
+  <a href="https://www.hetzner.com"><img src="https://img.shields.io/badge/Hetzner-D50C2D?style=flat-square&logo=hetzner&logoColor=white" alt="Hetzner" /></a>
 </p>
