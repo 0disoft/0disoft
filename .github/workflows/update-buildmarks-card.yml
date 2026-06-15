@@ -20,7 +20,7 @@ jobs:
       - name: Check out profile repository
         uses: actions/checkout@v6
 
-      - name: Check four-week cadence
+      - name: Check two-week cadence
         id: cadence
         shell: bash
         run: |
@@ -35,8 +35,8 @@ jobs:
           today="$(date -u +%F)"
           days=$(( ( $(date -u -d "$today" +%s) - $(date -u -d "$anchor" +%s) ) / 86400 ))
 
-          if [ "$days" -lt 0 ] || [ $((days % 28)) -ne 0 ]; then
-            echo "Not a four-week Buildmarks update day."
+          if [ "$days" -lt 0 ] || [ $((days % 14)) -ne 0 ]; then
+            echo "Not a two-week Buildmarks update day."
             echo "should_run=false" >> "$GITHUB_OUTPUT"
             exit 0
           fi
