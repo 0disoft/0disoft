@@ -1,6 +1,4 @@
-<a href="https://github.com/0disoft/buildmarks">
-  <img src="./assets/buildmarks-private.svg?v=0.1.15-cache8" alt="Buildmarks public and owner-supplied private GitHub signal card" width="98.5%" />
-</a>
+<img src="./assets/buildmarks-private.svg?v=0.1.17-cache1" alt="Buildmarks public and owner-supplied private GitHub signal card" width="98.5%" />
 
 <p>
   <a href="https://www.typescriptlang.org"><img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" /></a>

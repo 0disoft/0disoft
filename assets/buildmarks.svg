@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" class="card card-auto" role="img" width="760" height="420" viewBox="0 0 760 420" aria-labelledby="title desc">
   <title id="title">Buildmarks GitHub signal card for 0disoft</title>
-  <desc id="desc">21 distinct signals found across 12 summarized repositories. Overall public signal tier is Gold I, with 67 out of 100 available in the report. Maintainability Platinum V, 74 out of 100, Project Completeness Platinum V, 74 out of 100, Usability Surface Platinum IV, 75 out of 100, Shipping Evidence Gold I, 61 out of 100, Consistency Gold III, 42 out of 100, Project Stewardship Platinum IV, 77 out of 100. Public GitHub data only; not a developer ranking.</desc>
+  <desc id="desc">18 distinct signals found across 6 summarized repositories. Overall public signal tier is Gold II, with 55 out of 100 available in the report. Maintainability Gold I, 65 out of 100, Project Completeness Gold II, 59 out of 100, Usability Surface Gold II, 56 out of 100, Shipping Evidence Gold III, 41 out of 100, Consistency Gold IV, 39 out of 100, Project Stewardship Platinum V, 71 out of 100. Public GitHub data only; not a developer ranking.</desc>
   <defs>
     <linearGradient id="panelStroke" x1="18" y1="18" x2="742" y2="402" gradientUnits="userSpaceOnUse">
       <stop offset="0%" class="stroke-start" />
@@ -80,8 +80,6 @@
     .bg { fill: var(--bg); }
     .panel { fill: var(--panel); stroke: url(#panelStroke); stroke-width: 1; }
     .top-line { stroke: url(#panelStroke); stroke-width: 2; stroke-linecap: round; opacity: 0.75; }
-    .title { fill: var(--text); font: 700 24px ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
-    .brand-version { fill: var(--muted); font: 700 12px ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
     .subtitle, .footer, .section-label, .metric-note, .legend { fill: var(--muted); font: 500 13px ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
     .right { text-anchor: end; }
     .name { fill: var(--text); font: 700 20px ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
@@ -100,7 +98,6 @@
     .bar-low { fill: url(#barLow); }
     .chip-bg { fill: var(--chip-bg); stroke: var(--panel-border); stroke-width: 1; }
     .chip { fill: var(--chip-text); font: 600 12px ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
-    .link-text { fill: var(--chip-text); font: 700 12px ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; text-anchor: end; text-decoration: underline; }
     .fallback-box { fill: var(--chip-bg); stroke: var(--panel-border); stroke-width: 1; }
     .fallback-title { fill: var(--text); font: 700 22px ui-sans-serif, system-ui, sans-serif; }
     .fallback-body { fill: var(--muted); font: 500 15px ui-sans-serif, system-ui, sans-serif; }
@@ -116,48 +113,45 @@
   <rect width="760" height="420" class="bg" />
   <rect x="18" y="18" width="724" height="384" rx="14" class="panel" filter="url(#cardShadow)" />
   <path d="M24 22 H736" class="top-line" />
-  <text x="36" y="56" class="title">Buildmarks</text>
-  <text x="190" y="54" class="brand-version">v0.1.15</text>
-  <text x="36" y="96" class="name">0disoft</text>
-  <text x="704" y="58" class="subtitle right">Public Signal Tier</text>
-  <text x="704" y="92" class="overall overall-middle">Gold I</text>
+  <text x="36" y="62" class="name">0disoft</text>
+  <text x="704" y="62" class="overall overall-middle">Gold II</text>
   <g aria-label="Dimension signal tiers with underlying scores out of 100">
 
-    <g role="img" aria-label="Maintainability: Platinum V, 74 points out of 100">
+    <g role="img" aria-label="Maintainability: Gold I, 65 points out of 100">
       <text x="36" y="128" class="label">Maintainability</text>
-      <text x="306" y="128" class="score">Platinum V</text>
+      <text x="306" y="128" class="score">Gold I</text>
       <rect x="336" y="119" width="372" height="6" rx="3" class="track" aria-hidden="true" />
-      <rect x="336" y="119" width="275" height="6" rx="3" class="bar bar-middle" role="progressbar" aria-label="Maintainability score" aria-valuemin="0" aria-valuemax="100" aria-valuenow="74" />
+      <rect x="336" y="119" width="242" height="6" rx="3" class="bar bar-middle" role="progressbar" aria-label="Maintainability score" aria-valuemin="0" aria-valuemax="100" aria-valuenow="65" />
     </g>
-    <g role="img" aria-label="Project Completeness: Platinum V, 74 points out of 100">
+    <g role="img" aria-label="Project Completeness: Gold II, 59 points out of 100">
       <text x="36" y="157" class="label">Project Completeness</text>
-      <text x="306" y="157" class="score">Platinum V</text>
+      <text x="306" y="157" class="score">Gold II</text>
       <rect x="336" y="148" width="372" height="6" rx="3" class="track" aria-hidden="true" />
-      <rect x="336" y="148" width="275" height="6" rx="3" class="bar bar-middle" role="progressbar" aria-label="Project Completeness score" aria-valuemin="0" aria-valuemax="100" aria-valuenow="74" />
+      <rect x="336" y="148" width="219" height="6" rx="3" class="bar bar-middle" role="progressbar" aria-label="Project Completeness score" aria-valuemin="0" aria-valuemax="100" aria-valuenow="59" />
     </g>
-    <g role="img" aria-label="Usability Surface: Platinum IV, 75 points out of 100">
+    <g role="img" aria-label="Usability Surface: Gold II, 56 points out of 100">
       <text x="36" y="186" class="label">Usability Surface</text>
-      <text x="306" y="186" class="score">Platinum IV</text>
+      <text x="306" y="186" class="score">Gold II</text>
       <rect x="336" y="177" width="372" height="6" rx="3" class="track" aria-hidden="true" />
-      <rect x="336" y="177" width="279" height="6" rx="3" class="bar bar-strong" role="progressbar" aria-label="Usability Surface score" aria-valuemin="0" aria-valuemax="100" aria-valuenow="75" />
+      <rect x="336" y="177" width="208" height="6" rx="3" class="bar bar-middle" role="progressbar" aria-label="Usability Surface score" aria-valuemin="0" aria-valuemax="100" aria-valuenow="56" />
     </g>
-    <g role="img" aria-label="Shipping Evidence: Gold I, 61 points out of 100">
+    <g role="img" aria-label="Shipping Evidence: Gold III, 41 points out of 100">
       <text x="36" y="215" class="label">Shipping Evidence</text>
-      <text x="306" y="215" class="score">Gold I</text>
+      <text x="306" y="215" class="score">Gold III</text>
       <rect x="336" y="206" width="372" height="6" rx="3" class="track" aria-hidden="true" />
-      <rect x="336" y="206" width="227" height="6" rx="3" class="bar bar-middle" role="progressbar" aria-label="Shipping Evidence score" aria-valuemin="0" aria-valuemax="100" aria-valuenow="61" />
+      <rect x="336" y="206" width="153" height="6" rx="3" class="bar bar-low" role="progressbar" aria-label="Shipping Evidence score" aria-valuemin="0" aria-valuemax="100" aria-valuenow="41" />
     </g>
-    <g role="img" aria-label="Consistency: Gold III, 42 points out of 100">
+    <g role="img" aria-label="Consistency: Gold IV, 39 points out of 100">
       <text x="36" y="244" class="label">Consistency</text>
-      <text x="306" y="244" class="score">Gold III</text>
+      <text x="306" y="244" class="score">Gold IV</text>
       <rect x="336" y="235" width="372" height="6" rx="3" class="track" aria-hidden="true" />
-      <rect x="336" y="235" width="156" height="6" rx="3" class="bar bar-low" role="progressbar" aria-label="Consistency score" aria-valuemin="0" aria-valuemax="100" aria-valuenow="42" />
+      <rect x="336" y="235" width="145" height="6" rx="3" class="bar bar-low" role="progressbar" aria-label="Consistency score" aria-valuemin="0" aria-valuemax="100" aria-valuenow="39" />
     </g>
-    <g role="img" aria-label="Project Stewardship: Platinum IV, 77 points out of 100">
+    <g role="img" aria-label="Project Stewardship: Platinum V, 71 points out of 100">
       <text x="36" y="273" class="label">Project Stewardship</text>
-      <text x="306" y="273" class="score">Platinum IV</text>
+      <text x="306" y="273" class="score">Platinum V</text>
       <rect x="336" y="264" width="372" height="6" rx="3" class="track" aria-hidden="true" />
-      <rect x="336" y="264" width="286" height="6" rx="3" class="bar bar-strong" role="progressbar" aria-label="Project Stewardship score" aria-valuemin="0" aria-valuemax="100" aria-valuenow="77" />
+      <rect x="336" y="264" width="264" height="6" rx="3" class="bar bar-middle" role="progressbar" aria-label="Project Stewardship score" aria-valuemin="0" aria-valuemax="100" aria-valuenow="71" />
     </g>
   </g>
   <text x="36" y="318" class="section-label">Highlights</text>
@@ -171,18 +165,14 @@
       <rect x="204" y="330" width="156" height="28" rx="6" class="chip-bg" />
       <text x="216" y="349" class="chip">CI</text>
     </g>
-    <g role="img" aria-label="Highlight: Changelog">
+    <g role="img" aria-label="Highlight: Small Files">
       <rect x="372" y="330" width="156" height="28" rx="6" class="chip-bg" />
-      <text x="384" y="349" class="chip">Changelog</text>
+      <text x="384" y="349" class="chip">Small Files</text>
     </g>
-    <g role="img" aria-label="Highlight: Test Files">
+    <g role="img" aria-label="Highlight: Contributing">
       <rect x="540" y="330" width="156" height="28" rx="6" class="chip-bg" />
-      <text x="552" y="349" class="chip">Test Files</text>
+      <text x="552" y="349" class="chip">Contributing</text>
     </g>
   </g>
-  <text x="36" y="388" class="footer">Buildmarks · 2026-06-18</text>
-
-  <a href="./buildmarks-report/buildmarks-report.html" target="_top" aria-label="Open the Buildmarks report">
-    <text x="724" y="388" class="link-text">View report</text>
-  </a>
+  <text x="36" y="388" class="footer">Buildmarks v0.1.17 · Public Signals · 2026-06-18</text>
 </svg>
