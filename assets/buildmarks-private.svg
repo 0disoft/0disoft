@@ -117,7 +117,7 @@
   <rect x="18" y="18" width="724" height="384" rx="14" class="panel" filter="url(#cardShadow)" />
   <path d="M24 22 H736" class="top-line" />
   <text x="36" y="56" class="title">Buildmarks</text>
-  <text x="190" y="54" class="brand-version">v0.1.13</text>
+  <text x="190" y="54" class="brand-version">v0.1.14</text>
   <text x="36" y="96" class="name">0disoft</text>
   <text x="704" y="58" class="subtitle right">Public Signal Tier</text>
   <text x="704" y="92" class="overall overall-middle">Gold II</text>
@@ -152,11 +152,6 @@
       <text x="306" y="244" class="score">Gold III</text>
       <rect x="336" y="235" width="372" height="6" rx="3" class="track" aria-hidden="true" />
       <rect x="336" y="235" width="175" height="6" rx="3" class="bar bar-low" role="progressbar" aria-label="Consistency score" aria-valuemin="0" aria-valuemax="100" aria-valuenow="47" />
-    </g>
-    <g role="img" aria-label="Public Adoption: not available for this card">
-      <text x="36" y="273" class="label">Public Adoption</text>
-      <text x="306" y="273" class="score">N/A</text>
-      <rect x="336" y="264" width="372" height="6" rx="3" class="track" aria-hidden="true" />
     </g>
   </g>
   <text x="36" y="318" class="section-label">Highlights</text>
