@@ -1,5 +1,5 @@
 <a href="https://github.com/0disoft/buildmarks">
-  <img src="./assets/buildmarks-private.svg?v=0.1.15" alt="Buildmarks public and owner-supplied private GitHub signal card" width="98.5%" />
+  <img src="./assets/buildmarks-private.svg?v=0.1.15-cache2" alt="Buildmarks public and owner-supplied private GitHub signal card" width="98.5%" />
 </a>
 
 <p>
