@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" class="card card-auto" role="img" width="760" height="420" viewBox="0 0 760 420" aria-labelledby="title desc">
   <title id="title">Buildmarks GitHub signal card for 0disoft</title>
-  <desc id="desc">21 distinct signals found across 8 summarized repositories. Overall public signal tier is Gold I, with 66 out of 100 available in the report. Maintainability Platinum V, 73 out of 100, Project Completeness Platinum V, 72 out of 100, Usability Surface Platinum V, 73 out of 100, Shipping Evidence Gold I, 65 out of 100, Consistency Gold III, 42 out of 100, Project Stewardship Platinum V, 72 out of 100. Public GitHub data only; not a developer ranking.</desc>
+  <desc id="desc">21 distinct signals found across 12 summarized repositories. Overall public signal tier is Gold I, with 67 out of 100 available in the report. Maintainability Platinum V, 74 out of 100, Project Completeness Platinum V, 74 out of 100, Usability Surface Platinum IV, 75 out of 100, Shipping Evidence Gold I, 61 out of 100, Consistency Gold III, 42 out of 100, Project Stewardship Platinum IV, 77 out of 100. Public GitHub data only; not a developer ranking.</desc>
   <defs>
     <linearGradient id="panelStroke" x1="18" y1="18" x2="742" y2="402" gradientUnits="userSpaceOnUse">
       <stop offset="0%" class="stroke-start" />
@@ -123,29 +123,29 @@
   <text x="704" y="92" class="overall overall-middle">Gold I</text>
   <g aria-label="Dimension signal tiers with underlying scores out of 100">
 
-    <g role="img" aria-label="Maintainability: Platinum V, 73 points out of 100">
+    <g role="img" aria-label="Maintainability: Platinum V, 74 points out of 100">
       <text x="36" y="128" class="label">Maintainability</text>
       <text x="306" y="128" class="score">Platinum V</text>
       <rect x="336" y="119" width="372" height="6" rx="3" class="track" aria-hidden="true" />
-      <rect x="336" y="119" width="272" height="6" rx="3" class="bar bar-middle" role="progressbar" aria-label="Maintainability score" aria-valuemin="0" aria-valuemax="100" aria-valuenow="73" />
+      <rect x="336" y="119" width="275" height="6" rx="3" class="bar bar-middle" role="progressbar" aria-label="Maintainability score" aria-valuemin="0" aria-valuemax="100" aria-valuenow="74" />
     </g>
-    <g role="img" aria-label="Project Completeness: Platinum V, 72 points out of 100">
+    <g role="img" aria-label="Project Completeness: Platinum V, 74 points out of 100">
       <text x="36" y="157" class="label">Project Completeness</text>
       <text x="306" y="157" class="score">Platinum V</text>
       <rect x="336" y="148" width="372" height="6" rx="3" class="track" aria-hidden="true" />
-      <rect x="336" y="148" width="268" height="6" rx="3" class="bar bar-middle" role="progressbar" aria-label="Project Completeness score" aria-valuemin="0" aria-valuemax="100" aria-valuenow="72" />
+      <rect x="336" y="148" width="275" height="6" rx="3" class="bar bar-middle" role="progressbar" aria-label="Project Completeness score" aria-valuemin="0" aria-valuemax="100" aria-valuenow="74" />
     </g>
-    <g role="img" aria-label="Usability Surface: Platinum V, 73 points out of 100">
+    <g role="img" aria-label="Usability Surface: Platinum IV, 75 points out of 100">
       <text x="36" y="186" class="label">Usability Surface</text>
-      <text x="306" y="186" class="score">Platinum V</text>
+      <text x="306" y="186" class="score">Platinum IV</text>
       <rect x="336" y="177" width="372" height="6" rx="3" class="track" aria-hidden="true" />
-      <rect x="336" y="177" width="272" height="6" rx="3" class="bar bar-middle" role="progressbar" aria-label="Usability Surface score" aria-valuemin="0" aria-valuemax="100" aria-valuenow="73" />
+      <rect x="336" y="177" width="279" height="6" rx="3" class="bar bar-strong" role="progressbar" aria-label="Usability Surface score" aria-valuemin="0" aria-valuemax="100" aria-valuenow="75" />
     </g>
-    <g role="img" aria-label="Shipping Evidence: Gold I, 65 points out of 100">
+    <g role="img" aria-label="Shipping Evidence: Gold I, 61 points out of 100">
       <text x="36" y="215" class="label">Shipping Evidence</text>
       <text x="306" y="215" class="score">Gold I</text>
       <rect x="336" y="206" width="372" height="6" rx="3" class="track" aria-hidden="true" />
-      <rect x="336" y="206" width="242" height="6" rx="3" class="bar bar-middle" role="progressbar" aria-label="Shipping Evidence score" aria-valuemin="0" aria-valuemax="100" aria-valuenow="65" />
+      <rect x="336" y="206" width="227" height="6" rx="3" class="bar bar-middle" role="progressbar" aria-label="Shipping Evidence score" aria-valuemin="0" aria-valuemax="100" aria-valuenow="61" />
     </g>
     <g role="img" aria-label="Consistency: Gold III, 42 points out of 100">
       <text x="36" y="244" class="label">Consistency</text>
@@ -153,11 +153,11 @@
       <rect x="336" y="235" width="372" height="6" rx="3" class="track" aria-hidden="true" />
       <rect x="336" y="235" width="156" height="6" rx="3" class="bar bar-low" role="progressbar" aria-label="Consistency score" aria-valuemin="0" aria-valuemax="100" aria-valuenow="42" />
     </g>
-    <g role="img" aria-label="Project Stewardship: Platinum V, 72 points out of 100">
+    <g role="img" aria-label="Project Stewardship: Platinum IV, 77 points out of 100">
       <text x="36" y="273" class="label">Project Stewardship</text>
-      <text x="306" y="273" class="score">Platinum V</text>
+      <text x="306" y="273" class="score">Platinum IV</text>
       <rect x="336" y="264" width="372" height="6" rx="3" class="track" aria-hidden="true" />
-      <rect x="336" y="264" width="268" height="6" rx="3" class="bar bar-middle" role="progressbar" aria-label="Project Stewardship score" aria-valuemin="0" aria-valuemax="100" aria-valuenow="72" />
+      <rect x="336" y="264" width="286" height="6" rx="3" class="bar bar-strong" role="progressbar" aria-label="Project Stewardship score" aria-valuemin="0" aria-valuemax="100" aria-valuenow="77" />
     </g>
   </g>
   <text x="36" y="318" class="section-label">Highlights</text>
