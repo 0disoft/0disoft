@@ -41,7 +41,6 @@
   <a href="https://oxc.rs"><img src="https://img.shields.io/badge/Oxc-2B3C5A?style=flat-square&logo=oxc&logoColor=white" alt="Oxc" /></a>
   <a href="https://shiki.style"><img src="https://img.shields.io/badge/Shiki-475569?style=flat-square" alt="Shiki" /></a>
   <a href="https://marked.js.org"><img src="https://img.shields.io/badge/Marked.js-475569?style=flat-square" alt="Marked.js" /></a>
-  <a href="https://tiptap.dev"><img src="https://img.shields.io/badge/Tiptap-111827?style=flat-square" alt="Tiptap" /></a>
 </p>
 
 <p>
