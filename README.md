@@ -12,9 +12,7 @@
   <a href="https://svelte.dev"><img src="https://img.shields.io/badge/Svelte-FF3E00?style=flat-square&logo=svelte&logoColor=white" alt="Svelte" /></a>
   <a href="https://tailwindcss.com"><img src="https://img.shields.io/badge/Tailwind-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white" alt="Tailwind CSS" /></a>
   <a href="https://unocss.dev"><img src="https://img.shields.io/badge/UnoCSS-333333?style=flat-square&logo=unocss&logoColor=white" alt="UnoCSS" /></a>
-  <a href="https://tauri.app"><img src="https://img.shields.io/badge/Tauri-24C8DB?style=flat-square&logo=tauri&logoColor=white" alt="Tauri" /></a>
-  <a href="https://flutter.dev"><img src="https://img.shields.io/badge/Flutter-02569B?style=flat-square&logo=flutter&logoColor=white" alt="Flutter" /></a>
-  <a href="https://tiptap.dev"><img src="https://img.shields.io/badge/Tiptap-111827?style=flat-square" alt="Tiptap" /></a>
+  <a href="https://wails.io"><img src="https://img.shields.io/badge/Wails-DF0000?style=flat-square" alt="Wails" /></a>
 </p>
 
 <p>
@@ -33,9 +31,17 @@
 </p>
 
 <p>
+  <a href="https://www.sqlite.org"><img src="https://img.shields.io/badge/SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white" alt="SQLite" /></a>
+  <a href="https://www.postgresql.org"><img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white" alt="PostgreSQL" /></a>
+  <a href="https://duckdb.org"><img src="https://img.shields.io/badge/DuckDB-FFF000?style=flat-square&logo=duckdb&logoColor=111111" alt="DuckDB" /></a>
+  <a href="https://clickhouse.com"><img src="https://img.shields.io/badge/ClickHouse-FFCC01?style=flat-square&logo=clickhouse&logoColor=111111" alt="ClickHouse" /></a>
+</p>
+
+<p>
   <a href="https://oxc.rs"><img src="https://img.shields.io/badge/Oxc-2B3C5A?style=flat-square&logo=oxc&logoColor=white" alt="Oxc" /></a>
   <a href="https://shiki.style"><img src="https://img.shields.io/badge/Shiki-475569?style=flat-square" alt="Shiki" /></a>
   <a href="https://marked.js.org"><img src="https://img.shields.io/badge/Marked.js-475569?style=flat-square" alt="Marked.js" /></a>
+  <a href="https://tiptap.dev"><img src="https://img.shields.io/badge/Tiptap-111827?style=flat-square" alt="Tiptap" /></a>
 </p>
 
 <p>
