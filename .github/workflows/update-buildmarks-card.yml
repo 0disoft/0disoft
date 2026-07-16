@@ -43,8 +43,10 @@ jobs:
 
           echo "should_run=true" >> "$GITHUB_OUTPUT"
 
-      - name: Generate Buildmarks artifacts
+      - name: Generate private-local Buildmarks card
+        id: private_card
         if: steps.cadence.outputs.should_run == 'true'
+        continue-on-error: true
         uses: 0disoft/buildmarks@v0
         with:
           username: ${{ github.repository_owner }}
@@ -54,8 +56,22 @@ jobs:
           token: ${{ secrets.BUILDMARKS_PRIVATE_TOKEN }}
           activity-window-days: "180"
 
+      - name: Generate public Buildmarks fallback card
+        id: public_card
+        if: steps.cadence.outputs.should_run == 'true' && steps.private_card.outcome == 'failure'
+        uses: 0disoft/buildmarks@v0
+        with:
+          username: ${{ github.repository_owner }}
+          output: assets/buildmarks-private.svg
+          generate-report: "false"
+          private-local: "false"
+          token: ${{ github.token }}
+          activity-window-days: "180"
+
       - name: Commit updated Buildmarks artifacts
-        if: steps.cadence.outputs.should_run == 'true'
+        if: >-
+          steps.cadence.outputs.should_run == 'true' &&
+          (steps.private_card.outcome == 'success' || steps.public_card.outcome == 'success')
         run: |
           git add assets/buildmarks-private.svg
 
