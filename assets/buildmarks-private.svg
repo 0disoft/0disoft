@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" class="card card-auto" role="img" width="760" height="420" viewBox="0 0 760 420" aria-labelledby="title desc">
-  <title id="title">Buildmarks fallback card</title>
-  <desc id="desc">Not enough complete GitHub evidence to calculate a reliable signal score No signal score is shown. Not a developer ranking.</desc>
+  <title id="title">Buildmarks GitHub signal card for 0disoft</title>
+  <desc id="desc">21 distinct signals found across 12 summarized repositories. Overall public and owner-supplied private signal tier is Platinum I, with 88 out of 100 available in the report. Maintainability Diamond III, 94 out of 100, Project Completeness Diamond III, 94 out of 100, Usability Surface Diamond III, 94 out of 100, Shipping Evidence Diamond I, 98 out of 100, Consistency Gold II, 55 out of 100, Project Stewardship Diamond IV, 93 out of 100. Owner-supplied private repository signals are included and are not independently verifiable from public GitHub; not a developer ranking.</desc>
   <defs>
     <linearGradient id="panelStroke" x1="18" y1="18" x2="742" y2="402" gradientUnits="userSpaceOnUse">
       <stop offset="0%" class="stroke-start" />
@@ -113,9 +113,66 @@
   <rect width="760" height="420" class="bg" />
   <rect x="18" y="18" width="724" height="384" rx="14" class="panel" filter="url(#cardShadow)" />
   <path d="M24 22 H736" class="top-line" />
-  <text x="36" y="62" class="subtitle">Buildmarks signals</text>
-  <rect x="36" y="148" width="688" height="116" rx="10" class="fallback-box" />
-  <text x="62" y="196" class="fallback-title">Card temporarily unavailable</text>
-  <text x="62" y="228" class="fallback-body">Not enough complete GitHub evidence to calculate a reliable signal score</text>
-  <text x="36" y="388" class="footer">Buildmarks v0.1.23</text>
+  <text x="36" y="62" class="name">0disoft</text>
+  <text x="704" y="62" class="overall overall-strong">Platinum I</text>
+  <g aria-label="Dimension signal tiers with underlying scores out of 100">
+
+    <g role="img" aria-label="Maintainability: Diamond III, 94 points out of 100">
+      <text x="36" y="128" class="label">Maintainability</text>
+      <text x="306" y="128" class="score">Diamond III</text>
+      <rect x="336" y="119" width="372" height="6" rx="3" class="track" aria-hidden="true" />
+      <rect x="336" y="119" width="350" height="6" rx="3" class="bar bar-strong" role="progressbar" aria-label="Maintainability score" aria-valuemin="0" aria-valuemax="100" aria-valuenow="94" />
+    </g>
+    <g role="img" aria-label="Project Completeness: Diamond III, 94 points out of 100">
+      <text x="36" y="157" class="label">Project Completeness</text>
+      <text x="306" y="157" class="score">Diamond III</text>
+      <rect x="336" y="148" width="372" height="6" rx="3" class="track" aria-hidden="true" />
+      <rect x="336" y="148" width="350" height="6" rx="3" class="bar bar-strong" role="progressbar" aria-label="Project Completeness score" aria-valuemin="0" aria-valuemax="100" aria-valuenow="94" />
+    </g>
+    <g role="img" aria-label="Usability Surface: Diamond III, 94 points out of 100">
+      <text x="36" y="186" class="label">Usability Surface</text>
+      <text x="306" y="186" class="score">Diamond III</text>
+      <rect x="336" y="177" width="372" height="6" rx="3" class="track" aria-hidden="true" />
+      <rect x="336" y="177" width="350" height="6" rx="3" class="bar bar-strong" role="progressbar" aria-label="Usability Surface score" aria-valuemin="0" aria-valuemax="100" aria-valuenow="94" />
+    </g>
+    <g role="img" aria-label="Shipping Evidence: Diamond I, 98 points out of 100">
+      <text x="36" y="215" class="label">Shipping Evidence</text>
+      <text x="306" y="215" class="score">Diamond I</text>
+      <rect x="336" y="206" width="372" height="6" rx="3" class="track" aria-hidden="true" />
+      <rect x="336" y="206" width="365" height="6" rx="3" class="bar bar-strong" role="progressbar" aria-label="Shipping Evidence score" aria-valuemin="0" aria-valuemax="100" aria-valuenow="98" />
+    </g>
+    <g role="img" aria-label="Consistency: Gold II, 55 points out of 100">
+      <text x="36" y="244" class="label">Consistency</text>
+      <text x="306" y="244" class="score">Gold II</text>
+      <rect x="336" y="235" width="372" height="6" rx="3" class="track" aria-hidden="true" />
+      <rect x="336" y="235" width="205" height="6" rx="3" class="bar bar-middle" role="progressbar" aria-label="Consistency score" aria-valuemin="0" aria-valuemax="100" aria-valuenow="55" />
+    </g>
+    <g role="img" aria-label="Project Stewardship: Diamond IV, 93 points out of 100">
+      <text x="36" y="273" class="label">Project Stewardship</text>
+      <text x="306" y="273" class="score">Diamond IV</text>
+      <rect x="336" y="264" width="372" height="6" rx="3" class="track" aria-hidden="true" />
+      <rect x="336" y="264" width="346" height="6" rx="3" class="bar bar-strong" role="progressbar" aria-label="Project Stewardship score" aria-valuemin="0" aria-valuemax="100" aria-valuenow="93" />
+    </g>
+  </g>
+  <text x="36" y="318" class="section-label">Highlights</text>
+  <g aria-label="Buildmarks highlights">
+
+    <g role="img" aria-label="Highlight: Tests">
+      <rect x="36" y="330" width="156" height="28" rx="6" class="chip-bg" />
+      <text x="48" y="349" class="chip">Tests</text>
+    </g>
+    <g role="img" aria-label="Highlight: CI">
+      <rect x="204" y="330" width="156" height="28" rx="6" class="chip-bg" />
+      <text x="216" y="349" class="chip">CI</text>
+    </g>
+    <g role="img" aria-label="Highlight: Changelog">
+      <rect x="372" y="330" width="156" height="28" rx="6" class="chip-bg" />
+      <text x="384" y="349" class="chip">Changelog</text>
+    </g>
+    <g role="img" aria-label="Highlight: Test Files">
+      <rect x="540" y="330" width="156" height="28" rx="6" class="chip-bg" />
+      <text x="552" y="349" class="chip">Test Files</text>
+    </g>
+  </g>
+  <text x="36" y="388" class="footer">Buildmarks v0.1.25 · Public + Private Signals · 2026-07-16</text>
 </svg>
