@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" class="card card-auto" data-layout="compact" role="img" width="420" height="360" viewBox="0 0 420 360" aria-labelledby="title desc">
   <title id="title">Buildmarks project card for 0disoft</title>
-  <desc id="desc">Buildmarks reviewed 30 repositories and found 30 project practices. The overall result is Gold I, 63 out of 100. Maintainability Platinum V, 74 out of 100, Project Readiness Gold I, 65 out of 100, Ease of Use Platinum IV, 76 out of 100, Shipping Gold III, 48 out of 100, Consistency Gold IV, 26 out of 100, Project Care Platinum V, 70 out of 100. Owner-supplied private repositories are included and cannot be checked independently on public GitHub. Buildmarks is not a developer ranking. Representative projects: 0disoft/genai-telemetry-redactor: Docs + examples; Release + manifest. 0disoft/velox: Docs + examples</desc>
+  <desc id="desc">Buildmarks reviewed 30 repositories and found 30 project practices. The overall result is Platinum V, 70 out of 100. Maintainability Platinum IV, 79 out of 100, Project Readiness Platinum IV, 75 out of 100, Ease of Use Platinum II, 87 out of 100, Shipping Gold I, 60 out of 100, Consistency Gold IV, 31 out of 100, Project Care Platinum V, 70 out of 100. Owner-supplied private repositories are included and cannot be checked independently on public GitHub. Buildmarks is not a developer ranking. Representative projects: 0disoft/dsh-ci-diet: Docs + examples; Release + manifest. 0disoft/mensor: Docs + examples</desc>
   <style>.card { --surface:#f4eedf;--text:#203044;--muted:#6b6260;--accent:#ac513d;--secondary:#dbc9a9;--track:#e0d7c6;--chip:#ebe1cf;--line:#d3c8b5; }
     .card-dark { --surface:#292b36;--text:#f4eedf;--muted:#c9beb6;--accent:#f1a58d;--secondary:#d8c6a4;--track:#4d454a;--chip:#3c3740;--line:#6e6064; }
     @media (prefers-color-scheme: dark) { .card-auto { --surface:#292b36;--text:#f4eedf;--muted:#c9beb6;--accent:#f1a58d;--secondary:#d8c6a4;--track:#4d454a;--chip:#3c3740;--line:#6e6064; } }
@@ -39,7 +39,7 @@
   </style>
   <rect width="420" height="360" rx="16" class="surface" />
   <text x="22" y="32" class="brand">Buildmarks</text>
-  <text x="398" y="32" class="checked">94% checked</text>
+  <text x="398" y="32" class="checked">95% checked</text>
   <text x="22" y="63" class="username">0disoft</text>
   <g data-cover="easy-to-pick-up" aria-label="Easy to Pick Up">
     <text x="22" y="104" class="cover-title cover-serif"><tspan x="22">Easy to</tspan><tspan x="22" dy="32">Pick Up</tspan></text>
@@ -51,17 +51,17 @@
   </g>
   <path d="M22 149h376" class="divider" aria-hidden="true" />
   <g aria-label="Representative projects and observed details">
-    <g role="img" aria-label="0disoft/genai-telemetry-redactor: Docs + examples; Release + manifest">
-      <text x="22" y="176" class="project">genai-telemetry-redactor</text>
+    <g role="img" aria-label="0disoft/dsh-ci-diet: Docs + examples; Release + manifest">
+      <text x="22" y="176" class="project">dsh-ci-diet</text>
       <text x="22" y="199" class="facts">Docs + examples · Release + manifest</text>
     </g>
-<g role="img" aria-label="0disoft/velox: Docs + examples">
-      <text x="22" y="232" class="project">velox</text>
+<g role="img" aria-label="0disoft/mensor: Docs + examples">
+      <text x="22" y="232" class="project">mensor</text>
       <text x="22" y="255" class="facts">Docs + examples</text>
     </g>
   </g>
   <path d="M22 272h376" class="divider" aria-hidden="true" />
   <text x="22" y="296" class="footer">Public + Private Projects · 30 reviewed</text>
-  <text x="22" y="319" class="footer">Generated 2026-10-07 · v0.4.0</text>
+  <text x="22" y="319" class="footer">Generated 2026-10-21 · v0.4.0</text>
   <text x="22" y="342" class="footer">Private projects supplied by owner</text>
 </svg>
