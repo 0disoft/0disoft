@@ -6,19 +6,36 @@ on:
     # GitHub schedules use UTC. 10:15 UTC is 19:15 in Korea.
     - cron: "15 10 * * 3"
 
+# Default to no write access; each job opts into exactly what it needs.
 permissions:
-  contents: write
+  contents: read
 
 concurrency:
+  # Never cancel a run that may be mid-commit: this job pushes to main.
   group: buildmarks-${{ github.workflow }}-${{ github.ref }}
-  cancel-in-progress: true
+  cancel-in-progress: false
+
+env:
+  CARD_PATH: assets/buildmarks-profile.svg
+  PRIVATE_SCOPE_LABEL: Public + Private Projects
+  PUBLIC_SCOPE_LABEL: Public GitHub
 
 jobs:
   update-card:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: write
+      # Only used to leave a durable signal when the card degrades.
+      issues: write
     steps:
       - name: Check out profile repository
-        uses: actions/checkout@v6
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6.1.0
+        with:
+          fetch-depth: 0
+          # Do not leave a write token in .git/config while the third-party card
+          # action runs; the commit step authenticates explicitly instead.
+          persist-credentials: false
 
       - name: Check two-week cadence
         id: cadence
@@ -35,52 +52,254 @@ jobs:
           today="$(date -u +%F)"
           days=$(( ( $(date -u -d "$today" +%s) - $(date -u -d "$anchor" +%s) ) / 86400 ))
 
-          if [ "$days" -lt 0 ] || [ $((days % 14)) -ne 0 ]; then
-            echo "Not a two-week Buildmarks update day."
+          if [ "$days" -lt 0 ]; then
+            echo "Anchor date is in the future; skipping."
             echo "should_run=false" >> "$GITHUB_OUTPUT"
             exit 0
           fi
 
+          # A failed or missed slot must not cost another full interval: the
+          # cadence day always runs, and any other weekly attempt runs as well
+          # once the committed card is already older than one interval.
+          last_epoch="$(git log -1 --format=%ct -- "$CARD_PATH" || true)"
+          if [ -z "$last_epoch" ]; then
+            echo "No committed card yet; running."
+            echo "should_run=true" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          age_days=$(( ( $(date -u +%s) - last_epoch ) / 86400 ))
+
+          if [ $((days % 14)) -ne 0 ] && [ "$age_days" -lt 14 ]; then
+            echo "Not a two-week Buildmarks update day ($age_days day(s) since the last card commit)."
+            echo "should_run=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          echo "Updating the card: $age_days day(s) since the previous card commit."
           echo "should_run=true" >> "$GITHUB_OUTPUT"
 
+      # Pinned to the v0.4.0 commit so a moving v0 tag cannot silently swap the renderer.
       - name: Generate private-local Buildmarks card
         id: private_card
         if: steps.cadence.outputs.should_run == 'true'
         continue-on-error: true
-        uses: 0disoft/buildmarks@v0
+        timeout-minutes: 10
+        uses: 0disoft/buildmarks@109e834694f6211998c0393f1375f6ea06c238d2 # v0.4.0
         with:
           username: ${{ github.repository_owner }}
-          output: assets/buildmarks-private.svg
+          output: assets/buildmarks-profile.svg
+          card-layout: detailed
           generate-report: "false"
           private-local: "true"
           token: ${{ secrets.BUILDMARKS_PRIVATE_TOKEN }}
           activity-window-days: "180"
 
-      - name: Generate public Buildmarks fallback card
+      - name: Generate public-only fallback card
         id: public_card
         if: steps.cadence.outputs.should_run == 'true' && steps.private_card.outcome == 'failure'
-        uses: 0disoft/buildmarks@v0
+        timeout-minutes: 10
+        uses: 0disoft/buildmarks@109e834694f6211998c0393f1375f6ea06c238d2 # v0.4.0
         with:
           username: ${{ github.repository_owner }}
-          output: assets/buildmarks-private.svg
+          output: assets/buildmarks-profile.svg
+          card-layout: detailed
           generate-report: "false"
           private-local: "false"
           token: ${{ github.token }}
           activity-window-days: "180"
 
-      - name: Commit updated Buildmarks artifacts
+      - name: Report public-only fallback
         if: >-
           steps.cadence.outputs.should_run == 'true' &&
-          (steps.private_card.outcome == 'success' || steps.public_card.outcome == 'success')
+          steps.private_card.outcome == 'failure' &&
+          steps.public_card.outcome == 'success'
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: |
-          git add assets/buildmarks-private.svg
+          set -euo pipefail
+
+          echo "::warning title=Buildmarks fell back to public data::Private-local collection failed, so this run committed a public-only card. Check the BUILDMARKS_PRIVATE_TOKEN secret."
+          {
+            echo "### Buildmarks card fell back to public data"
+            echo ""
+            echo "The private-local collection step failed, so this run rendered the public-only card."
+            echo "The usual cause is an expired or under-scoped BUILDMARKS_PRIVATE_TOKEN secret."
+            echo "Re-run this workflow after fixing the secret to restore private-local signals."
+          } >> "$GITHUB_STEP_SUMMARY"
+
+          # A step summary is invisible unless someone opens the run, so leave a
+          # durable signal without opening a duplicate issue on every retry.
+          # Filing the issue is a convenience only: a failure here must not stop
+          # the card commit, which already recorded the fallback in the summary.
+          # Each call is checked explicitly: this function runs as the left side
+          # of a ||, a context where bash ignores errexit inside the body.
+          record_fallback_issue() {
+            gh label create buildmarks-degraded \
+              --color FBCA04 \
+              --description "Buildmarks card fell back to public-only data" \
+              --force >/dev/null 2>&1 || true
+
+            local run_url body existing
+            run_url="${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+            body="$(printf 'The scheduled private-local Buildmarks run failed, so the card was regenerated from public data only.\n\nWorkflow run: %s\n\nCheck the BUILDMARKS_PRIVATE_TOKEN secret, then re-run the workflow to restore private-local signals.' "$run_url")"
+
+            if ! existing="$(gh issue list --state open --label buildmarks-degraded --limit 1 --json number --jq '.[0].number // empty')"; then
+              echo "::warning title=Fallback notice::Could not query the buildmarks-degraded issues."
+              return 1
+            fi
+
+            if [ -n "$existing" ]; then
+              if ! gh issue comment "$existing" --body "$body" >/dev/null; then
+                echo "::warning title=Fallback notice::Could not comment on buildmarks-degraded issue #$existing."
+                return 1
+              fi
+              echo "Updated buildmarks-degraded issue #$existing."
+            else
+              if ! gh issue create --title "Buildmarks card fell back to public-only data" --label buildmarks-degraded --body "$body" >/dev/null; then
+                echo "::warning title=Fallback notice::Could not open a buildmarks-degraded issue."
+                return 1
+              fi
+              echo "Opened a new buildmarks-degraded issue."
+            fi
+          }
+
+          record_fallback_issue || echo "::warning title=Fallback notice::The card fell back to public-only data, but the buildmarks-degraded issue could not be updated."
+
+      - name: Validate generated card
+        id: validate
+        if: steps.cadence.outputs.should_run == 'true' && (steps.private_card.outcome == 'success' || steps.public_card.outcome == 'success')
+        shell: bash
+        env:
+          PRIVATE_OUTCOME: ${{ steps.private_card.outcome }}
+        run: |
+          set -euo pipefail
+
+          card="$CARD_PATH"
+
+          if [ ! -s "$card" ]; then
+            echo "::error title=Missing card::$card was not generated."
+            exit 1
+          fi
+
+          bytes="$(wc -c < "$card" | tr -d ' ')"
+          if [ "$bytes" -lt 3000 ]; then
+            echo "::error title=Truncated card::$card is only $bytes bytes."
+            exit 1
+          fi
+
+          if ! grep -q '<svg xmlns="http://www.w3.org/2000/svg"' "$card"; then
+            echo "::error title=Broken card::$card has no SVG root element."
+            exit 1
+          fi
+
+          if ! grep -q 'width="760" height="420"' "$card"; then
+            echo "::error title=Wrong layout::$card is not the 760x420 detailed layout that card-layout: detailed requests."
+            exit 1
+          fi
+
+          rows="$(grep -o 'class="metric"' "$card" | wc -l | tr -d ' ' || true)"
+          if [ "$rows" -ne 6 ]; then
+            echo "::error title=Missing score rows::$card shows $rows of 6 project area rows."
+            exit 1
+          fi
+
+          expected_scope="$PUBLIC_SCOPE_LABEL"
+          if [ "$PRIVATE_OUTCOME" = "success" ]; then
+            expected_scope="$PRIVATE_SCOPE_LABEL"
+          fi
+          if ! grep -qF "· ${expected_scope} ·" "$card"; then
+            echo "::error title=Wrong data scope::$card does not declare \"${expected_scope}\" in its footer."
+            exit 1
+          fi
+
+          generated="$(grep -oE '[0-9]{4}-[0-9]{2}-[0-9]{2}' "$card" | tail -n 1 || true)"
+          today="$(date -u +%F)"
+          if [ "$generated" != "$today" ]; then
+            echo "::warning title=Stale card date::$card is stamped $generated instead of $today."
+          fi
+
+          if command -v xmllint >/dev/null 2>&1; then
+            xmllint --noout "$card"
+          fi
+
+          echo "Card validated: $bytes bytes, 6 score rows, scope $expected_scope."
+
+      - name: Update README cache-buster
+        if: steps.cadence.outputs.should_run == 'true' && steps.validate.outcome == 'success'
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          tag="$(sha256sum "$CARD_PATH" | cut -c1-12)"
+          sed -i -E "s#(assets/buildmarks-profile\.svg)(\?v=[^\"']*)?#\1?v=${tag}#" README.md
+
+          if ! grep -q "assets/buildmarks-profile.svg?v=${tag}" README.md; then
+            echo "::error title=README cache-buster::README.md does not reference $CARD_PATH, so the cache tag cannot be updated."
+            exit 1
+          fi
+
+          echo "README cache tag set to $tag."
+
+      - name: Commit and push updated card
+        if: steps.cadence.outputs.should_run == 'true' && steps.validate.outcome == 'success'
+        shell: bash
+        env:
+          PRIVATE_OUTCOME: ${{ steps.private_card.outcome }}
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+
+          scope="public+private"
+          if [ "$PRIVATE_OUTCOME" != "success" ]; then
+            scope="public-only fallback"
+          fi
+
+          git add "$CARD_PATH" README.md
 
           if git diff --cached --quiet; then
-            echo "Buildmarks artifacts are already up to date."
+            echo "Buildmarks card is already up to date."
+            {
+              echo "### Buildmarks card unchanged"
+              echo ""
+              echo "Scope: $scope."
+            } >> "$GITHUB_STEP_SUMMARY"
             exit 0
           fi
 
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git commit -m "chore: update buildmarks artifacts"
-          git push
+          git commit -m "chore: update buildmarks card ($scope)"
+
+          # The checkout step leaves no credential behind, so authenticate the
+          # remote for this step only. The token is masked in the run log.
+          git remote set-url origin "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+
+          branch="$GITHUB_REF_NAME"
+          for attempt in 1 2 3; do
+            if git pull --rebase --autostash origin "$branch" && git push origin "HEAD:$branch"; then
+              {
+                echo "### Buildmarks card updated"
+                echo ""
+                echo "Scope: $scope."
+                echo "Cache tag: $(grep -oE 'buildmarks-profile\.svg\?v=[0-9a-f]+' README.md | head -n 1 || true)"
+              } >> "$GITHUB_STEP_SUMMARY"
+              exit 0
+            fi
+            git rebase --abort 2>/dev/null || true
+            sleep $(( attempt * 5 ))
+          done
+
+          echo "::error title=Push failed::The updated card could not be pushed after three attempts."
+          exit 1
+
+      - name: Fail when no card was generated
+        if: >-
+          steps.cadence.outputs.should_run == 'true' &&
+          steps.private_card.outcome != 'success' &&
+          steps.public_card.outcome != 'success'
+        shell: bash
+        run: |
+          echo "::error title=No Buildmarks card::Both the private-local generation and the public fallback failed."
+          exit 1
