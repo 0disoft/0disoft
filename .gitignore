@@ -1,0 +1,7 @@
+# Buildmarks report output. A private-local report describes owner-supplied
+# private repositories, so it must never be published from a public profile.
+assets/buildmarks-report/
+
+# Editor and OS noise
+.DS_Store
+Thumbs.db
