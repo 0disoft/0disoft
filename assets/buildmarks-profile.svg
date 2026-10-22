@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" class="card card-auto" role="img" width="760" height="420" viewBox="0 0 760 420" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" class="card card-auto" data-layout="compact" role="img" width="420" height="304" viewBox="0 0 420 304" aria-labelledby="title desc">
   <title id="title">Buildmarks project card for 0disoft</title>
-  <desc id="desc">First Steps Coach. The first steps feel supported. The path is gathering a longer story. Buildmarks reviewed 30 repositories and found 30 project practices. The overall result is Gold I, 66 out of 100. Maintainability Platinum IV, 75 out of 100, Project Readiness Platinum V, 70 out of 100, Ease of Use Platinum II, 86 out of 100, Shipping Gold II, 53 out of 100, Consistency Gold IV, 27 out of 100, Project Care Gold I, 67 out of 100. Owner-supplied private repositories are included and cannot be checked independently on public GitHub. Buildmarks is not a developer ranking.</desc>
+  <desc id="desc">First Steps Coach. The first steps feel supported. The path is gathering a longer story. Buildmarks reviewed 30 repositories and found 30 project practices. The overall result is Gold I, 66 out of 100. Maintainability Platinum V, 73 out of 100, Project Readiness Platinum V, 70 out of 100, Ease of Use Platinum II, 85 out of 100, Shipping Gold II, 55 out of 100, Consistency Gold IV, 27 out of 100, Project Care Gold I, 66 out of 100. Owner-supplied private repositories are included and cannot be checked independently on public GitHub. Buildmarks is not a developer ranking. Representative projects: 0disoft/buildmarks: Docs + examples; Release + manifest. 0disoft/mensor: Docs + examples</desc>
   <style>.card { --surface:#f4eedf;--text:#203044;--muted:#6b6260;--accent:#ac513d;--secondary:#dbc9a9;--track:#e0d7c6;--chip:#ebe1cf;--line:#d3c8b5; }
     .card-dark { --surface:#292b36;--text:#f4eedf;--muted:#c9beb6;--accent:#f1a58d;--secondary:#d8c6a4;--track:#4d454a;--chip:#3c3740;--line:#6e6064; }
     @media (prefers-color-scheme: dark) { .card-auto { --surface:#292b36;--text:#f4eedf;--muted:#c9beb6;--accent:#f1a58d;--secondary:#d8c6a4;--track:#4d454a;--chip:#3c3740;--line:#6e6064; } }
@@ -32,17 +32,32 @@
     .emblem-fill{fill:var(--accent);}
     .emblem-cutout{fill:var(--surface);stroke:var(--surface);}
     .emblem-light{stroke:var(--surface);}
+
+    .card{--surface:#fbfcfa;--text:#17201d;--muted:#68756e;--line:#e2e7e1;}
+    .card-dark{--surface:#101718;--text:#f1f6f2;--muted:#94a19a;--line:#2a3632;}
+    @media(prefers-color-scheme:dark){.card-auto{--surface:#101718;--text:#f1f6f2;--muted:#94a19a;--line:#2a3632;}}
+    .surface{stroke:var(--line);stroke-width:1;}
+    .brand{font-size:14px;font-weight:750;letter-spacing:.2px;}
+    .brand-mark{fill:var(--accent);}
+    .username{font-size:15px;font-weight:500;fill:var(--muted);}
+    .cover-title{font-size:30px;font-weight:800;letter-spacing:-.7px;}
+    .profile-score{font-size:38px;font-weight:800;text-anchor:end;letter-spacing:-1.5px;}
+    .score-unit,.tagline,.footer{font-size:14px;fill:var(--muted);}
+    .score-unit{text-anchor:end;}
+    .project{font-size:14px;font-weight:600;}
+    .muted{fill:var(--muted);font-weight:400;}
+    .small-icon{fill:none;stroke:var(--muted);stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round;}
   </style>
-  <rect width="760" height="420" rx="16" class="surface" />
-  <g aria-hidden="true" class="accent"><path d="M32 23h7v17h-7zM43 23h7v17h-7z" /></g>
-  <text x="60" y="39" class="brand">Buildmarks</text>
-  <text x="728" y="38" class="checked">95% checked</text>
-  <text x="32" y="75" class="username">0disoft</text>
-  <path d="M284 98v224" class="divider" aria-hidden="true" />
+  <rect x=".5" y=".5" width="419" height="303" rx="20" class="surface" />
+  <g transform="translate(24 20)" class="brand-mark" aria-hidden="true"><path d="M0 0h7v7H0zM10 0h7v7h-7zM0 10h7v7H0zM10 10h7v7h-7z"/></g>
+  <text x="49" y="33" class="brand">Buildmarks</text>
+  <text x="24" y="58" class="username">0disoft</text>
+  <g aria-label="66/100">
+    <text x="396" y="42"><tspan class="profile-score">66</tspan><tspan x="396" y="60" class="score-unit">/ 100</tspan></text>
+  </g>
   <g data-cover="easy-to-pick-up" aria-label="First Steps Coach">
-    <text x="32" y="119" class="cover-title cover-serif"><tspan x="32">First Steps</tspan><tspan x="32" dy="34">Coach</tspan></text>
-    <text x="32" y="180" class="tagline"><tspan x="32">The first steps feel supported.</tspan><tspan x="32" dy="17">The path is gathering a longer</tspan><tspan x="32" dy="17">story.</tspan></text>
-    <g transform="translate(38 258) scale(.45)" data-emblem="first-steps-coach" class="persona-emblem" aria-hidden="true">
+    <text x="24" y="100" class="cover-title"><tspan x="24">First Steps</tspan><tspan x="24" dy="34">Coach</tspan></text>
+    <g transform="translate(276 78) scale(.9)" data-emblem="first-steps-coach" class="persona-emblem" aria-hidden="true">
     <rect x="5" y="5" width="118" height="118" rx="32" class="emblem-halo"/>
 
     <path d="M21 102h26V82h25V61h27V40h13"/>
@@ -50,57 +65,35 @@
     <rect x="23" y="73" width="12" height="19" rx="6" class="emblem-fill" transform="rotate(-20 29 82)"/>
     <rect x="68" y="29" width="12" height="19" rx="6" class="emblem-fill" transform="rotate(20 74 38)"/>
   </g>
-    <text x="250" y="310" class="profile-score">66/100</text>
   </g>
-  <g aria-label="Project areas with scores out of 100"><g role="img" aria-label="Maintainability: Platinum IV, 75 points out of 100">
-      <text x="314" y="112" class="metric">Maintainability</text>
-      <text x="728" y="112" class="value">75</text>
-      <rect x="314" y="122" width="414" height="7" rx="3.5" class="track" aria-hidden="true" />
-      <rect x="314" y="122" width="311" height="7" rx="3.5" class="bar" role="progressbar" aria-label="Maintainability score" aria-valuemin="0" aria-valuemax="100" aria-valuenow="75" />
+  <text x="24" y="156" class="tagline"><tspan x="24">The first steps feel supported.</tspan><tspan x="24" dy="16">The path is gathering a longer</tspan><tspan x="24" dy="16">story.</tspan></text>
+  <path d="M24 210h372" class="divider" aria-hidden="true" />
+  <g aria-label="Representative projects and observed details">
+    <g role="img" aria-label="0disoft/buildmarks: Docs + examples; Release + manifest">
+      <title>0disoft/buildmarks: Docs + examples; Release + manifest</title>
+      <g transform="translate(24 223)" class="small-icon"><rect x="2" y="1" width="12" height="14" rx="2"/><path d="M5 1v10l3-2 3 2V1M2 12h12"/></g>
+      <text x="48" y="236" class="project">buildmarks</text>
     </g>
-<g role="img" aria-label="Project Readiness: Platinum V, 70 points out of 100">
-      <text x="314" y="148" class="metric">Project Readiness</text>
-      <text x="728" y="148" class="value">70</text>
-      <rect x="314" y="158" width="414" height="7" rx="3.5" class="track" aria-hidden="true" />
-      <rect x="314" y="158" width="290" height="7" rx="3.5" class="bar" role="progressbar" aria-label="Project Readiness score" aria-valuemin="0" aria-valuemax="100" aria-valuenow="70" />
+<g role="img" aria-label="0disoft/mensor: Docs + examples">
+      <title>0disoft/mensor: Docs + examples</title>
+      <g transform="translate(214 223)" class="small-icon"><rect x="2" y="1" width="12" height="14" rx="2"/><path d="M5 1v10l3-2 3 2V1M2 12h12"/></g>
+      <text x="238" y="236" class="project">mensor</text>
     </g>
-<g role="img" aria-label="Ease of Use: Platinum II, 86 points out of 100">
-      <text x="314" y="184" class="metric">Ease of Use</text>
-      <text x="728" y="184" class="value">86</text>
-      <rect x="314" y="194" width="414" height="7" rx="3.5" class="track" aria-hidden="true" />
-      <rect x="314" y="194" width="356" height="7" rx="3.5" class="bar" role="progressbar" aria-label="Ease of Use score" aria-valuemin="0" aria-valuemax="100" aria-valuenow="86" />
-    </g>
-<g role="img" aria-label="Shipping: Gold II, 53 points out of 100">
-      <text x="314" y="220" class="metric">Shipping</text>
-      <text x="728" y="220" class="value">53</text>
-      <rect x="314" y="230" width="414" height="7" rx="3.5" class="track" aria-hidden="true" />
-      <rect x="314" y="230" width="219" height="7" rx="3.5" class="bar" role="progressbar" aria-label="Shipping score" aria-valuemin="0" aria-valuemax="100" aria-valuenow="53" />
-    </g>
-<g role="img" aria-label="Consistency: Gold IV, 27 points out of 100">
-      <text x="314" y="256" class="metric">Consistency</text>
-      <text x="728" y="256" class="value">27</text>
-      <rect x="314" y="266" width="414" height="7" rx="3.5" class="track" aria-hidden="true" />
-      <rect x="314" y="266" width="112" height="7" rx="3.5" class="bar" role="progressbar" aria-label="Consistency score" aria-valuemin="0" aria-valuemax="100" aria-valuenow="27" />
-    </g>
-<g role="img" aria-label="Project Care: Gold I, 67 points out of 100">
-      <text x="314" y="292" class="metric">Project Care</text>
-      <text x="728" y="292" class="value">67</text>
-      <rect x="314" y="302" width="414" height="7" rx="3.5" class="track" aria-hidden="true" />
-      <rect x="314" y="302" width="277" height="7" rx="3.5" class="bar" role="progressbar" aria-label="Project Care score" aria-valuemin="0" aria-valuemax="100" aria-valuenow="67" />
-    </g></g>
-  <text x="32" y="333" class="caption">Highlights</text>
-  <g aria-label="Project highlights"><g role="img" aria-label="Highlight: CI">
-      <rect x="32" y="345" width="224" height="27" rx="6" class="chip-bg" />
-      <text x="44" y="363" class="chip">CI</text>
-    </g>
-<g role="img" aria-label="Highlight: Contributing">
-      <rect x="268" y="345" width="224" height="27" rx="6" class="chip-bg" />
-      <text x="280" y="363" class="chip">Contributing</text>
-    </g>
-<g role="img" aria-label="Highlight: Conduct">
-      <rect x="504" y="345" width="224" height="27" rx="6" class="chip-bg" />
-      <text x="516" y="363" class="chip">Conduct</text>
-    </g></g>
-  <path d="M32 383h696" class="divider" aria-hidden="true" />
-  <text x="32" y="403" class="footer">Buildmarks v0.6.0 · Public + Private Projects · 2026-10-22</text>
+  </g>
+  <g role="img" aria-label="Public + Private Projects · 30 reviewed">
+    <title>Public + Private Projects · 30 reviewed</title>
+    <g transform="translate(24 254)" class="small-icon"><rect x="2" y="7" width="12" height="8" rx="2"/><path d="M5 7V4a3 3 0 0 1 6 0v3"/></g>
+    <text x="48" y="267" class="footer">30 repos</text>
+  </g>
+  <g role="img" aria-label="95% checked">
+    <title>95% checked</title>
+    <g transform="translate(154 254)" class="small-icon"><circle cx="8" cy="8" r="6.5"/><path d="m5 8 2 2 4-4"/></g>
+    <text x="178" y="267" class="footer">95%</text>
+  </g>
+  <g role="img" aria-label="Generated 2026-10-22 · v0.6.0">
+    <title>Generated 2026-10-22 · v0.6.0</title>
+    <g transform="translate(276 254)" class="small-icon"><rect x="1" y="3" width="14" height="12" rx="2"/><path d="M4 1v4m8-4v4M1 7h14"/></g>
+    <text x="300" y="267" class="footer">2026-10-22</text>
+  </g>
+  <text x="24" y="292" class="footer">Public + Private Projects · Owner-supplied</text>
 </svg>

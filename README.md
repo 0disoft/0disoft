@@ -27,4 +27,4 @@ Coming soon.
 
 [Buildmarks](https://github.com/0disoft/buildmarks) generates this card from public GitHub data and owner-supplied private repositories. The footer shows the data scope and generation date; private repository names stay out of this profile.
 
-<img src="./assets/buildmarks-profile.svg?v=a5115786260b" alt="Buildmarks GitHub project signal card for 0disoft: public data, plus owner-supplied private repositories when available" width="420" />
+<img src="./assets/buildmarks-profile.svg?v=5501bfc0f158" alt="Buildmarks GitHub project signal card for 0disoft: public data, plus owner-supplied private repositories when available" width="420" />
