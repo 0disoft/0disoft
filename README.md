@@ -23,4 +23,4 @@ I build systems software, developer tools, and web services.
 
 [Buildmarks](https://github.com/0disoft/buildmarks) generates this card from public GitHub data and owner-supplied private repositories. The footer shows the data scope and generation date; private repository names stay out of this profile.
 
-<img src="./assets/buildmarks-profile.svg?v=162092f4f031" alt="Buildmarks GitHub project signal card for 0disoft: public data, plus owner-supplied private repositories when available" width="100%" />
+<img src="./assets/buildmarks-profile.svg?v=f14f98e36fcc" alt="Buildmarks GitHub project signal card for 0disoft: public data, plus owner-supplied private repositories when available" width="100%" />
