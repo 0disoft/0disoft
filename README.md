@@ -14,7 +14,7 @@ Use it to explore native software with C-like control and predictable costs. The
 
 ### browniec
 
-In development.
+Coming soon.
 
 ## Core languages
 
