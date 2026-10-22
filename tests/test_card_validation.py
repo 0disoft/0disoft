@@ -23,9 +23,11 @@ class CardValidationTests(unittest.TestCase):
         self.card = Path(self.directory.name) / "card.svg"
         # Synthetic fixture stays independent of live scores and collection dates.
         self.content = (
-            '<svg xmlns="http://www.w3.org/2000/svg" width="760" height="420">'
-            + '<text class="metric">Area</text>' * 6
-            + '<text class="footer">Buildmarks v0.4.0 · Public + Private Projects · 2026-10-22</text>'
+            '<svg xmlns="http://www.w3.org/2000/svg" width="420" height="304" data-layout="compact">'
+            + '<text><tspan class="profile-score">66</tspan></text>'
+            + '<g aria-label="Public + Private Projects · 30 reviewed"/>'
+            + '<g aria-label="Generated 2026-10-22 · v0.6.0"/>'
+            + '<text class="footer">2026-10-22</text>'
             + '<!--' + 'padding' * 500 + '--></svg>'
         )
 
@@ -35,7 +37,7 @@ class CardValidationTests(unittest.TestCase):
 
     def test_current_private_and_public_cards(self):
         self.check_card()
-        self.check_card(self.content.replace("Public + Private Projects", "Public GitHub"), scope="Public GitHub")
+        self.check_card(self.content.replace("Public + Private Projects", "Public GitHub projects").replace('height="304"', 'height="280"'), scope="Public GitHub")
 
     def test_utc_midnight_during_generation(self):
         self.check_card(today=date(2026, 10, 23))
@@ -50,12 +52,14 @@ class CardValidationTests(unittest.TestCase):
         with self.assertRaises(ET.ParseError):
             self.check_card(self.content.replace("</svg>", ""))
 
-    def test_wrong_scope_namespace_layout_and_missing_row(self):
+    def test_wrong_scope_namespace_layout_and_missing_score(self):
         for content in (
             self.content.replace("Public + Private Projects", "Public GitHub"),
             self.content.replace("http://www.w3.org/2000/svg", "urn:not-svg"),
-            self.content.replace('width="760"', 'width="420"'),
-            self.content.replace('<text class="metric">Area</text>', "", 1),
+            self.content.replace('width="420"', 'width="760"'),
+            self.content.replace('data-layout="compact"', 'data-layout="detailed"'),
+            self.content.replace('<tspan class="profile-score">66</tspan>', "", 1),
+            self.content.replace('<tspan class="profile-score">66</tspan>', '<tspan class="profile-score">101</tspan>'),
             self.content.replace('class="footer"', 'class="caption"'),
         ):
             with self.subTest(content=content[:100]), self.assertRaises(ValueError):

@@ -100,7 +100,7 @@ jobs:
         with:
           username: ${{ github.repository_owner }}
           output: assets/buildmarks-profile.svg
-          card-layout: detailed
+          card-layout: compact
           generate-report: "false"
           private-local: "true"
           token: ${{ secrets.BUILDMARKS_PRIVATE_TOKEN }}
@@ -114,7 +114,7 @@ jobs:
         with:
           username: ${{ github.repository_owner }}
           output: assets/buildmarks-profile.svg
-          card-layout: detailed
+          card-layout: compact
           generate-report: "false"
           private-local: "false"
           token: ${{ github.token }}

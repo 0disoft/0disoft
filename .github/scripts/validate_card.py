@@ -1,4 +1,4 @@
-"""Validate a newly generated detailed Buildmarks card using the standard library."""
+"""Validate a newly generated compact Buildmarks card using the standard library."""
 
 import argparse
 from datetime import date, datetime, timedelta, timezone
@@ -22,24 +22,33 @@ def validate_card(path, scope, generated_since, today=None):
     root = ET.fromstring(content)
     if root.tag != f"{SVG}svg":
         raise ValueError("Expected an SVG root in the SVG namespace")
-    if (root.get("width"), root.get("height")) != ("760", "420"):
-        raise ValueError("Expected the 760x420 detailed layout")
+    height = "304" if scope == "Public + Private Projects" else "280"
+    if root.get("data-layout") != "compact" or (root.get("width"), root.get("height")) != ("420", height):
+        raise ValueError(f"Expected the 420x{height} compact layout")
 
     texts = list(root.iter(f"{SVG}text"))
-    metrics = [node for node in texts if "metric" in node.get("class", "").split()]
-    if len(metrics) != 6:
-        raise ValueError(f"Expected 6 metric rows, found {len(metrics)}")
-    footers = [node for node in texts if "footer" in node.get("class", "").split()]
-    if len(footers) != 1:
-        raise ValueError("Expected exactly one card footer")
-    footer = "".join(footers[0].itertext()).strip()
-    match = re.fullmatch(r"Buildmarks v\S+ · " + re.escape(scope) + r" · (\d{4}-\d{2}-\d{2})", footer)
+    scores = [node for node in root.iter() if "profile-score" in node.get("class", "").split()]
+    if len(scores) != 1 or not re.fullmatch(r"\d{1,3}", "".join(scores[0].itertext()).strip()):
+        raise ValueError("Expected one numeric profile score")
+    if not 0 <= int("".join(scores[0].itertext()).strip()) <= 100:
+        raise ValueError("Profile score must be between 0 and 100")
+    labels = [node.get("aria-label", "") for node in root.iter(f"{SVG}g")]
+    scope_label = "Public GitHub projects" if scope == "Public GitHub" else scope
+    if not any(label.startswith(scope_label + " · ") for label in labels):
+        raise ValueError("Card has the wrong data scope")
+    generated_labels = [label for label in labels if label.startswith("Generated ")]
+    if len(generated_labels) != 1:
+        raise ValueError("Expected one generation date")
+    match = re.fullmatch(r"Generated (\d{4}-\d{2}-\d{2}) · v\S+", generated_labels[0])
     if not match:
-        raise ValueError("Footer has the wrong data scope or no generation date")
+        raise ValueError("Card has no generation date or version")
+    footers = [node for node in texts if "footer" in node.get("class", "").split()]
+    if not any("".join(footer.itertext()).strip() == match[1] for footer in footers):
+        raise ValueError("Visible footer is missing the generation date")
     generated = date.fromisoformat(match[1])
     if not started <= generated <= today:
         raise ValueError(f"Card date {generated} falls outside this generation ({started}..{today})")
-    return f"Card validated: {len(content)} bytes, 6 score rows, scope {scope}, date {generated}."
+    return f"Card validated: {len(content)} bytes, compact layout, scope {scope}, date {generated}."
 
 
 def main():
