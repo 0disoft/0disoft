@@ -96,7 +96,7 @@ jobs:
         if: steps.cadence.outputs.should_run == 'true'
         continue-on-error: true
         timeout-minutes: 10
-        uses: 0disoft/buildmarks@9ed8353ed2f271cc0daaceaf0c2331d09aa480be # v0.5.0
+        uses: 0disoft/buildmarks@e7a86647426048c276f6f723d431ee7952eac26d # v0.6.0
         with:
           username: ${{ github.repository_owner }}
           output: assets/buildmarks-profile.svg
@@ -110,7 +110,7 @@ jobs:
         id: public_card
         if: steps.cadence.outputs.should_run == 'true' && steps.private_card.outcome == 'failure'
         timeout-minutes: 10
-        uses: 0disoft/buildmarks@9ed8353ed2f271cc0daaceaf0c2331d09aa480be # v0.5.0
+        uses: 0disoft/buildmarks@e7a86647426048c276f6f723d431ee7952eac26d # v0.6.0
         with:
           username: ${{ github.repository_owner }}
           output: assets/buildmarks-profile.svg
