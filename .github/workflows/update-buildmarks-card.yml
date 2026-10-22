@@ -279,6 +279,9 @@ jobs:
           branch="$GITHUB_REF_NAME"
           for attempt in 1 2 3; do
             if git pull --rebase --autostash origin "$branch" && git push origin "HEAD:$branch"; then
+              # The token URL existed only for this push. Put the plain remote
+              # back so no later step in this job can reuse the credential.
+              git remote set-url origin "https://github.com/${GITHUB_REPOSITORY}.git"
               {
                 echo "### Buildmarks card updated"
                 echo ""
