@@ -4,8 +4,15 @@ I build systems software, developer tools, and web services.
 
 ## Projects
 
-- [fairyc](https://github.com/0disoft/fairyc)
-- browniec
+### fairyc
+
+[Fairy C](https://github.com/0disoft/fairyc) is an experimental systems programming language with explicit resource ownership, compile-time borrow checking, and C interoperability, without a garbage collector.
+
+Use it to explore native software with C-like control and predictable costs. The compiler is currently a Stage 0 prototype.
+
+[Get started](https://github.com/0disoft/fairyc#human-quickstart)
+
+### browniec
 
 ## Core languages
 
