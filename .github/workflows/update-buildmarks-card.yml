@@ -23,10 +23,11 @@ env:
 jobs:
   update-card:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    # Two 10-minute generation attempts, plus checkout, validation and publishing.
+    timeout-minutes: 25
     permissions:
       contents: write
-      # Only used to leave a durable signal when the card degrades.
+      # Record degraded collection and close the notice after a published recovery.
       issues: write
     steps:
       - name: Check out profile repository
@@ -79,6 +80,16 @@ jobs:
           echo "Updating the card: $age_days day(s) since the previous card commit."
           echo "should_run=true" >> "$GITHUB_OUTPUT"
 
+      - name: Prepare card generation
+        id: generation
+        if: steps.cadence.outputs.should_run == 'true'
+        shell: bash
+        run: |
+          set -euo pipefail
+          echo "started_on=$(date -u +%F)" >> "$GITHUB_OUTPUT"
+          # A successful action must produce a new file, not reuse the checkout.
+          rm -f -- "$CARD_PATH"
+
       # Pinned to the v0.4.0 commit so a moving v0 tag cannot silently swap the renderer.
       - name: Generate private-local Buildmarks card
         id: private_card
@@ -120,7 +131,7 @@ jobs:
         run: |
           set -euo pipefail
 
-          echo "::warning title=Buildmarks fell back to public data::Private-local collection failed, so this run committed a public-only card. Check the BUILDMARKS_PRIVATE_TOKEN secret."
+          echo "::warning title=Buildmarks fell back to public data::Private-local collection failed, so this run generated a public-only card. Check the BUILDMARKS_PRIVATE_TOKEN secret."
           {
             echo "### Buildmarks card fell back to public data"
             echo ""
@@ -173,58 +184,15 @@ jobs:
         shell: bash
         env:
           PRIVATE_OUTCOME: ${{ steps.private_card.outcome }}
+          GENERATED_SINCE: ${{ steps.generation.outputs.started_on }}
         run: |
           set -euo pipefail
-
-          card="$CARD_PATH"
-
-          if [ ! -s "$card" ]; then
-            echo "::error title=Missing card::$card was not generated."
-            exit 1
-          fi
-
-          bytes="$(wc -c < "$card" | tr -d ' ')"
-          if [ "$bytes" -lt 3000 ]; then
-            echo "::error title=Truncated card::$card is only $bytes bytes."
-            exit 1
-          fi
-
-          if ! grep -q '<svg xmlns="http://www.w3.org/2000/svg"' "$card"; then
-            echo "::error title=Broken card::$card has no SVG root element."
-            exit 1
-          fi
-
-          if ! grep -q 'width="760" height="420"' "$card"; then
-            echo "::error title=Wrong layout::$card is not the 760x420 detailed layout that card-layout: detailed requests."
-            exit 1
-          fi
-
-          rows="$(grep -o 'class="metric"' "$card" | wc -l | tr -d ' ' || true)"
-          if [ "$rows" -ne 6 ]; then
-            echo "::error title=Missing score rows::$card shows $rows of 6 project area rows."
-            exit 1
-          fi
-
           expected_scope="$PUBLIC_SCOPE_LABEL"
           if [ "$PRIVATE_OUTCOME" = "success" ]; then
             expected_scope="$PRIVATE_SCOPE_LABEL"
           fi
-          if ! grep -qF "· ${expected_scope} ·" "$card"; then
-            echo "::error title=Wrong data scope::$card does not declare \"${expected_scope}\" in its footer."
-            exit 1
-          fi
-
-          generated="$(grep -oE '[0-9]{4}-[0-9]{2}-[0-9]{2}' "$card" | tail -n 1 || true)"
-          today="$(date -u +%F)"
-          if [ "$generated" != "$today" ]; then
-            echo "::warning title=Stale card date::$card is stamped $generated instead of $today."
-          fi
-
-          if command -v xmllint >/dev/null 2>&1; then
-            xmllint --noout "$card"
-          fi
-
-          echo "Card validated: $bytes bytes, 6 score rows, scope $expected_scope."
+          python3 .github/scripts/validate_card.py "$CARD_PATH" \
+            --scope "$expected_scope" --generated-since "$GENERATED_SINCE"
 
       - name: Update README cache-buster
         if: steps.cadence.outputs.should_run == 'true' && steps.validate.outcome == 'success'
@@ -243,6 +211,7 @@ jobs:
           echo "README cache tag set to $tag."
 
       - name: Commit and push updated card
+        id: publish
         if: steps.cadence.outputs.should_run == 'true' && steps.validate.outcome == 'success'
         shell: bash
         env:
@@ -274,6 +243,7 @@ jobs:
 
           # The checkout step leaves no credential behind, so authenticate the
           # remote for this step only. The token is masked in the run log.
+          trap 'git remote set-url origin "https://github.com/${GITHUB_REPOSITORY}.git"' EXIT
           git remote set-url origin "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
 
           branch="$GITHUB_REF_NAME"
@@ -296,6 +266,20 @@ jobs:
 
           echo "::error title=Push failed::The updated card could not be pushed after three attempts."
           exit 1
+
+      - name: Close resolved collection notices
+        if: >-
+          steps.private_card.outcome == 'success' &&
+          steps.validate.outcome == 'success' &&
+          steps.publish.outcome == 'success'
+        timeout-minutes: 1
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if ! bash .github/scripts/close_degraded_issues.sh; then
+            echo "::warning title=Recovery notice::The private-local card is published, but the collection notice could not be closed."
+          fi
 
       - name: Fail when no card was generated
         if: >-
