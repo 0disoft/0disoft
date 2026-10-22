@@ -90,13 +90,13 @@ jobs:
           # A successful action must produce a new file, not reuse the checkout.
           rm -f -- "$CARD_PATH"
 
-      # Pinned to the v0.4.0 commit so a moving v0 tag cannot silently swap the renderer.
+      # Pin the release commit so a moving tag cannot silently swap the renderer.
       - name: Generate private-local Buildmarks card
         id: private_card
         if: steps.cadence.outputs.should_run == 'true'
         continue-on-error: true
         timeout-minutes: 10
-        uses: 0disoft/buildmarks@4884a072fc847223c4d27db843f0338d8a0de4e6 # v0.4.0 + sha pin
+        uses: 0disoft/buildmarks@9ed8353ed2f271cc0daaceaf0c2331d09aa480be # v0.5.0
         with:
           username: ${{ github.repository_owner }}
           output: assets/buildmarks-profile.svg
@@ -110,7 +110,7 @@ jobs:
         id: public_card
         if: steps.cadence.outputs.should_run == 'true' && steps.private_card.outcome == 'failure'
         timeout-minutes: 10
-        uses: 0disoft/buildmarks@4884a072fc847223c4d27db843f0338d8a0de4e6 # v0.4.0 + sha pin
+        uses: 0disoft/buildmarks@9ed8353ed2f271cc0daaceaf0c2331d09aa480be # v0.5.0
         with:
           username: ${{ github.repository_owner }}
           output: assets/buildmarks-profile.svg
